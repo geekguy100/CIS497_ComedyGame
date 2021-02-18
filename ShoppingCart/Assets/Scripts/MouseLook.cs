@@ -27,6 +27,10 @@ public class MouseLook : MonoBehaviour
         head = GetComponentInChildren<Camera>().transform;
         bodyStartRotation = transform.localRotation;
         headStartRotation = head.localRotation;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
     }
 
     private void FixedUpdate()

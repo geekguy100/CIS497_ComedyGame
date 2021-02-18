@@ -1,42 +1,29 @@
 /*****************************************************************************
 // File Name :         CharacterMovement.cs
 // Author :            Kyle Grenier
-// Creation Date :     #CREATIONDATE#
+// Creation Date :     02/17/2021
 //
-// Brief Description : ADD BRIEF DESCRIPTION OF THE FILE HERE
+// Brief Description : Rigidbody character movement controller.
 *****************************************************************************/
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class CharacterMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 6f;
-    [SerializeField] private float gravity = 20f;
 
     private Vector3 movementDirection = Vector3.zero;
-    private CharacterController controller;
+
+    private Rigidbody rb;
 
     private void Awake()
     {
-        controller = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate()
+    public void Move(Vector3 direction)
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
-        Vector3 input = new Vector3(h, 0, v) * movementSpeed;
-
-        //CharacterController's Move method uses world-space, not local space, so we need to convert the inputocity to world space.
-        input = transform.TransformDirection(input);
-
-        if (controller.isGrounded)
-        {
-            movementDirection = input;
-        }
-
-        movementDirection.y -= gravity * Time.fixedDeltaTime;
-
-        controller.Move(movementDirection * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + direction * movementSpeed * Time.fixedDeltaTime);
     }
 
 }
