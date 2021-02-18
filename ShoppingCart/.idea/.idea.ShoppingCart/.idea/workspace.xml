@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93b9329c-e6cd-4dc5-9d12-17f0299b5274" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NathanScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NathanScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NathanScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NathanScene/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NathanScene/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NathanScene/ReflectionProbe-0.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +40,7 @@
         <option value="$PROJECT_DIR$/Assets/Art/Shaders/Mirror_PBR.shader" />
         <option value="$PROJECT_DIR$/Assets/Art/Shaders/mirror_vertexlit.shader" />
         <option value="$PROJECT_DIR$/Assets/Art/Shaders/mirror_unlit.shader" />
+        <option value="$PROJECT_DIR$/Assets/Art/Shaders/Mirror.shader" />
       </list>
     </option>
   </component>
@@ -68,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613360093153</updated>
       <workItem from="1613360109354" duration="1968000" />
-      <workItem from="1613594658711" duration="2027000" />
+      <workItem from="1613594658711" duration="2513000" />
     </task>
     <servers />
   </component>
