@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 2742220525238795453}
   - component: {fileID: 2742220525238795452}
   m_Layer: 0
-  m_Name: Cube - item
-  m_TagString: Untagged
+  m_Name: Cube (Red)
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 87a53042f30a0cf46bc1ea39d9c1312a, type: 2}
+  - {fileID: 2100000, guid: a1fa0cfb65127824197c4c70aa7a32fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,11 +110,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOnShelf: 0
-  isInCart: 0
+  isInPlayerCart: 0
+  isInOtherCart: 0
   distAway: 0
   reach: 0
-  player: {fileID: 0}
-  cart: {fileID: 0}
+  pw: {fileID: 0}
 --- !u!54 &2742220525238795452
 Rigidbody:
   m_ObjectHideFlags: 0
