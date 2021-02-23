@@ -18,7 +18,7 @@ public abstract class ShoppingList : MonoBehaviour
     /// Adds an item to the shopping center's repository.
     /// </summary>
     /// <param name="itemType">The type of item to add.</param>
-    public void AddItem(System.Type itemType)
+    public virtual void AddItem(System.Type itemType)
     {
         if (!ShoppingHelper.IsOfTypeItem(itemType))
         {
@@ -42,7 +42,7 @@ public abstract class ShoppingList : MonoBehaviour
     /// Removes an item from the shopping center's repository.
     /// </summary>
     /// <param name="item">The item to remove.</param>
-    public void RemoveItem(System.Type itemType)
+    public virtual void RemoveItem(System.Type itemType)
     {
         if (!ShoppingHelper.IsOfTypeItem(itemType))
         {

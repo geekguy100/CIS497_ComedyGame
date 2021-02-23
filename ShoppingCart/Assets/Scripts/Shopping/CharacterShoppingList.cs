@@ -7,11 +7,15 @@
 *****************************************************************************/
 using UnityEngine;
 using System.Collections.Generic;
+using TMPro;
 
 public class CharacterShoppingList : ShoppingList
 {
-    public void Start()
-    {
+    [Tooltip("Optional UI associated with this particular shopping list.")]
+    [SerializeField] private ShoppingListUI shoppingListUI;
 
+    private void Start()
+    {
+        
     }
 }

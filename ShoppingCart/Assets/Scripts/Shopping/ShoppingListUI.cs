@@ -1,5 +1,5 @@
 /*****************************************************************************
-// File Name :         Orange.cs
+// File Name :         ShoppingListUI.cs
 // Author :            Kyle Grenier
 // Creation Date :     #CREATIONDATE#
 //
@@ -7,10 +7,15 @@
 *****************************************************************************/
 using UnityEngine;
 
-public class Orange : Item
+public class ShoppingListUI : MonoBehaviour
 {
-    protected override string GetDescription()
+    void Start()
     {
-        return "An Orange";
+        
+    }
+
+    void Update()
+    {
+        
     }
 }

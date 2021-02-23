@@ -7,15 +7,7 @@
 *****************************************************************************/
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public abstract class Item : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    protected abstract string GetDescription();
 }
