@@ -3,11 +3,11 @@
 // Author :            Kyle Grenier
 // Creation Date :     #CREATIONDATE#
 //
-// Brief Description : ADD BRIEF DESCRIPTION OF THE FILE HERE
+// Brief Description : Allows a game object to control a shopping cart.
 *****************************************************************************/
 using UnityEngine;
 
-public class ControlCart : MonoBehaviour
+public class CartControl : MonoBehaviour
 {
     // The joint to hold the cart to the character. Null if we are not in control of a cart.
     private FixedJoint joint;
@@ -24,24 +24,14 @@ public class ControlCart : MonoBehaviour
     [Tooltip("If the joint encounters this much torque, break it.")]
     [SerializeField] private float grabBreakingTorque = 100f;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftControl) && cart != null)
-            AbandonCart();
-    }
 
-    private void OnTriggerStay(Collider col)
-    {
-        if (Input.GetKey(KeyCode.E) && col.gameObject.CompareTag("Cart") && cart == null)
-        {
-            AssignCart(col.gameObject);
-        }
-    }
-
-    private void AssignCart(GameObject cart)
+    /// <summary>
+    /// Assigns a shopping cart to the character.
+    /// </summary>
+    /// <param name="cart"></param>
+    public void AssignCart(GameObject cart)
     {
         this.cart = cart;
-        print("Assign");
 
         cart.transform.rotation = transform.rotation;
 
@@ -64,9 +54,8 @@ public class ControlCart : MonoBehaviour
 
     }
 
-    private void AbandonCart()
+    public void AbandonCart()
     {
-        print("BREAK");
         // If there is a joint still connected to the cart, destroy it.
         if (joint != null)
             Destroy(joint);
@@ -87,6 +76,15 @@ public class ControlCart : MonoBehaviour
         }
 
         cart = null;
+    }
+
+    /// <summary>
+    /// Does the character have a cart they are in control of?
+    /// </summary>
+    /// <returns>True if the character has a cart they are in control of.</returns>
+    public bool HasCart()
+    {
+        return (cart != null);
     }
 
     private void OnJointBreak(float breakForce)
