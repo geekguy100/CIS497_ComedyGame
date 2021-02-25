@@ -9,6 +9,8 @@ TagManager:
   - Floor
   - Item
   - Pickup
+  - Factory
+  - Interactable
   layers:
   - Default
   - TransparentFX
