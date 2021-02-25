@@ -8,25 +8,19 @@ public class Cart : MonoBehaviour
     [SerializeField] GameObject owner;
     private Vector3 ownerPos;
 
-    NavMeshAgent agent;
+    
     // Start is called before the first frame update
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        agent.updateRotation = false;
-        if (Input.GetMouseButtonDown(0))
+        if(transform.localRotation.z >= 25 || transform.localRotation.z <= -25)
         {
-            RaycastHit cast;
-
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out cast, 500))
-            {
-                agent.destination = cast.point;
-            }
+            Debug.Log("My cart tipped over!");
         }
     }
 }
