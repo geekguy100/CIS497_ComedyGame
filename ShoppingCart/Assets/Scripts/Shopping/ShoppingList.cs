@@ -3,16 +3,24 @@
 // Author :            Kyle Grenier
 // Creation Date :     02/22/2021
 //
-// Brief Description : Abstract class that defines functionality of the in-game shopping lists.
+// Brief Description : Class that defines functionality of the in-game shopping lists - adding items, removing items, etc.
 *****************************************************************************/
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public abstract class ShoppingList : MonoBehaviour
 {
-    private Dictionary<System.Type, int> shoppingDictionary = new Dictionary<System.Type, int>();
+    private Dictionary<System.Type, int> shoppingDictionary;
+
+    public event Action<System.Type> OnItemAdded;
+    public event Action<System.Type> OnItemRemoved;
 
 
+    protected virtual void Awake()
+    {
+        shoppingDictionary = new Dictionary<System.Type, int>();
+    }
 
     /// <summary>
     /// Adds an item to the shopping center's repository.
@@ -36,6 +44,8 @@ public abstract class ShoppingList : MonoBehaviour
 
         Debug.Log(gameObject.name + ": Added item " + itemType.ToString() + " to the list.\n" +
             "Quantity of item is now " + shoppingDictionary[itemType]);
+
+        OnItemAdded?.Invoke(itemType);
     }
 
     /// <summary>
@@ -58,5 +68,30 @@ public abstract class ShoppingList : MonoBehaviour
 
         Debug.Log(gameObject.name + ": Removed item " + itemType.ToString() + " to the list.\n" +
             "Quantity of item is now " + shoppingDictionary[itemType]);
+
+        OnItemRemoved?.Invoke(itemType);
+    }
+
+    /// <summary>
+    /// Gets the quantity of an item type.
+    /// </summary>
+    /// <param name="itemType">The type of item to check the quantity of.</param>
+    /// <returns>The quantity of the item type.</returns>
+    public int GetQuantity(System.Type itemType)
+    {
+        if (!ShoppingHelper.IsOfTypeItem(itemType))
+        {
+            print("SHOPPING LIST: NOT AN ITEM");
+            return 0;
+        }
+        else
+        {
+            print("RETURNING QUANTITY OF TYPE: " + itemType.ToString());
+            if (shoppingDictionary.TryGetValue(itemType, out int quantity))
+                return quantity;
+
+            // Return the quantity if there is one, else return 0.
+            return 0;
+        }
     }
 }

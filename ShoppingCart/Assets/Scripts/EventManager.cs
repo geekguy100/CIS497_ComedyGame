@@ -1,9 +1,9 @@
 /*****************************************************************************
 // File Name :         EventManager.cs
 // Author :            Kyle Grenier
-// Creation Date :     #CREATIONDATE#
+// Creation Date :     02/21/2021
 //
-// Brief Description : ADD BRIEF DESCRIPTION OF THE FILE HERE
+// Brief Description : Script to manage events - Observer Pattern.
 *****************************************************************************/
 using System;
 
@@ -17,8 +17,15 @@ public static class EventManager
         OnItemTaken?.Invoke(item);
     }
 
+    /// <summary>
+    /// Invoked when an item is spawned into the scene.
+    /// </summary>
+    /// <param name="item"></param>
     public static void ItemSpawned(System.Type item)
     {
+        if (!ShoppingHelper.IsOfTypeItem(item))
+            return;
+
         OnItemSpawned?.Invoke(item);
     }
 }

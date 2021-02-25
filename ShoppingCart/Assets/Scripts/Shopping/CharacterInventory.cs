@@ -1,21 +1,18 @@
 /*****************************************************************************
-// File Name :         CharacterShoppingList.cs
+// File Name :         CharacterInventory.cs
 // Author :            Kyle Grenier
 // Creation Date :     #CREATIONDATE#
 //
-// Brief Description : The shopping list each character has on their person.
+// Brief Description : The inventory of a character; what that character has on their person.
 *****************************************************************************/
 using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
 
-public class CharacterShoppingList : ShoppingList
+public class CharacterInventory : ShoppingList
 {
-    [Tooltip("Optional UI associated with this particular shopping list.")]
-    [SerializeField] private ShoppingListUI shoppingListUI;
-
     private void Start()
     {
-        
+        AddItem(typeof(Orange));
     }
 }

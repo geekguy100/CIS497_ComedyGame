@@ -3,7 +3,7 @@
 // Author :            Kyle Grenier
 // Creation Date :     #CREATIONDATE#
 //
-// Brief Description : ADD BRIEF DESCRIPTION OF THE FILE HERE
+// Brief Description : Script that handles how the player interacts with IInteractables.
 *****************************************************************************/
 using UnityEngine;
 
@@ -20,8 +20,14 @@ public class PlayerInteraction : MonoBehaviour
     // If the player is within the IInteractable
     private void OnTriggerStay(Collider col)
     {
-        IInteractable interactable = col.GetComponent<IInteractable>();
-        if (interactable != null && Input.GetMouseButtonDown(0))
-            characterInteraction.Interact(interactable);
+        if (col.CompareTag("Interactable"))
+        {
+            IInteractable interactable = col.GetComponent<IInteractable>();
+            if (interactable != null && Input.GetKeyDown(KeyCode.E))
+            {
+                print("CLICK");
+                characterInteraction.Interact(interactable);
+            }
+        }
     }
 }

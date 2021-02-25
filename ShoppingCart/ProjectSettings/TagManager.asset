@@ -10,6 +10,7 @@ TagManager:
   - Item
   - Pickup
   - Factory
+  - Interactable
   layers:
   - Default
   - TransparentFX

@@ -25,13 +25,13 @@ public class PlayerCartControl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && cartControl.HasCart())
         {
-            // To make sure we won't immediately pick up another cart, we
-            // start this coroutine.
-
             if (lastCoroutine != null)
                 StopCoroutine(lastCoroutine);
 
             cartControl.AbandonCart();
+
+            // To make sure we won't immediately pick up another cart, we
+            // start this coroutine.
             lastCoroutine = StartCoroutine(ResetPickup());
         }
     }
