@@ -12,6 +12,10 @@ public static class EventManager
     public static event Action<System.Type> OnItemTaken;
     public static event Action<System.Type> OnItemSpawned;
 
+
+    /// <summary>
+    /// Invoked when an item is taken from the shopping center.
+    /// </summary>
     public static void ItemTaken(System.Type item)
     {
         OnItemTaken?.Invoke(item);
@@ -20,12 +24,12 @@ public static class EventManager
     /// <summary>
     /// Invoked when an item is spawned into the scene.
     /// </summary>
-    /// <param name="item"></param>
-    public static void ItemSpawned(System.Type item)
+    /// <param name="itemType">The type of item that was spawned.</param>
+    public static void ItemSpawned(System.Type itemType)
     {
-        if (!ShoppingHelper.IsOfTypeItem(item))
+        if (!ShoppingHelper.IsOfTypeItem(itemType))
             return;
 
-        OnItemSpawned?.Invoke(item);
+        OnItemSpawned?.Invoke(itemType);
     }
 }

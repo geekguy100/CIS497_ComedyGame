@@ -61,15 +61,30 @@ public abstract class ShoppingList : MonoBehaviour
         }
 
 
-        if (shoppingDictionary.ContainsKey(itemType))
+        // If we have that item in the list, remove 1 from its quantity.
+        if (shoppingDictionary.ContainsKey(itemType) && shoppingDictionary[itemType] > 0)
+        {
             shoppingDictionary[itemType] -= 1;
+        }      
+        // We don't have that item in our list, so warn the user.
         else
-            Debug.LogWarning(gameObject.name + ": Cannot remove item of type " + itemType + " because it is not in our shopping list!");
+        {
+            Debug.LogWarning(gameObject.name + ": Cannot remove item of type " + itemType + " because it is not in our shopping list!\n" +
+                "Either we don't have it or quantity is 0.");
+            return;
+        }
 
         Debug.Log(gameObject.name + ": Removed item " + itemType.ToString() + " to the list.\n" +
             "Quantity of item is now " + shoppingDictionary[itemType]);
 
         OnItemRemoved?.Invoke(itemType);
+
+        // If that was the last item in the list, remove it.
+        if (shoppingDictionary[itemType] <= 0)
+        {
+            Debug.Log("No more " + itemType.ToString());
+            shoppingDictionary.Remove(itemType);
+        }
     }
 
     /// <summary>
@@ -79,19 +94,10 @@ public abstract class ShoppingList : MonoBehaviour
     /// <returns>The quantity of the item type.</returns>
     public int GetQuantity(System.Type itemType)
     {
-        if (!ShoppingHelper.IsOfTypeItem(itemType))
-        {
-            print("SHOPPING LIST: NOT AN ITEM");
-            return 0;
-        }
-        else
-        {
-            print("RETURNING QUANTITY OF TYPE: " + itemType.ToString());
-            if (shoppingDictionary.TryGetValue(itemType, out int quantity))
-                return quantity;
+        if (shoppingDictionary.TryGetValue(itemType, out int quantity))
+            return quantity;
 
-            // Return the quantity if there is one, else return 0.
-            return 0;
-        }
+        // Return the quantity if there is one, else return 0.
+        return 0;
     }
 }

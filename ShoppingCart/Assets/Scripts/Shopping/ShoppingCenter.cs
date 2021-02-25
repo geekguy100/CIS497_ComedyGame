@@ -6,9 +6,10 @@
 // Brief Description : The shopping list that contains all of the items 
                        and their quantities currently up for grabs in the store.
 *****************************************************************************/
-
+using UnityEngine;
 public sealed class ShoppingCenter : ShoppingList
 {
+    #region Singleton
     public static ShoppingCenter instance;
 
     protected override void Awake()
@@ -20,16 +21,12 @@ public sealed class ShoppingCenter : ShoppingList
         else
             Destroy(gameObject);
     }
-
-    private void Start()
-    {
-        AddItem(typeof(Orange));
-    }
+    #endregion
 
     private void OnEnable()
     {
         EventManager.OnItemSpawned += AddItem;
-        //EventManager.OnItemTaken += RemoveItem;
+        EventManager.OnItemTaken += RemoveItem;
 
         // TODO: Items should only be removed from the ShoppingCenter if an NPC checks out.
         // If an NPC doesn't check out and has an item on them, then it's technically still in the shopping center.
@@ -39,6 +36,14 @@ public sealed class ShoppingCenter : ShoppingList
     private void OnDisable()
     {
         EventManager.OnItemSpawned -= AddItem;
-        //EventManager.OnItemTaken -= RemoveItem;
+        EventManager.OnItemTaken -= RemoveItem;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            EventManager.ItemTaken(typeof(Orange));
+        }
     }
 }

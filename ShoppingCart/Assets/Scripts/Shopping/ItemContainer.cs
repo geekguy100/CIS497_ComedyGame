@@ -36,6 +36,12 @@ public class ItemContainer : MonoBehaviour, IInteractable
             Destroy(this);
             return;
         }
+
+        // Make sure the event manager knows the number of items in this cart.
+        for (int i = 0; i < quantity; ++i)
+        {
+            EventManager.ItemSpawned(System.Type.GetType(itemType));
+        }
     }
 
     /// <summary>
