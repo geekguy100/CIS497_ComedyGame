@@ -39,9 +39,9 @@ public sealed class ShoppingListUI : MonoBehaviour
 
     private void OnEnable()
     {
-        if (inventory == null)
+        if (inventory == null || shoppingList == null)
         {
-            Debug.LogWarning(gameObject.name + " has no inventory to display...");
+            Debug.LogWarning(gameObject.name + " has no inventory or shopping list to display...");
             Destroy(gameObject);
             return;
         }
