@@ -11,11 +11,6 @@ using TMPro;
 
 public class CharacterInventory : ShoppingList
 {
-
-    private void Start()
-    {
-    }
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))

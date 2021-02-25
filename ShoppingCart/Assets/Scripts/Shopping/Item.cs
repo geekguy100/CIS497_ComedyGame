@@ -7,7 +7,17 @@
 *****************************************************************************/
 using UnityEngine;
 
-public abstract class Item : MonoBehaviour
+public abstract class Item : MonoBehaviour, IInteractable
 {
+    public virtual void Interact(GameObject sender)
+    {
+        CharacterInventory inventory = sender.GetComponent<CharacterInventory>();
+        if (inventory != null)
+        {
+            inventory.AddItem(GetType());
+            Destroy(gameObject);
+        }
+    }
+
     protected abstract string GetDescription();
 }

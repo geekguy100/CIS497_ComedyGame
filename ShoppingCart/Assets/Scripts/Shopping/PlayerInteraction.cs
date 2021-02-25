@@ -23,9 +23,8 @@ public class PlayerInteraction : MonoBehaviour
         if (col.CompareTag("Interactable"))
         {
             IInteractable interactable = col.GetComponent<IInteractable>();
-            if (interactable != null && Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && interactable != null)
             {
-                print("CLICK");
                 characterInteraction.Interact(interactable);
             }
         }

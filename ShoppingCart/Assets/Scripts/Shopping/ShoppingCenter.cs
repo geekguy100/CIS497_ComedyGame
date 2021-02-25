@@ -27,10 +27,6 @@ public sealed class ShoppingCenter : ShoppingList
     {
         EventManager.OnItemSpawned += AddItem;
         EventManager.OnItemTaken += RemoveItem;
-
-        // TODO: Items should only be removed from the ShoppingCenter if an NPC checks out.
-        // If an NPC doesn't check out and has an item on them, then it's technically still in the shopping center.
-        // The player should be aware of this.
     }
 
     private void OnDisable()
@@ -41,9 +37,13 @@ public sealed class ShoppingCenter : ShoppingList
 
     private void Update()
     {
+        // Faking spawning in items.
+        // These EventManager calls will be called by the SpawnManager.
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             EventManager.ItemSpawned(typeof(Orange));
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
+            EventManager.ItemTaken(typeof(Orange));
     }
 }
