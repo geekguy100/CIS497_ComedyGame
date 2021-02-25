@@ -66,10 +66,10 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 256
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 3
-    compressionQuality: 50
+    compressionQuality: 20
     crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
@@ -78,10 +78,10 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 256
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 3
-    compressionQuality: 50
+    compressionQuality: 20
     crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0

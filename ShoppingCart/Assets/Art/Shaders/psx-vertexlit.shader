@@ -87,9 +87,9 @@ Shader "psx/vertexlit" {
 						    discard;
 						    
 						    
-						half4 color = c*(IN.colorFog.a);
-						color.rgb += IN.colorFog.rgb*(1 - IN.colorFog.a);
-						return color;
+		                half4 color = c*(IN.colorFog.a);
+		                color.rgb += IN.colorFog.rgb*(1 - IN.colorFog.a);
+		                return c + (1 - IN.colorFog.a);
 					}
 				ENDCG
 			}

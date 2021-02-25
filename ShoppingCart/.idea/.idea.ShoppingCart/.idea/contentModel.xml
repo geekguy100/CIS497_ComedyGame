@@ -25,13 +25,21 @@
             </e>
           </e>
         </e>
+        <e p="FranksScripts" t="Include">
+          <e p="Cart.cs" t="Include" />
+          <e p="NPC.cs" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="CharacterMovement.cs" t="Include" />
           <e p="ItemCollection.cs" t="Include" />
           <e p="ItemSpawning.cs" t="Include" />
           <e p="MouseLook.cs" t="Include" />
+          <e p="PickupWindow.cs" t="Include" />
+          <e p="PlayerInput.cs" t="Include" />
+          <e p="Shopping" t="Include">
+            <e p="ControlCart.cs" t="Include" />
+          </e>
         </e>
-        <e p="Scripts.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
