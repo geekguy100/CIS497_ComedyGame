@@ -43,7 +43,7 @@ public sealed class ShoppingCenter : ShoppingList
     {
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            EventManager.ItemTaken(typeof(Orange));
+            EventManager.ItemSpawned(typeof(Orange));
         }
     }
 }
