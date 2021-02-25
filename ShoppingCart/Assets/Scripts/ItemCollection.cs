@@ -26,13 +26,7 @@ public class ItemCollection : MonoBehaviour
     void Update()
     {
         distAway = Vector3.Distance(pw.player.transform.position, transform.position);
-        /*if (isOnShelf && distAway < reach && Input.GetKeyDown(KeyCode.E))
-        {
-            isOnShelf = false;
-            transform.position = cart.transform.position + new Vector3(0, 1, 0);
-            isInPlayerCart = true;
-        }*/
-        if (!isInPlayerCart && !isInOtherCart && distAway < reach && !pw.nearbyItems.Contains(this))
+        if (!isInPlayerCart && !isInOtherCart && distAway <= reach && !pw.nearbyItems.Contains(this))
         {
             pw.nearbyItems.Add(this);
             pw.UpdateDisplay();
