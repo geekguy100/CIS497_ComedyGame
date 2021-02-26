@@ -7,7 +7,7 @@ public class Cart : MonoBehaviour
 {
     [SerializeField] GameObject owner;
     private Vector3 ownerPos;
-
+    private Quaternion cartRot;
     
     // Start is called before the first frame update
     void Start()
@@ -18,9 +18,6 @@ public class Cart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.localRotation.z >= 25 || transform.localRotation.z <= -25)
-        {
-            Debug.Log("My cart tipped over!");
-        }
+        
     }
 }

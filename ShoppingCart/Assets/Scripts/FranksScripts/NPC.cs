@@ -1,3 +1,8 @@
+/* Frank Calabrese
+ * NPC.cs
+ * state machine for NPCs. 
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +24,6 @@ public class NPC : MonoBehaviour
     private Quaternion cartLocalRot;
 
     NavMeshAgent agent;
-    // Start is called before the first frame update
     void Start()
     {
         cartLocalPos = cart.transform.localPosition;
@@ -37,9 +41,18 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         switch (myState)
         {
             case State.Shopping:
+
+                if (cart.transform.rotation.z >= 25 || cart.transform.rotation.z <= -25)
+                {
+                    Debug.Log("My cart tipped over!");
+                    cart.transform.localRotation = cartLocalRot;
+                    Debug.Log("Adjusted my cart");
+                }
 
                 if (Input.GetMouseButtonDown(0))
                 {

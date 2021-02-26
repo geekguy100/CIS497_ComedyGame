@@ -273,19 +273,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.56127733, y: 0.6637535, z: 0.9966483}
   m_Center: {x: 0.000000059604645, y: 0.47018248, z: 0.04349971}
---- !u!114 &3831202029786231634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5300584958252040894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 564a01e7ae0b7194d87f903eb5c85bb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: {fileID: 5300584959740279353}
 --- !u!1 &5300584959740279353
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,14 +401,14 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 1, z: 0.7}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.01, y: 0.97799987, z: -0.5380002}
+  m_ConnectedAnchor: {x: 0.01, y: 0.97799987, z: -0.53799933}
   serializedVersion: 2
   m_Spring: 10
   m_Damper: 0.2
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
-  m_BreakForce: 20
+  m_BreakForce: 100
   m_BreakTorque: 20
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -462,8 +449,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cart: {fileID: 5300584958252040894}
-  springJoint: {fileID: 4993960089667094380}
-  charJoint: {fileID: 0}
 --- !u!1001 &4993960091400634351
 PrefabInstance:
   m_ObjectHideFlags: 0
