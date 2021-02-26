@@ -27,6 +27,11 @@ public class ItemContainer : MonoBehaviour, IInteractable
     [Tooltip("The number of items present in this container.")]
     [SerializeField] private int quantity;
 
+    [Tooltip("The visual prefab of this item container.")]
+    [SerializeField] private GameObject visualPrefab;
+
+    private GameObject visual;
+
     void Start()
     {
         // Make sure this item container has a valid type associated with it.
@@ -42,6 +47,8 @@ public class ItemContainer : MonoBehaviour, IInteractable
         {
             EventManager.ItemSpawned(System.Type.GetType(itemType));
         }
+
+        visual = Instantiate(visualPrefab, transform.position, visualPrefab.transform.rotation);
     }
 
     /// <summary>
@@ -58,6 +65,8 @@ public class ItemContainer : MonoBehaviour, IInteractable
             Debug.Log(gameObject.name + " ItemContainer quantity of " + itemType + " now at " + quantity);
             senderList.AddItem(System.Type.GetType(itemType));
         }
+        else if (quantity <= 0 && visual != null)
+            Destroy(visual);
     }
 
     /// <summary>
