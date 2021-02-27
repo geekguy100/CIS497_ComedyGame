@@ -3,11 +3,11 @@
 // Author :            Kyle Grenier
 // Creation Date :     #CREATIONDATE#
 //
-// Brief Description : ADD BRIEF DESCRIPTION OF THE FILE HERE
+// Brief Description : Interface for objects that can be interacted with.
 *****************************************************************************/
 using UnityEngine;
 
-public interface IInteractable
+public interface IItemInteractable
 {
-    void Interact();
+    void Interact(ShoppingList senderList);
 }

@@ -11,6 +11,7 @@ TagManager:
   - Pickup
   - Factory
   - Interactable
+  - Checkout
   layers:
   - Default
   - TransparentFX

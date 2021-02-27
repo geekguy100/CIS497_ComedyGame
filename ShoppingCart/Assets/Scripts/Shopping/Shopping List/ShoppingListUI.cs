@@ -80,6 +80,12 @@ public sealed class ShoppingListUI : MonoBehaviour
     /// <param name="itemType">The type of item to update the text of.</param>
     private void UpdateList(System.Type itemType)
     {
+        // Prevent misc items from being added to shopping list.
+        // Misc items will still be added to the character's inventory however, just not updated
+        // on the shopping list UI.
+        if (!shoppingList.ContainsType(itemType))
+            return;
+
         foreach(ListItem item in itemsOnList)
         {
             // If the item is already on our UI, update the text.
@@ -111,6 +117,18 @@ public sealed class ShoppingListUI : MonoBehaviour
             inventory.GetQuantity(item.itemType) + " / " + 
             shoppingList.GetQuantity(item.itemType) + " / " + 
             ShoppingCenter.instance.GetQuantity(item.itemType);
+
+        // If we have enough of the item we need, make the text color green.
+        if (inventory.GetQuantity(item.itemType) >= shoppingList.GetQuantity(item.itemType))
+            item.textComponent.color = Color.green;
+
+        // If there are no longer enough items of this type present in the shopping center, make the text color red.
+        else if (ShoppingCenter.instance.GetQuantity(item.itemType) < shoppingList.GetQuantity(item.itemType))
+            item.textComponent.color = Color.red;
+
+        // If we're still collecting this type of item and there are enough present in the store, make the text color black.
+        else
+            item.textComponent.color = Color.black;
     }
 
     /// <summary>

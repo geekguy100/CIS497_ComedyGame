@@ -1,5 +1,5 @@
 /*****************************************************************************
-// File Name :         IInteractable.cs
+// File Name :         DogToy.cs
 // Author :            Kyle Grenier
 // Creation Date :     #CREATIONDATE#
 //
@@ -7,7 +7,10 @@
 *****************************************************************************/
 using UnityEngine;
 
-public interface IInteractable
+public class DogToy : Item
 {
-    void Interact();
+    protected override string GetDescription()
+    {
+        return "A toy for a dog.";
+    }
 }

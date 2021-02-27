@@ -11,6 +11,8 @@ public static class EventManager
 {
     public static event Action<System.Type> OnItemTaken;
     public static event Action<System.Type> OnItemSpawned;
+    public static event Action OnGameStart;
+    public static event Action OnShoppingCenterFilled;
 
 
     /// <summary>
@@ -31,5 +33,15 @@ public static class EventManager
             return;
 
         OnItemSpawned?.Invoke(itemType);
+    }
+
+    /// <summary>
+    /// Signals any observers that the game has started,
+    /// and lets observers know when the shopping center is filled.
+    /// </summary>
+    public static void GameStart()
+    {
+        OnGameStart?.Invoke();
+        OnShoppingCenterFilled?.Invoke();
     }
 }

@@ -34,16 +34,4 @@ public sealed class ShoppingCenter : ShoppingList
         EventManager.OnItemSpawned -= AddItem;
         EventManager.OnItemTaken -= RemoveItem;
     }
-
-    private void Update()
-    {
-        // Faking spawning in items.
-        // These EventManager calls will be called by the SpawnManager.
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            EventManager.ItemSpawned(typeof(Orange));
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha6))
-            EventManager.ItemTaken(typeof(Orange));
-    }
 }

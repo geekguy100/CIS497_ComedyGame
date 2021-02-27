@@ -11,11 +11,4 @@ using TMPro;
 
 public class CharacterInventory : ShoppingList
 {
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-            AddItem(typeof(Watermelon));
-        else if (Input.GetKeyDown(KeyCode.L))
-            RemoveItem(typeof(Watermelon));
-    }
 }

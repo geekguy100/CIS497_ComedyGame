@@ -8,6 +8,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using System.Linq;
 
 public abstract class ShoppingList : MonoBehaviour
 {
@@ -20,6 +21,19 @@ public abstract class ShoppingList : MonoBehaviour
     protected virtual void Awake()
     {
         shoppingDictionary = new Dictionary<System.Type, int>();
+    }
+
+    /// <summary>
+    /// Check to see if a shopping list contains an item of the given type.
+    /// </summary>
+    /// <param name="itemType">The type of item to check for.</param>
+    /// <returns>True if the shopping list contains the type of item.</returns>
+    public virtual bool ContainsType(System.Type itemType)
+    {
+        if (!ShoppingHelper.IsOfTypeItem(itemType))
+            return false;
+
+        return shoppingDictionary.ContainsKey(itemType);
     }
 
     /// <summary>
@@ -99,5 +113,50 @@ public abstract class ShoppingList : MonoBehaviour
 
         // Return the quantity if there is one, else return 0.
         return 0;
+    }
+
+    /// <summary>
+    /// Gets the total quantity of items on the shopping list.
+    /// </summary>
+    /// <returns>The sum of the quantites of items on the shopping list; 
+    /// The total amount of items on the shopping list.</returns>
+    public int GetTotalQuantity()
+    {
+        int total = 0;
+        foreach(int quantity in shoppingDictionary.Values)
+        {
+            total += quantity;
+        }
+
+        return total;
+    }
+
+    /// <summary>
+    /// Gets a random item in an ItemContainerData format.
+    /// </summary>
+    /// <returns>An ItemContainerData containing the item's type and quantity.</returns>
+    public ItemContainerData GetRandomItem()
+    {
+        int index = UnityEngine.Random.Range(0, shoppingDictionary.Count);
+        System.Type itemType = shoppingDictionary.ElementAt(index).Key;
+        ItemContainerData item = new ItemContainerData(itemType.ToString(), shoppingDictionary[itemType]);
+        return item;
+    }
+
+    /// <summary>
+    /// Gets all of the items in the list as an array of ItemContainerData.
+    /// </summary>
+    /// <returns></returns>
+    public ItemContainerData[] GetItemData()
+    {
+        ItemContainerData[] items = new ItemContainerData[shoppingDictionary.Count];
+
+        for(int i = 0; i < items.Length; ++i)
+        {
+            System.Type itemType = shoppingDictionary.ElementAt(i).Key;
+            items[i] = new ItemContainerData(itemType.ToString(), shoppingDictionary[itemType]);
+        }
+
+        return items;
     }
 }

@@ -6,17 +6,28 @@
 // Brief Description : Defines functionality for characters interacting with IInteractables.
 *****************************************************************************/
 using UnityEngine;
+using System;
 
 public class CharacterInteraction : MonoBehaviour
 {
-    [Tooltip("The GameObject to act as the sender when interacting with an IInteractable.")]
-    [SerializeField] private GameObject gameObjectToSend;
+    [Tooltip("The ShoppingList to act as the sender when interacting with an IInteractable.")]
+    [SerializeField] private ShoppingList listToSend;
+
+    public event Action<IItemInteractable> OnInteracted;
+
+    public void Interact(IItemInteractable interactable)
+    {
+        if (listToSend == null)
+            Debug.LogWarning(gameObject.name + " has no game object to send to the interactable.");
+        else
+        {
+            interactable.Interact(listToSend);
+            OnInteracted?.Invoke(interactable);
+        }
+    }
 
     public void Interact(IInteractable interactable)
     {
-        if (gameObjectToSend == null)
-            Debug.LogWarning(gameObject.name + " has no game object to send to the interactable.");
-        else
-            interactable.Interact(gameObjectToSend);
+        interactable.Interact();
     }
 }

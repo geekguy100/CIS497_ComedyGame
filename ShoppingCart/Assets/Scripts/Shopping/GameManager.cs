@@ -1,5 +1,5 @@
 /*****************************************************************************
-// File Name :         IInteractable.cs
+// File Name :         GameManager.cs
 // Author :            Kyle Grenier
 // Creation Date :     #CREATIONDATE#
 //
@@ -7,7 +7,10 @@
 *****************************************************************************/
 using UnityEngine;
 
-public interface IInteractable
+public class GameManager : MonoBehaviour
 {
-    void Interact();
+    private void Start()
+    {
+        EventManager.GameStart();
+    }
 }

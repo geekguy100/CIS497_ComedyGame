@@ -23,21 +23,21 @@ public class ItemCollection : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        distAway = Vector3.Distance(pw.player.transform.position, transform.position);
-        if (!isInPlayerCart && !isInOtherCart && distAway <= reach && !pw.nearbyItems.Contains(this))
-        {
-            pw.nearbyItems.Add(this);
-            pw.UpdateDisplay();
-        }
+    //void Update()
+    //{
+    //    distAway = Vector3.Distance(pw.player.transform.position, transform.position);
+    //    if (!isInPlayerCart && !isInOtherCart && distAway <= reach && !pw.nearbyItems.Contains(this))
+    //    {
+    //        pw.nearbyItems.Add(this);
+    //        pw.UpdateDisplay();
+    //    }
 
-        if (distAway > reach && pw.nearbyItems.Contains(this))
-        {
-            pw.nearbyItems.Remove(this);
-            pw.UpdateDisplay();
-        }
-    }
+    //    if (distAway > reach && pw.nearbyItems.Contains(this))
+    //    {
+    //        pw.nearbyItems.Remove(this);
+    //        pw.UpdateDisplay();
+    //    }
+    //}
 
 
 }

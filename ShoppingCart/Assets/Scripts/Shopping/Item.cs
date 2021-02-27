@@ -1,20 +1,19 @@
 /*****************************************************************************
 // File Name :         Item.cs
 // Author :            Kyle Grenier
-// Creation Date :     #CREATIONDATE#
+// Creation Date :     02/26/2021
 //
-// Brief Description : ADD BRIEF DESCRIPTION OF THE FILE HERE
+// Brief Description : Ground item behavior.
 *****************************************************************************/
 using UnityEngine;
 
-public abstract class Item : MonoBehaviour, IInteractable
+public abstract class Item : MonoBehaviour, IItemInteractable
 {
-    public virtual void Interact(GameObject sender)
+    public virtual void Interact(ShoppingList senderList)
     {
-        CharacterInventory inventory = sender.GetComponent<CharacterInventory>();
-        if (inventory != null)
+        if (senderList != null)
         {
-            inventory.AddItem(GetType());
+            senderList.AddItem(GetType());
             Destroy(gameObject);
         }
     }

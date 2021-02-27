@@ -232,7 +232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Ketchup
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &13307956
 PrefabInstance:
@@ -433,7 +432,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Steak
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &25317045
 BoxCollider:
@@ -1236,7 +1234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: CoughSyrup
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &57321542
 GameObject:
@@ -1347,7 +1344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Flour
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &63965324
 PrefabInstance:
@@ -1462,7 +1458,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Milk
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &66364897
 BoxCollider:
@@ -1826,7 +1821,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Apple
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &95831650
 GameObject:
@@ -1875,7 +1869,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Milk
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &95831653
 BoxCollider:
@@ -2048,7 +2041,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: CoughSyrup
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &103005712
 GameObject:
@@ -2159,7 +2151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Laptop
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &104347664
 GameObject:
@@ -2270,7 +2261,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Waffles
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &105133055
 GameObject:
@@ -2611,7 +2601,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: PetFood
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &124563751
 GameObject:
@@ -2722,7 +2711,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Laptop
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &125267902
 PrefabInstance:
@@ -2985,7 +2973,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Bandage
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &141843842
 GameObject:
@@ -3096,7 +3083,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Toothpaste
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &143594144
 GameObject:
@@ -3207,7 +3193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Flour
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &150979670
 GameObject:
@@ -3491,7 +3476,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: TV
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &174895227
 PrefabInstance:
@@ -3676,7 +3660,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Pasta
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &180042804
 PrefabInstance:
@@ -4027,7 +4010,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Pizza
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &205647545
 PrefabInstance:
@@ -4178,9 +4160,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 223625755}
+  - component: {fileID: 223625757}
+  - component: {fileID: 223625756}
   m_Layer: 0
   m_Name: checkout (8)
-  m_TagString: Untagged
+  m_TagString: Checkout
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4204,6 +4188,32 @@ Transform:
   m_Father: {fileID: 1539410134}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &223625756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223625754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd70bfb41c651746ae9da92cf07f99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winText: {fileID: 553667056}
+--- !u!65 &223625757
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223625754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.77, y: 2.08, z: 1.57}
+  m_Center: {x: -0.62, y: -1.42, z: 2.57}
 --- !u!1 &225638278
 GameObject:
   m_ObjectHideFlags: 0
@@ -4313,7 +4323,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Orange
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &228216777
 GameObject:
@@ -4424,7 +4433,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Ketchup
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &234078921
 PrefabInstance:
@@ -4609,7 +4617,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Hairspray
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &235736497
 PrefabInstance:
@@ -5154,7 +5161,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: PetFood
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &248134349
 GameObject:
@@ -5238,7 +5244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &252726027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5445,7 +5451,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Laptop
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &270657201
 GameObject:
@@ -5752,7 +5757,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: PetToy
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &286261634
 GameObject:
@@ -5863,7 +5867,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Soda
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &290972175
 PrefabInstance:
@@ -6182,7 +6185,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Hairspray
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &305497334
 GameObject:
@@ -6293,7 +6295,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Vitamins
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &313080578
 GameObject:
@@ -6336,9 +6337,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 321304425}
+  - component: {fileID: 321304427}
+  - component: {fileID: 321304426}
   m_Layer: 0
   m_Name: checkout (1)
-  m_TagString: Untagged
+  m_TagString: Checkout
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6362,6 +6365,32 @@ Transform:
   m_Father: {fileID: 1539410134}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &321304426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321304424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd70bfb41c651746ae9da92cf07f99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winText: {fileID: 553667056}
+--- !u!65 &321304427
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321304424}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.77, y: 2.08, z: 1.57}
+  m_Center: {x: -0.62, y: -1.42, z: 2.57}
 --- !u!1 &322842727
 GameObject:
   m_ObjectHideFlags: 0
@@ -6598,7 +6627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: CoughSyrup
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &329880441
 PrefabInstance:
@@ -7315,7 +7343,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Vitamins
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &390465930
 PrefabInstance:
@@ -7758,7 +7785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: IceCream
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &422412772
 PrefabInstance:
@@ -9374,7 +9400,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Cabbage
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &517688154
 GameObject:
@@ -9485,7 +9510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Toothpaste
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &524866480
 GameObject:
@@ -9596,7 +9620,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Flour
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &535358390
 PrefabInstance:
@@ -9868,7 +9891,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Orange
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &540657915
 GameObject:
@@ -9922,10 +9944,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de3cdb09ded35fc4daddbec300d34614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  cart: {fileID: 0}
   nearbyItems: []
-  display: {fileID: 1613431721}
+  display: {fileID: 0}
   selection: 0
   cursor: {fileID: 1061488375}
   cursorPos: {x: 0, y: 0, z: 0}
@@ -10108,7 +10128,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Pizza
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &549840091
 PrefabInstance:
@@ -10324,6 +10343,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
   m_PrefabInstance: {fileID: 550995824}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &553667056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 553667057}
+  - component: {fileID: 553667059}
+  - component: {fileID: 553667058}
+  m_Layer: 5
+  m_Name: Win Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &553667057
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553667056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1360220995}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &553667058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553667056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: WINNER!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &553667059
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553667056}
+  m_CullTransparentMesh: 1
 --- !u!1 &554435302
 GameObject:
   m_ObjectHideFlags: 0
@@ -10528,7 +10681,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Game
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &560926306
 GameObject:
@@ -10639,7 +10791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Shampoo
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &563780491
 GameObject:
@@ -10948,7 +11099,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Candy
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &581851921
 PrefabInstance:
@@ -11501,6 +11651,49 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &606583640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 606583642}
+  - component: {fileID: 606583641}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &606583641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606583640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c9362c78b39c648b882c97b66d1150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &606583642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606583640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.840608, y: 3.6222832, z: 49.84532}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &606981571
 GameObject:
   m_ObjectHideFlags: 0
@@ -11548,7 +11741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Chicken
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &606981574
 BoxCollider:
@@ -12074,7 +12266,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Watermelon
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &625446946
 PrefabInstance:
@@ -12151,9 +12342,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 625472092}
+  - component: {fileID: 625472094}
+  - component: {fileID: 625472093}
   m_Layer: 0
   m_Name: checkout (3)
-  m_TagString: Untagged
+  m_TagString: Checkout
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12177,6 +12370,32 @@ Transform:
   m_Father: {fileID: 1539410134}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &625472093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625472091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd70bfb41c651746ae9da92cf07f99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winText: {fileID: 553667056}
+--- !u!65 &625472094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625472091}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.77, y: 2.08, z: 1.57}
+  m_Center: {x: -0.62, y: -1.42, z: 2.57}
 --- !u!1001 &628768079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12423,9 +12642,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 635375319}
+  - component: {fileID: 635375321}
+  - component: {fileID: 635375320}
   m_Layer: 0
   m_Name: checkout
-  m_TagString: Untagged
+  m_TagString: Checkout
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12449,6 +12670,32 @@ Transform:
   m_Father: {fileID: 1539410134}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &635375320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635375318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd70bfb41c651746ae9da92cf07f99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winText: {fileID: 553667056}
+--- !u!65 &635375321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635375318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.77, y: 2.08, z: 1.57}
+  m_Center: {x: -0.62, y: -1.42, z: 2.57}
 --- !u!1 &635767342
 GameObject:
   m_ObjectHideFlags: 0
@@ -12558,7 +12805,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Bandage
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &637701538
 PrefabInstance:
@@ -13475,6 +13721,101 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
   m_PrefabInstance: {fileID: 675418184}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &683300801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 683300802}
+  - component: {fileID: 683300805}
+  - component: {fileID: 683300804}
+  - component: {fileID: 683300803}
+  m_Layer: 5
+  m_Name: PickupWindow
+  m_TagString: Pickup
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &683300802
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683300801}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2385, y: 0.2385, z: 0.2385}
+  m_Children:
+  - {fileID: 939400143}
+  - {fileID: 1955570047}
+  m_Father: {fileID: 1360220995}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 626, y: 352}
+  m_Pivot: {x: 1, y: 0}
+--- !u!114 &683300803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683300801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3cdb09ded35fc4daddbec300d34614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nearbyItems: []
+  display: {fileID: 939400144}
+  selection: 0
+  cursor: {fileID: 1955570048}
+  cursorPos: {x: 0, y: 0, z: 0}
+--- !u!114 &683300804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683300801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &683300805
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683300801}
+  m_CullTransparentMesh: 1
 --- !u!1001 &683368220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13732,7 +14073,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Pasta
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &705133551
 GameObject:
@@ -13907,7 +14247,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Game
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &708574127
 PrefabInstance:
@@ -14052,7 +14391,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Fish
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &715645446
 BoxCollider:
@@ -14225,7 +14563,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Laptop
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &719663171
 PrefabInstance:
@@ -14930,7 +15267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: TV
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &782159712
 PrefabInstance:
@@ -15210,7 +15546,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Vitamins
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &793850539
 GameObject:
@@ -15321,7 +15656,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: DogToy
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &810661784
 GameObject:
@@ -15560,7 +15894,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Fish
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &812874493
 BoxCollider:
@@ -16431,7 +16764,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Chicken
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &880448801
 BoxCollider:
@@ -16604,7 +16936,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Toothpaste
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &884710691
 GameObject:
@@ -16810,7 +17141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Pasta
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &889478354
 PrefabInstance:
@@ -17470,7 +17800,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: IceCream
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &920659836
 PrefabInstance:
@@ -17632,7 +17961,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Orange
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &926910882
 BoxCollider:
@@ -17852,7 +18180,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Steak
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &931693706
 BoxCollider:
@@ -18025,7 +18352,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Chip
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &934986282
 GameObject:
@@ -18079,6 +18405,140 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 21.114758, y: 2.5276048, z: 1.840276}
   m_Center: {x: 1.3172746, y: 1.2584211, z: -5.684342e-14}
+--- !u!1 &939400142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 939400143}
+  - component: {fileID: 939400145}
+  - component: {fileID: 939400144}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &939400143
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939400142}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.9634, y: 6.9634, z: 6.9634}
+  m_Children: []
+  m_Father: {fileID: 683300802}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.0022583008, y: 0.008239746}
+  m_SizeDelta: {x: -536.1, y: -301.45}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &939400144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939400142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 10
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 8
+  m_fontSizeMax: 10
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &939400145
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939400142}
+  m_CullTransparentMesh: 1
 --- !u!1 &948958161
 GameObject:
   m_ObjectHideFlags: 0
@@ -18188,7 +18648,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Cabbage
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &951254323
 GameObject:
@@ -18243,9 +18702,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 952655208}
+  - component: {fileID: 952655210}
+  - component: {fileID: 952655209}
   m_Layer: 0
   m_Name: checkout (4)
-  m_TagString: Untagged
+  m_TagString: Checkout
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18269,6 +18730,32 @@ Transform:
   m_Father: {fileID: 1539410134}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &952655209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952655207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd70bfb41c651746ae9da92cf07f99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winText: {fileID: 553667056}
+--- !u!65 &952655210
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952655207}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.77, y: 2.08, z: 1.57}
+  m_Center: {x: -0.62, y: -1.42, z: 2.57}
 --- !u!1 &964346289
 GameObject:
   m_ObjectHideFlags: 0
@@ -18316,7 +18803,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Apple
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &964346292
 BoxCollider:
@@ -18553,7 +19039,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Cabbage
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &972624831
 PrefabInstance:
@@ -19074,7 +19559,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Shampoo
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &996763705
 GameObject:
@@ -19280,7 +19764,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Ketchup
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1001277022
 GameObject:
@@ -19391,7 +19874,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Shampoo
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1002775528
 PrefabInstance:
@@ -19580,7 +20062,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Hairspray
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1010866543
 PrefabInstance:
@@ -19979,7 +20460,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Chip
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1025455582
 PrefabInstance:
@@ -21159,7 +21639,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Watermelon
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &1071489735
 BoxCollider:
@@ -21332,7 +21811,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Laptop
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1077516506
 GameObject:
@@ -21569,7 +22047,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Shampoo
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1087551511
 GameObject:
@@ -21999,7 +22476,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Apple
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1109090935
 PrefabInstance:
@@ -22374,7 +22850,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Shampoo
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1136773264
 GameObject:
@@ -22485,7 +22960,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Bandage
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1144048783
 GameObject:
@@ -22691,7 +23165,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Waffles
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1151802160
 GameObject:
@@ -23129,7 +23602,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: IceCream
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1173459031
 GameObject:
@@ -23240,7 +23712,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Toothpaste
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1176072867
 PrefabInstance:
@@ -23491,7 +23962,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Watermelon
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1180689830
 GameObject:
@@ -23771,12 +24241,12 @@ GameObject:
   - component: {fileID: 1200715029}
   - component: {fileID: 1200715028}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: old_Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1200715028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24287,7 +24757,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Toothpaste
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1232770088
 PrefabInstance:
@@ -24794,7 +25263,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Flour
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1239833580
 PrefabInstance:
@@ -25034,7 +25502,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Game
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1250510115
 GameObject:
@@ -25093,7 +25560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8bd3f8f36d80d245b2fd73124c6de79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectToSend: {fileID: 595393736}
+  listToSend: {fileID: 0}
 --- !u!135 &1250510119
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25216,7 +25683,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Orange
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1277748681
 PrefabInstance:
@@ -25892,7 +26358,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Watermelon
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1323718492
 PrefabInstance:
@@ -26077,7 +26542,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Bandage
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1336501093
 GameObject:
@@ -26188,7 +26652,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Hairspray
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1337666664
 GameObject:
@@ -26518,7 +26981,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Pizza
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1347527360
 GameObject:
@@ -26629,7 +27091,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Apple
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1348550825
 PrefabInstance:
@@ -26803,7 +27264,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Bread
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &1358190975
 BoxCollider:
@@ -26976,8 +27436,108 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Toothpaste
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
+--- !u!1 &1360220991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1360220995}
+  - component: {fileID: 1360220994}
+  - component: {fileID: 1360220993}
+  - component: {fileID: 1360220992}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1360220992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360220991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1360220993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360220991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1360220994
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360220991}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1360220995
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360220991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 683300802}
+  - {fileID: 553667057}
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1365066653
 GameObject:
   m_ObjectHideFlags: 0
@@ -27352,7 +27912,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Cabbage
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &1373448060
 BoxCollider:
@@ -27557,7 +28116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Cookie
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1380031468
 GameObject:
@@ -27668,7 +28226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Chip
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1393293007
 GameObject:
@@ -27922,7 +28479,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: TV
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1404496531
 GameObject:
@@ -28953,7 +29509,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Toothpaste
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1480884193
 GameObject:
@@ -29299,7 +29854,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Vitamins
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1499876555
 GameObject:
@@ -29887,7 +30441,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Shampoo
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1532075159
 GameObject:
@@ -29936,7 +30489,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Bread
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &1532075162
 BoxCollider:
@@ -30109,7 +30661,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Hairspray
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1532948907
 PrefabInstance:
@@ -30197,7 +30748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1533692909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31145,7 +31696,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Cookie
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1588177386
 GameObject:
@@ -31428,7 +31978,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Pizza
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1594941791
 GameObject:
@@ -31439,9 +31988,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1594941792}
+  - component: {fileID: 1594941794}
+  - component: {fileID: 1594941793}
   m_Layer: 0
   m_Name: checkout (5)
-  m_TagString: Untagged
+  m_TagString: Checkout
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31465,6 +32016,32 @@ Transform:
   m_Father: {fileID: 1539410134}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1594941793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594941791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd70bfb41c651746ae9da92cf07f99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winText: {fileID: 553667056}
+--- !u!65 &1594941794
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594941791}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.77, y: 2.08, z: 1.57}
+  m_Center: {x: -0.62, y: -1.42, z: 2.57}
 --- !u!1 &1598951639
 GameObject:
   m_ObjectHideFlags: 0
@@ -31512,7 +32089,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Chicken
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &1598951642
 BoxCollider:
@@ -31585,9 +32161,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1603097304}
+  - component: {fileID: 1603097306}
+  - component: {fileID: 1603097305}
   m_Layer: 0
   m_Name: checkout (2)
-  m_TagString: Untagged
+  m_TagString: Checkout
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31611,6 +32189,32 @@ Transform:
   m_Father: {fileID: 1539410134}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1603097305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603097303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd70bfb41c651746ae9da92cf07f99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winText: {fileID: 553667056}
+--- !u!65 &1603097306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603097303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.77, y: 2.08, z: 1.57}
+  m_Center: {x: -0.62, y: -1.42, z: 2.57}
 --- !u!1 &1603969435
 GameObject:
   m_ObjectHideFlags: 0
@@ -31815,7 +32419,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: CoughSyrup
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1606389192
 GameObject:
@@ -31851,7 +32454,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Orange
-  quantity: 5
   visualPrefab: {fileID: 0}
 --- !u!54 &1606389194
 Rigidbody:
@@ -32228,7 +32830,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Soda
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1647832876
 PrefabInstance:
@@ -32346,6 +32947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8df9c326858f98b4f8ddc34a14916457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxItems: 20
 --- !u!1001 &1659735119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32742,7 +33344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Hairspray
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1684505398
 GameObject:
@@ -33422,7 +34023,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Fish
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &1721974948
 BoxCollider:
@@ -33830,7 +34430,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: PetFood
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1728057171
 PrefabInstance:
@@ -34157,9 +34756,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1744647368}
+  - component: {fileID: 1744647370}
+  - component: {fileID: 1744647369}
   m_Layer: 0
   m_Name: checkout (6)
-  m_TagString: Untagged
+  m_TagString: Checkout
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34183,6 +34784,32 @@ Transform:
   m_Father: {fileID: 1539410134}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1744647369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744647367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd70bfb41c651746ae9da92cf07f99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winText: {fileID: 553667056}
+--- !u!65 &1744647370
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744647367}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.77, y: 2.08, z: 1.57}
+  m_Center: {x: -0.62, y: -1.42, z: 2.57}
 --- !u!1 &1751361810
 GameObject:
   m_ObjectHideFlags: 0
@@ -34292,7 +34919,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Cookie
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1752656173
 PrefabInstance:
@@ -35115,7 +35741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Watermelon
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1807172267
 GameObject:
@@ -35321,7 +35946,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Orange
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1818000839
 PrefabInstance:
@@ -35572,7 +36196,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Bleach
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1829901133
 GameObject:
@@ -36134,7 +36757,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Bandage
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1878192519
 PrefabInstance:
@@ -36546,7 +37168,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Candy
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1904490982
 GameObject:
@@ -36657,7 +37278,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Cabbage
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1905565763
 GameObject:
@@ -36768,7 +37388,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Bleach
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1914993569
 GameObject:
@@ -36974,7 +37593,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: TV
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1918600996
 PrefabInstance:
@@ -37163,7 +37781,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Shampoo
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1927187842
 GameObject:
@@ -37274,7 +37891,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Game
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1927733032
 PrefabInstance:
@@ -37679,7 +38295,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: TV
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1950233619
 PrefabInstance:
@@ -37848,6 +38463,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 36.227, y: 0, z: 0}
+--- !u!1 &1955570046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1955570047}
+  - component: {fileID: 1955570049}
+  - component: {fileID: 1955570048}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1955570047
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955570046}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4.192872, y: 4.192872, z: 4.192872}
+  m_Children: []
+  m_Father: {fileID: 683300802}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 542, y: 35}
+  m_SizeDelta: {x: 20.016, y: 35.024}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1955570048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955570046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1955570049
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955570046}
+  m_CullTransparentMesh: 1
 --- !u!1 &1956773164
 GameObject:
   m_ObjectHideFlags: 0
@@ -38159,7 +38849,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Steak
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!65 &1966863380
 BoxCollider:
@@ -38427,7 +39116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Watermelon
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1988517111
 GameObject:
@@ -38633,7 +39321,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Apple
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &1996284636
 GameObject:
@@ -38744,7 +39431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Cabbage
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &1996414442
 PrefabInstance:
@@ -39359,7 +40045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: PetFood
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &2041070464
 GameObject:
@@ -39565,7 +40250,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Bleach
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &2043557339
 GameObject:
@@ -39822,7 +40506,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Vitamins
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &2061393345
 GameObject:
@@ -39933,7 +40616,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: DogToy
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &2076961402
 PrefabInstance:
@@ -40118,7 +40800,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Waffles
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &2081401057
 PrefabInstance:
@@ -40303,7 +40984,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Apple
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &2086101723
 GameObject:
@@ -40548,7 +41228,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: TV
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &2087715152
 GameObject:
@@ -40659,7 +41338,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Orange
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &2088336034
 PrefabInstance:
@@ -40744,9 +41422,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2092563316}
+  - component: {fileID: 2092563318}
+  - component: {fileID: 2092563317}
   m_Layer: 0
   m_Name: checkout (7)
-  m_TagString: Untagged
+  m_TagString: Checkout
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -40770,6 +41450,32 @@ Transform:
   m_Father: {fileID: 1539410134}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2092563317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092563315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd70bfb41c651746ae9da92cf07f99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winText: {fileID: 553667056}
+--- !u!65 &2092563318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092563315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.77, y: 2.08, z: 1.57}
+  m_Center: {x: -0.62, y: -1.42, z: 2.57}
 --- !u!1001 &2093796996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40953,7 +41659,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: CoughSyrup
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1001 &2102822295
 PrefabInstance:
@@ -41212,7 +41917,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Game
-  quantity: 1
   visualPrefab: {fileID: 2742220525238795446, guid: d030723c3de2c9d4da368c2266217b13, type: 3}
 --- !u!1 &2135344058
 GameObject:
