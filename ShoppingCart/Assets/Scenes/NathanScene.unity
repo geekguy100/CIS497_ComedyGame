@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 8b7e8d646c530b04588f6434c4159e6d, type: 2}
 --- !u!1 &1325924
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,6 +249,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -515,6 +519,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -589,6 +597,10 @@ PrefabInstance:
       value: isle piece middle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -615,7 +627,7 @@ GameObject:
   m_Name: w (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &35425679
@@ -760,6 +772,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1097,7 +1113,7 @@ GameObject:
   m_Name: w (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &52925666
@@ -1192,7 +1208,7 @@ GameObject:
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &68388639
@@ -1322,7 +1338,7 @@ GameObject:
   m_Name: Cube (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &76536894
@@ -1465,6 +1481,10 @@ PrefabInstance:
       value: isle piece middle (4)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -1489,7 +1509,7 @@ GameObject:
   m_Name: Aisle (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &82636731
@@ -1521,8 +1541,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.6351585, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.4289403, y: 1.2584211, z: 0}
+  m_Size: {x: 7.6789246, y: 2.5276048, z: 1.840276}
+  m_Center: {x: 1.8386664, y: 1.2584211, z: 5.684342e-14}
 --- !u!1001 &93956534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1585,6 +1605,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1659,6 +1683,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1739,6 +1767,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -1803,6 +1835,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2109,6 +2145,10 @@ PrefabInstance:
       value: isle piece middle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -2181,6 +2221,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2344,6 +2388,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -2505,6 +2553,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -2577,6 +2629,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2739,7 +2795,7 @@ GameObject:
   m_Name: w (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &189504788
@@ -2834,7 +2890,7 @@ GameObject:
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &200134874
@@ -2929,7 +2985,7 @@ GameObject:
   m_Name: Cube (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &211117218
@@ -3136,6 +3192,10 @@ PrefabInstance:
       value: isle piece middle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -3162,7 +3222,7 @@ GameObject:
   m_Name: w (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &229929089
@@ -3257,7 +3317,7 @@ GameObject:
   m_Name: w (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &230155841
@@ -3387,7 +3447,7 @@ GameObject:
   m_Name: w
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &302631305
@@ -3577,7 +3637,7 @@ GameObject:
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &310931112
@@ -3767,7 +3827,7 @@ GameObject:
   m_Name: w (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &321473012
@@ -3914,6 +3974,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -3988,6 +4052,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4012,7 +4080,7 @@ GameObject:
   m_Name: Aisle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &345150292
@@ -4047,8 +4115,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 17.78169, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.34925938, y: 1.2584211, z: 0}
+  m_Size: {x: 17.78169, y: 2.5276048, z: 2.0690956}
+  m_Center: {x: -0.34925938, y: 1.2584211, z: 1.3718987}
 --- !u!1 &345930433
 GameObject:
   m_ObjectHideFlags: 0
@@ -4208,6 +4276,10 @@ PrefabInstance:
       value: isle piece middle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4280,6 +4352,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4356,6 +4432,10 @@ PrefabInstance:
       value: isle piece middle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4420,6 +4500,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4634,6 +4718,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4755,7 +4843,7 @@ GameObject:
   m_Name: w (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &386639765
@@ -4896,6 +4984,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5099,6 +5191,10 @@ PrefabInstance:
       value: isle piece middle (4)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -5298,7 +5394,7 @@ GameObject:
   m_Name: w (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &441692349
@@ -5433,6 +5529,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -5511,6 +5611,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -5583,6 +5687,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5755,6 +5863,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -5779,7 +5891,7 @@ GameObject:
   m_Name: Aisle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &514782122
@@ -5870,6 +5982,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6086,7 +6202,7 @@ GameObject:
   m_Name: Aisle (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &538446567
@@ -6122,8 +6238,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 21.114758, y: 2.5276048, z: 1.840276}
-  m_Center: {x: 1.3172746, y: 1.2584211, z: -5.684342e-14}
+  m_Size: {x: 21.244091, y: 2.5276048, z: 1.840276}
+  m_Center: {x: 3.8487015, y: 1.2584211, z: 0}
 --- !u!1001 &541465131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6368,6 +6484,10 @@ PrefabInstance:
       value: isle piece middle (4)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -6394,7 +6514,7 @@ GameObject:
   m_Name: w (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &555346333
@@ -6537,6 +6657,10 @@ PrefabInstance:
       value: isle piece middle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -6601,6 +6725,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6880,7 +7008,7 @@ GameObject:
   m_Name: w (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &616356966
@@ -7027,6 +7155,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -7134,7 +7266,7 @@ GameObject:
   m_Name: Aisle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &633969555
@@ -7169,8 +7301,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 17.78169, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.34925938, y: 1.2584211, z: 0}
+  m_Size: {x: 17.78169, y: 2.5276048, z: 2.0595818}
+  m_Center: {x: -0.34925938, y: 1.2584211, z: 1.3121071}
 --- !u!1 &644415694
 GameObject:
   m_ObjectHideFlags: 0
@@ -7280,7 +7412,7 @@ GameObject:
   m_Name: w (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &648190490
@@ -7423,6 +7555,10 @@ PrefabInstance:
       value: isle piece middle (4)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -7449,7 +7585,7 @@ GameObject:
   m_Name: w (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &650367613
@@ -7584,6 +7720,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -7650,6 +7790,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -7676,7 +7820,7 @@ GameObject:
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &674002328
@@ -7819,6 +7963,10 @@ PrefabInstance:
       value: isle piece middle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -7845,7 +7993,7 @@ GameObject:
   m_Name: Cube (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &678432268
@@ -7978,6 +8126,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8140,7 +8292,7 @@ GameObject:
   m_Name: Cube (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &687003831
@@ -8283,6 +8435,10 @@ PrefabInstance:
       value: isle piece middle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -8307,7 +8463,7 @@ GameObject:
   m_Name: Aisle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &692355797
@@ -8342,8 +8498,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 17.78169, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.34925938, y: 1.2584211, z: 0}
+  m_Size: {x: 17.78169, y: 2.5276048, z: 2.0011463}
+  m_Center: {x: -0.34925938, y: 1.2584211, z: 1.3339663}
 --- !u!1 &693278624
 GameObject:
   m_ObjectHideFlags: 0
@@ -8431,6 +8587,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8555,6 +8715,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -8627,6 +8791,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8905,6 +9073,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -8931,7 +9103,7 @@ GameObject:
   m_Name: w (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &739132600
@@ -9078,6 +9250,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -9187,6 +9363,10 @@ PrefabInstance:
       value: isle piece middle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -9213,7 +9393,7 @@ GameObject:
   m_Name: w (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &756245685
@@ -9360,6 +9540,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -9426,6 +9610,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -9490,6 +9678,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9662,6 +9854,10 @@ PrefabInstance:
       value: isle piece middle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -9821,6 +10017,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10008,7 +10208,7 @@ GameObject:
   m_Name: Cube (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &785943497
@@ -10151,6 +10351,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -10223,6 +10427,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10299,6 +10507,10 @@ PrefabInstance:
       value: isle piece middle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -10373,6 +10585,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -10445,6 +10661,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10624,7 +10844,7 @@ GameObject:
   m_Name: Aisle (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &846333960
@@ -10656,8 +10876,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.6351585, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.4289403, y: 1.2584211, z: 0}
+  m_Size: {x: 7.8642654, y: 2.5276048, z: 1.840276}
+  m_Center: {x: 1.8606826, y: 1.2584211, z: -1.4210855e-14}
 --- !u!1 &852450838
 GameObject:
   m_ObjectHideFlags: 0
@@ -10672,7 +10892,7 @@ GameObject:
   m_Name: Aisle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &852450839
@@ -10834,6 +11054,10 @@ PrefabInstance:
       value: isle piece middle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -10860,7 +11084,7 @@ GameObject:
   m_Name: Cube (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &860550216
@@ -10955,7 +11179,7 @@ GameObject:
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &867913532
@@ -11098,6 +11322,10 @@ PrefabInstance:
       value: isle piece middle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -11170,6 +11398,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11246,6 +11478,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -11312,6 +11548,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -11336,7 +11576,7 @@ GameObject:
   m_Name: Aisle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &900780659
@@ -11371,8 +11611,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 17.78169, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.34925938, y: 1.2584211, z: 0}
+  m_Size: {x: 17.78169, y: 2.5276048, z: 2.0459042}
+  m_Center: {x: -0.34925938, y: 1.2584211, z: 1.369937}
 --- !u!1 &903141983
 GameObject:
   m_ObjectHideFlags: 0
@@ -11389,7 +11629,7 @@ GameObject:
   m_Name: w (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &903141984
@@ -11768,6 +12008,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -11834,6 +12078,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -11860,7 +12108,7 @@ GameObject:
   m_Name: w (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &950371466
@@ -11995,6 +12243,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -12059,6 +12311,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12280,7 +12536,7 @@ GameObject:
   m_Name: Aisle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &978897533
@@ -12315,8 +12571,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 17.78169, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.34925938, y: 1.2584211, z: 0}
+  m_Size: {x: 17.78169, y: 2.5276048, z: 1.8385906}
+  m_Center: {x: -0.34925938, y: 1.2584211, z: 1.3473959}
 --- !u!1 &980382989
 GameObject:
   m_ObjectHideFlags: 0
@@ -12331,7 +12587,7 @@ GameObject:
   m_Name: Aisle (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &980382990
@@ -12363,8 +12619,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.6351585, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.4289403, y: 1.2584211, z: 0}
+  m_Size: {x: 7.628216, y: 2.5276048, z: 1.840276}
+  m_Center: {x: 1.9563617, y: 1.2584211, z: 1.4210855e-14}
 --- !u!1 &982505891
 GameObject:
   m_ObjectHideFlags: 0
@@ -12381,7 +12637,7 @@ GameObject:
   m_Name: Cube (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &982505892
@@ -12522,6 +12778,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12683,6 +12943,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12862,6 +13126,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -12888,7 +13156,7 @@ GameObject:
   m_Name: w (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1027293635
@@ -13395,6 +13663,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -13461,6 +13733,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -13487,7 +13763,7 @@ GameObject:
   m_Name: w (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1069323863
@@ -13580,7 +13856,7 @@ GameObject:
   m_Name: Aisle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1085356525
@@ -13695,7 +13971,7 @@ GameObject:
   m_Name: Aisle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1120235512
@@ -13796,6 +14072,10 @@ PrefabInstance:
       value: isle piece middle (4)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -13868,6 +14148,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13948,6 +14232,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -13972,7 +14260,7 @@ GameObject:
   m_Name: Aisle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1149046310
@@ -14065,6 +14353,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -14089,7 +14381,7 @@ GameObject:
   m_Name: Aisle (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1156959250
@@ -14121,8 +14413,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.6351585, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.4289403, y: 1.2584211, z: 0}
+  m_Size: {x: 7.6727753, y: 2.5276048, z: 1.840276}
+  m_Center: {x: 1.9192939, y: 1.2584211, z: 5.684342e-14}
 --- !u!1 &1160116921
 GameObject:
   m_ObjectHideFlags: 0
@@ -14243,6 +14535,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -14267,7 +14563,7 @@ GameObject:
   m_Name: Aisle (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1162767701
@@ -14299,8 +14595,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.6351585, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.4289403, y: 1.2584211, z: 0}
+  m_Size: {x: 7.8157654, y: 2.5276048, z: 1.840276}
+  m_Center: {x: 1.8649224, y: 1.2584211, z: 1.4210855e-14}
 --- !u!1001 &1165631849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14525,6 +14821,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -14597,6 +14897,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14811,6 +15115,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -14889,6 +15197,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -14961,6 +15273,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15037,6 +15353,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -15111,6 +15431,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -15175,6 +15499,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15347,6 +15675,10 @@ PrefabInstance:
       value: isle piece middle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -15419,6 +15751,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15582,6 +15918,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -15741,6 +16081,10 @@ PrefabInstance:
       value: isle piece middle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -15819,6 +16163,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -15843,7 +16191,7 @@ GameObject:
   m_Name: Aisle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1286155215
@@ -15878,8 +16226,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 17.78169, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.34925938, y: 1.2584211, z: 0}
+  m_Size: {x: 17.78169, y: 2.5276048, z: 2.1508236}
+  m_Center: {x: -0.34925938, y: 1.2584211, z: 1.4061613}
 --- !u!1001 &1294182186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15934,6 +16282,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16192,6 +16544,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -16390,6 +16746,10 @@ PrefabInstance:
       value: isle piece middle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -16464,6 +16824,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -16490,7 +16854,7 @@ GameObject:
   m_Name: Cube (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1352589829
@@ -16870,7 +17234,7 @@ GameObject:
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1357532843
@@ -17011,6 +17375,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17212,7 +17580,7 @@ GameObject:
   m_Name: w (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1374050554
@@ -17587,7 +17955,7 @@ GameObject:
   m_Name: w (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1421819355
@@ -17720,6 +18088,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17902,7 +18274,7 @@ GameObject:
   m_Name: Aisle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1450102511
@@ -17938,8 +18310,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 21.114758, y: 2.5276048, z: 1.840276}
-  m_Center: {x: 1.3172746, y: 1.2584211, z: -5.684342e-14}
+  m_Size: {x: 21.24656, y: 2.5276048, z: 1.840276}
+  m_Center: {x: 3.5669672, y: 1.2584211, z: -2.842171e-14}
 --- !u!1 &1456393726
 GameObject:
   m_ObjectHideFlags: 0
@@ -18068,6 +18440,10 @@ PrefabInstance:
       value: isle piece middle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -18094,7 +18470,7 @@ GameObject:
   m_Name: w (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1465176760
@@ -18237,6 +18613,10 @@ PrefabInstance:
       value: isle piece middle (4)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -18263,7 +18643,7 @@ GameObject:
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1493283225
@@ -18406,6 +18786,10 @@ PrefabInstance:
       value: isle piece middle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -18515,6 +18899,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -18579,6 +18967,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18653,6 +19045,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18733,6 +19129,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -18759,7 +19159,7 @@ GameObject:
   m_Name: w (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1541609651
@@ -18997,6 +19397,10 @@ PrefabInstance:
       value: isle piece middle (5)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -19061,6 +19465,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19250,6 +19658,10 @@ PrefabInstance:
       value: isle piece middle (4)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -19365,7 +19777,7 @@ GameObject:
   m_Name: Cube (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1592990451
@@ -19540,6 +19952,10 @@ PrefabInstance:
       value: isle piece middle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -19604,6 +20020,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19678,6 +20098,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19790,6 +20214,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -19862,6 +20290,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20037,6 +20469,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -20109,6 +20545,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20185,6 +20625,10 @@ PrefabInstance:
       value: isle piece middle (4)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -20249,6 +20693,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20423,6 +20871,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -20495,6 +20947,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20573,6 +21029,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20738,6 +21198,10 @@ PrefabInstance:
       value: isle piece middle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -20762,7 +21226,7 @@ GameObject:
   m_Name: Aisle (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1698195280
@@ -20798,8 +21262,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 21.114758, y: 2.5276048, z: 1.840276}
-  m_Center: {x: 1.3172746, y: 1.2584211, z: -5.684342e-14}
+  m_Size: {x: 21.283794, y: 2.5276048, z: 1.840276}
+  m_Center: {x: 3.6620808, y: 1.2584211, z: 0}
 --- !u!1001 &1704247056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20854,6 +21318,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21379,6 +21847,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -21451,6 +21923,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21748,6 +22224,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -21909,6 +22389,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -21933,7 +22417,7 @@ GameObject:
   m_Name: Aisle (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1744153035
@@ -21965,8 +22449,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.6351585, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.4289403, y: 1.2584211, z: 0}
+  m_Size: {x: 7.590042, y: 2.5276048, z: 1.840276}
+  m_Center: {x: 1.9268378, y: 1.2584211, z: 1.4210855e-14}
 --- !u!1 &1745173122
 GameObject:
   m_ObjectHideFlags: 0
@@ -21981,7 +22465,7 @@ GameObject:
   m_Name: Aisle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1745173123
@@ -22243,6 +22727,10 @@ PrefabInstance:
       value: isle piece middle (4)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -22315,6 +22803,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22728,7 +23220,7 @@ GameObject:
   m_Name: Cube (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1820091854
@@ -22861,6 +23353,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23036,6 +23532,10 @@ PrefabInstance:
       value: isle piece middle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -23110,6 +23610,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -23136,7 +23640,7 @@ GameObject:
   m_Name: Cube (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1840477845
@@ -23311,6 +23815,10 @@ PrefabInstance:
       value: isle piece middle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -23337,7 +23845,7 @@ GameObject:
   m_Name: Cube (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1866204943
@@ -23432,7 +23940,7 @@ GameObject:
   m_Name: Cube (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1871348557
@@ -23565,6 +24073,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23703,6 +24215,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23989,6 +24505,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24294,6 +24814,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -24360,6 +24884,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -24424,6 +24952,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_Name
       value: env_aisle_modular_cap_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24545,7 +25077,7 @@ GameObject:
   m_Name: Aisle (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1942562696
@@ -24577,8 +25109,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.6351585, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.4289403, y: 1.2584211, z: 0}
+  m_Size: {x: 7.666855, y: 2.5276048, z: 1.840276}
+  m_Center: {x: 1.8964319, y: 1.2584211, z: 0}
 --- !u!1 &1954003186
 GameObject:
   m_ObjectHideFlags: 0
@@ -24740,6 +25272,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_Name
       value: isle piece middle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24968,6 +25504,10 @@ PrefabInstance:
       value: isle piece middle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -25042,6 +25582,10 @@ PrefabInstance:
       value: isle piece middle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec425bbffcc160b42bdbe612952386e6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -25068,7 +25612,7 @@ GameObject:
   m_Name: w (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &2014232234
@@ -25163,7 +25707,7 @@ GameObject:
   m_Name: Cube (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2014980055
@@ -25298,6 +25842,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -25364,6 +25912,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -25390,7 +25942,7 @@ GameObject:
   m_Name: w (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2020451826
@@ -25791,6 +26343,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -25942,7 +26498,7 @@ GameObject:
   m_Name: Aisle (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2053977417
@@ -25974,8 +26530,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.6351585, y: 2.5276048, z: 1.840276}
-  m_Center: {x: -0.4289403, y: 1.2584211, z: 0}
+  m_Size: {x: 7.567528, y: 2.5276048, z: 1.840276}
+  m_Center: {x: 2.0089598, y: 1.2584211, z: 0}
 --- !u!1 &2067755763
 GameObject:
   m_ObjectHideFlags: 0
@@ -25992,7 +26548,7 @@ GameObject:
   m_Name: w (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2067755764
@@ -26087,7 +26643,7 @@ GameObject:
   m_Name: w (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &2078122989
@@ -26222,6 +26778,10 @@ PrefabInstance:
       value: env_aisle_modular_cap_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 849634eee8388aa44b5f57c9e152eb8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -26337,7 +26897,7 @@ GameObject:
   m_Name: w (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2100221880
