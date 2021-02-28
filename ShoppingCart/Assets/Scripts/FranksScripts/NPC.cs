@@ -59,7 +59,7 @@ public class NPC : MonoBehaviour
         {
             case State.Shopping:
 
-                if (cart.transform.rotation.z >= 25 || cart.transform.rotation.z <= -25)
+                if (Mathf.Abs(cart.transform.localRotation.z) >= 25 || Mathf.Abs(cart.transform.localRotation.y) >= 45)
                 {
                     Debug.Log("My cart tipped over!");
                     cart.transform.localRotation = cartLocalRot;
