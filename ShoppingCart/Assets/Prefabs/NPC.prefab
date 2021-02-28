@@ -408,7 +408,7 @@ SpringJoint:
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
-  m_BreakForce: 100
+  m_BreakForce: 20
   m_BreakTorque: 20
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -449,6 +449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cart: {fileID: 5300584958252040894}
+  potentialItems: []
 --- !u!1001 &4993960091400634351
 PrefabInstance:
   m_ObjectHideFlags: 0

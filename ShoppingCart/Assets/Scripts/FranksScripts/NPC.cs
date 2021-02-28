@@ -12,13 +12,16 @@ using UnityEngine.AI;
 public class NPC : MonoBehaviour
 {
     [SerializeField] GameObject cart;
+    [SerializeField] ItemContainer[] potentialItems;
 
 
     enum State { Shopping, RetreivingCart, PickingUpCart}
     private State myState;
+
     private Vector3 whereIsMyCart;
     private SpringJoint myJoint;
     private SpringJoint newJoint;
+    private int listIndex = 0;
 
     private Vector3 cartLocalPos;
     private Quaternion cartLocalRot;
@@ -26,6 +29,7 @@ public class NPC : MonoBehaviour
     NavMeshAgent agent;
     void Start()
     {
+
         cartLocalPos = cart.transform.localPosition;
         cartLocalRot = cart.transform.localRotation;
         myJoint = gameObject.GetComponent<SpringJoint>();
@@ -63,6 +67,8 @@ public class NPC : MonoBehaviour
                         agent.destination = cast.point;
                     }
                 }
+
+                //agent.destination = gameObject.GetComponent<NPCShoppingList>().itemsINeed[listIndex].ItemType.
 
                 break;
 
@@ -118,6 +124,8 @@ public class NPC : MonoBehaviour
         newJoint.breakTorque = 20;
         newJoint.connectedBody = cart.GetComponent<Rigidbody>();
         newJoint.anchor = new Vector3(0, 1, 0.7f);
-        newJoint.connectedAnchor = new Vector3(0.01f, 0.9779999f, -0.538f);
+        newJoint.connectedAnchor = new Vector3(0.01f, 0.9779999f, -0.538f); //don't look
     }
+
+    
 }
