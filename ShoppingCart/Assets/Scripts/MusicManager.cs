@@ -12,7 +12,7 @@ public class MusicManager : MonoBehaviour
     void Start()
     {
         source = GetComponent<AudioSource>();
-        index = -1;
+        index = Random.Range(0, music.Length -1);
     }
 
     // Update is called once per frame

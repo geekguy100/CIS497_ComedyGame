@@ -12,7 +12,7 @@ using System.Collections;
 public class PlayerCartControl : MonoBehaviour
 {
     private CartControl cartControl;
-
+    public bool didAttach = false;
     private bool canPickupCart = true;
     private Coroutine lastCoroutine = null;
 
@@ -42,6 +42,7 @@ public class PlayerCartControl : MonoBehaviour
         {
             cartControl.AssignCart(col.gameObject);
             canPickupCart = false;
+            didAttach = true;
         }
     }
 
