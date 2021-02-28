@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: 4993960089667094380}
   - component: {fileID: 4993960089667094382}
   - component: {fileID: 4993960089667094368}
+  - component: {fileID: 563721111925458009}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -449,7 +450,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cart: {fileID: 5300584958252040894}
-  potentialItems: []
+--- !u!208 &563721111925458009
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5300584959740279353}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.51500005, y: 0.90800005, z: 0.147}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.90800005, z: -0.007}
+  m_TimeToStationary: 0.5
 --- !u!1001 &4993960091400634351
 PrefabInstance:
   m_ObjectHideFlags: 0

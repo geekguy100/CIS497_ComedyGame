@@ -12,30 +12,38 @@ using UnityEngine.AI;
 public class NPC : MonoBehaviour
 {
     [SerializeField] GameObject cart;
-    [SerializeField] ItemContainer[] potentialItems;
+    private Item[] potentialItems = { new Orange(), new CoughSyrup(), new Laptop(), new Milk(), new Steak(), new Shampoo() };
 
 
     enum State { Shopping, RetreivingCart, PickingUpCart}
     private State myState;
+    private System.Type type;
 
     private Vector3 whereIsMyCart;
     private SpringJoint myJoint;
     private SpringJoint newJoint;
     private int listIndex = 0;
+    private bool hasDestination = false;
 
     private Vector3 cartLocalPos;
     private Quaternion cartLocalRot;
 
     NavMeshAgent agent;
+    NavMeshObstacle obstacle;
     void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
+        obstacle = GetComponent<NavMeshObstacle>();
+        obstacle.enabled = false;
+        
 
         cartLocalPos = cart.transform.localPosition;
         cartLocalRot = cart.transform.localRotation;
         myJoint = gameObject.GetComponent<SpringJoint>();
 
         myState = State.Shopping;
-        agent = GetComponent<NavMeshAgent>();
+        
+        
 
 
         //move to GM later, makes NPC and carts not collide1
@@ -58,17 +66,23 @@ public class NPC : MonoBehaviour
                     Debug.Log("Adjusted my cart");
                 }
 
-                if (Input.GetMouseButtonDown(0))
+                if(hasDestination == false)
                 {
-                    RaycastHit cast;
-
-                    if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out cast, 500))
-                    {
-                        agent.destination = cast.point;
-                    }
+                    agent.SetDestination(ShoppingHelper.GetNearestContainerOfType(GetComponent<Transform>(), potentialItems[listIndex].GetType()).position);
+                    hasDestination = true;
                 }
 
-                //agent.destination = gameObject.GetComponent<NPCShoppingList>().itemsINeed[listIndex].ItemType.
+                if(Mathf.Abs(transform.position.x - ShoppingHelper.GetNearestContainerOfType(GetComponent<Transform>(), potentialItems[listIndex].GetType()).position.x) <= 5
+                    || Mathf.Abs(transform.position.z - ShoppingHelper.GetNearestContainerOfType(GetComponent<Transform>(), potentialItems[listIndex].GetType()).position.z) <= 5)
+                {
+                    if (listIndex < potentialItems.Length - 1) listIndex++;
+                    else listIndex = 0;
+                    hasDestination = false;
+                }
+
+
+
+                
 
                 break;
 
@@ -86,6 +100,7 @@ public class NPC : MonoBehaviour
 
                 ReplaceJoint();
 
+                hasDestination = false;
                 myState = State.Shopping;
                 
                 break;
