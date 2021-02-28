@@ -13,6 +13,7 @@ public static class EventManager
     public static event Action<System.Type> OnItemSpawned;
     public static event Action OnGameStart;
     public static event Action OnShoppingCenterFilled;
+    public static event Action OnGameWin;
 
 
     /// <summary>
@@ -43,5 +44,13 @@ public static class EventManager
     {
         OnGameStart?.Invoke();
         OnShoppingCenterFilled?.Invoke();
+    }
+
+    /// <summary>
+    /// Invoked when the player successfully checks out.
+    /// </summary>
+    public static void GameWin()
+    {
+        OnGameWin?.Invoke();
     }
 }

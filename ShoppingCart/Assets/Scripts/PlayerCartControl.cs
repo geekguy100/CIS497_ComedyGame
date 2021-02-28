@@ -14,6 +14,7 @@ public class PlayerCartControl : MonoBehaviour
     private CartControl cartControl;
     public bool didAttach = false;
     private bool canPickupCart = true;
+    private bool canAbandonCart = false;
     private Coroutine lastCoroutine = null;
 
     private void Awake()
@@ -23,7 +24,7 @@ public class PlayerCartControl : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && cartControl.HasCart())
+        if (Input.GetKeyDown(KeyCode.E) && cartControl.HasCart() && canAbandonCart)
         {
             if (lastCoroutine != null)
                 StopCoroutine(lastCoroutine);
@@ -33,6 +34,7 @@ public class PlayerCartControl : MonoBehaviour
             // To make sure we won't immediately pick up another cart, we
             // start this coroutine.
             lastCoroutine = StartCoroutine(ResetPickup());
+
         }
     }
 
@@ -40,8 +42,12 @@ public class PlayerCartControl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E) && col.gameObject.CompareTag("Cart") && !cartControl.HasCart() && canPickupCart)
         {
+            if (lastCoroutine != null)
+                StopCoroutine(lastCoroutine);
+
             cartControl.AssignCart(col.gameObject);
-            canPickupCart = false;
+
+            lastCoroutine = StartCoroutine(ResetAbandonment());
             didAttach = true;
         }
     }
@@ -55,6 +61,14 @@ public class PlayerCartControl : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         canPickupCart = true;
+        canAbandonCart = false;
+    }
+
+    private IEnumerator ResetAbandonment()
+    {
+        yield return new WaitForSeconds(0.2f);
+        canAbandonCart = true;
+        canPickupCart = false;
     }
 
 }

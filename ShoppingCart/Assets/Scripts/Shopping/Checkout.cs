@@ -10,6 +10,7 @@ using UnityEngine;
 public class Checkout : MonoBehaviour
 {
     [SerializeField] private GameObject winText;
+    
 
     /// <summary>
     /// Checks to see if the character has all of the items they need;
@@ -39,6 +40,7 @@ public class Checkout : MonoBehaviour
         {
             // Right now we're assuming only the player can check out.
             winText.SetActive(true);
+            EventManager.GameWin();
         }
         else
             Debug.Log("Can't check out yet...");
