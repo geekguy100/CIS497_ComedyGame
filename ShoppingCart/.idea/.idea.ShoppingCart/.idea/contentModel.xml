@@ -25,20 +25,79 @@
             </e>
           </e>
         </e>
-        <e p="FranksScripts" t="Include">
-          <e p="Cart.cs" t="Include" />
-          <e p="NPC.cs" t="Include" />
-        </e>
         <e p="Scripts" t="Include">
+          <e p="AdditiveSceneLoader.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
-          <e p="ItemCollection.cs" t="Include" />
-          <e p="ItemSpawning.cs" t="Include" />
-          <e p="MouseLook.cs" t="Include" />
-          <e p="PickupWindow.cs" t="Include" />
-          <e p="PlayerInput.cs" t="Include" />
-          <e p="Shopping" t="Include">
-            <e p="ControlCart.cs" t="Include" />
+          <e p="EventManager.cs" t="Include" />
+          <e p="FranksScripts" t="Include">
+            <e p="Cart.cs" t="Include" />
+            <e p="NPC.cs" t="Include" />
           </e>
+          <e p="IInteractable.cs" t="Include" />
+          <e p="IItemInteractable.cs" t="Include" />
+          <e p="ItemCollection.cs" t="Include" />
+          <e p="ItemFactory.cs" t="Include" />
+          <e p="ItemSpawner.cs" t="Include" />
+          <e p="MouseLook.cs" t="Include" />
+          <e p="MusicManager.cs" t="Include" />
+          <e p="PickupWindow.cs" t="Include" />
+          <e p="PlayerCartControl.cs" t="Include" />
+          <e p="PlayerInput.cs" t="Include" />
+          <e p="SFXManager.cs" t="Include" />
+          <e p="Shopping" t="Include">
+            <e p="CartControl.cs" t="Include" />
+            <e p="CharacterInteraction.cs" t="Include" />
+            <e p="CharacterInventory.cs" t="Include" />
+            <e p="CharacterShoppingList.cs" t="Include" />
+            <e p="Checkout.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+            <e p="Item Types" t="Include">
+              <e p="Apple.cs" t="Include" />
+              <e p="Bandage.cs" t="Include" />
+              <e p="Bleach.cs" t="Include" />
+              <e p="Bread.cs" t="Include" />
+              <e p="Cabbage.cs" t="Include" />
+              <e p="Candy.cs" t="Include" />
+              <e p="Chicken.cs" t="Include" />
+              <e p="Chip.cs" t="Include" />
+              <e p="Cookie.cs" t="Include" />
+              <e p="CoughSyrup.cs" t="Include" />
+              <e p="DogToy.cs" t="Include" />
+              <e p="Fish.cs" t="Include" />
+              <e p="Flour.cs" t="Include" />
+              <e p="Game.cs" t="Include" />
+              <e p="Hairspray.cs" t="Include" />
+              <e p="IceCream.cs" t="Include" />
+              <e p="Ketchup.cs" t="Include" />
+              <e p="Laptop.cs" t="Include" />
+              <e p="Milk.cs" t="Include" />
+              <e p="Orange.cs" t="Include" />
+              <e p="Pasta.cs" t="Include" />
+              <e p="PetFood.cs" t="Include" />
+              <e p="PetToy.cs" t="Include" />
+              <e p="Pizza.cs" t="Include" />
+              <e p="Shampoo.cs" t="Include" />
+              <e p="Soda.cs" t="Include" />
+              <e p="Steak.cs" t="Include" />
+              <e p="Toothpaste.cs" t="Include" />
+              <e p="TV.cs" t="Include" />
+              <e p="Vitamins.cs" t="Include" />
+              <e p="Waffles.cs" t="Include" />
+              <e p="Watermelon.cs" t="Include" />
+            </e>
+            <e p="Item.cs" t="Include" />
+            <e p="ItemContainer.cs" t="Include" />
+            <e p="NPCShoppingList.cs" t="Include" />
+            <e p="PlayerInteraction.cs" t="Include" />
+            <e p="Shopping List" t="Include">
+              <e p="ShoppingList.cs" t="Include" />
+              <e p="ShoppingListUI.cs" t="Include" />
+            </e>
+            <e p="ShoppingCenter.cs" t="Include" />
+          </e>
+          <e p="ShoppingHelper.cs" t="Include" />
+          <e p="Timer.cs" t="Include" />
+          <e p="TutorialUI.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

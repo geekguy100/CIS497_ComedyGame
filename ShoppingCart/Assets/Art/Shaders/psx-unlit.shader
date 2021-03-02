@@ -26,7 +26,7 @@ Shader "psx/unlit" {
 		half3 normal : TEXCOORD1;
 	};
 
-    float1 _bias;
+    uniform fixed _bias; _bias;
 	float4 _MainTex_ST;
 	uniform half4 unity_FogStart;
 	uniform half4 unity_FogEnd;
@@ -81,8 +81,7 @@ Shader "psx/unlit" {
 	{
 		half4 c = tex2D(_MainTex, IN.uv_MainTex / IN.normal.r)* IN.color;
 		
-		if(c.a < _bias)
-            discard;
+		clip( c.a - _bias );
         						    
         						    
 		half4 color = c*(IN.colorFog.a);
