@@ -1,18 +1,18 @@
 fileFormatVersion: 2
-guid: e3265ab4bf004d28a9537516768c1c75
+guid: ab7949b297f551d4baf389b62c248891
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 90
+  fontSize: 40
   forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Liberation Sans
+  - Advanced Pixel-7
   fallbackFontReferences: []
   customCharacters: 
-  fontRenderingMode: 1
+  fontRenderingMode: 0
   ascentCalculationMode: 1
   useLegacyBoundsCalculation: 0
   shouldRoundAdvanceValue: 1

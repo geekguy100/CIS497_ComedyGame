@@ -7,6 +7,9 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Art" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="zdepth Text.shader" t="Include" />
+          </e>
           <e p="Shaders" t="Include">
             <e p="Mirror.shader" t="Include" />
             <e p="Mirror_PBR.shader" t="Include" />
@@ -32,6 +35,10 @@
           <e p="FranksScripts" t="Include">
             <e p="Cart.cs" t="Include" />
             <e p="NPC.cs" t="Include" />
+            <e p="NPCBehavior.cs" t="Include" />
+            <e p="NPCresetting.cs" t="Include" />
+            <e p="NPCretrieving.cs" t="Include" />
+            <e p="NPCshopping.cs" t="Include" />
           </e>
           <e p="IInteractable.cs" t="Include" />
           <e p="IItemInteractable.cs" t="Include" />
