@@ -12,6 +12,7 @@ TagManager:
   - Factory
   - Interactable
   - Checkout
+  - SFXManager
   layers:
   - Default
   - TransparentFX

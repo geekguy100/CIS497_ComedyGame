@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TutorialUI : MonoBehaviour
 {
+    public bool paused;
     public bool doTutorial;
     public int action;
     public TextMeshProUGUI text;
     public PlayerCartControl pcc;
     public PlayerInteraction pi;
-    public Checkout c;
+    public GameObject pauseMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,34 @@ public class TutorialUI : MonoBehaviour
         {
             Tutorial();
         }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            PauseGame();
+        }
+    }
+
+    public void PauseGame()
+    {
+        if (!paused)
+        {
+            paused = true;
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            paused = false;
+            pauseMenu.SetActive(false);
+            Time.timeScale = 1;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
+
+    public void ReturnToMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
     }
 
     public IEnumerator Delay()
@@ -40,6 +70,7 @@ public class TutorialUI : MonoBehaviour
         {
             case 0:
                 text.text = "Use the mouse to look around.\n";
+                StartCoroutine(Delay());
                 if (Input.anyKey)
                 {
                     StartCoroutine(Delay());
@@ -64,21 +95,13 @@ public class TutorialUI : MonoBehaviour
                 break;
             case 3:
                 text.text = "The window on the right shows nearby items.\nWalk near something and press F to pick it up.\nScroll with the mouse to select which item to pick up.\n";
-                if (true)//pi.didPickup)
+                if (Input.GetKeyDown(KeyCode.F))
                 {
                     StartCoroutine(Delay());
                     action++;
                 }
                 break;
-            case 4:
-                text.text = "If you don't like the music, press N to skip the song.\n";
-                if (Input.GetKeyDown(KeyCode.N))
-                {
-                    StartCoroutine(Delay());
-                    action++;
-                }
-                break;
-            case 5: 
+            case 4: 
                 text.text = "Get all of the items on your list then head to checkout and press F. Press F now to dismiss.\n";
                 if (Input.GetKeyDown(KeyCode.F))
                 {
@@ -86,7 +109,7 @@ public class TutorialUI : MonoBehaviour
                     action++;
                 }
                 break;
-            case 6:
+            case 5:
                 text.enabled = false;
                 doTutorial = false;
                 break;
