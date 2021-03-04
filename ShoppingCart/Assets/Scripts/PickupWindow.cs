@@ -8,7 +8,7 @@ public class PickupWindow : MonoBehaviour
 {
     private PlayerInteraction playerInteraction;
     private CharacterInventory playerInventory;
-
+    public SFXManager sfx;
     //public GameObject cart;
     public List<ItemContainer> nearbyItems;
     public TextMeshProUGUI display;
@@ -99,13 +99,13 @@ public class PickupWindow : MonoBehaviour
         if (Input.mouseScrollDelta.y < 0 && selection < nearbyItems.Count - 1)
         {
             selection++;
-            cursor.rectTransform.anchoredPosition -= new Vector2(0, 65);
+            cursor.rectTransform.anchoredPosition -= new Vector2(0, 80);
             Debug.Log(selection);
         }
         if (Input.mouseScrollDelta.y > 0 && selection != 0)
         {
             selection--;
-            cursor.rectTransform.anchoredPosition += new Vector2(0, 65);
+            cursor.rectTransform.anchoredPosition += new Vector2(0, 80);
             Debug.Log(selection);
         }
         if (Input.GetKeyDown(KeyCode.F) && nearbyItems.Count != 0)
@@ -113,6 +113,7 @@ public class PickupWindow : MonoBehaviour
             //nearbyItems[selection].transform.position = cart.transform.position + new Vector3(0, 1, 0);
             //nearbyItems[selection].isInPlayerCart = true;
             nearbyItems[selection].Interact(playerInventory);
+            sfx.source.PlayOneShot(sfx.pickup);
 
             if (nearbyItems[selection].GetData().Quantity <= 0)
             {
