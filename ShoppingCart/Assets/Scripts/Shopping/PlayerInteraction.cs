@@ -19,7 +19,6 @@ public class PlayerInteraction : MonoBehaviour
     public event Action<IItemInteractable> Player_OnInteractableNearby_Removed;
 
     private PickupWindow pickupWindow = null;
-    public bool didPickup = false;
 
     private void Awake()
     {
@@ -77,7 +76,6 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                didPickup = true; //For some reason this isn't setting for the tutorial
                 for (int i = 0; i < interactablesNearby.Count; ++i)
                 {
                     characterInteraction.Interact(interactablesNearby[i]);

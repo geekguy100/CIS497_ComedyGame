@@ -15,26 +15,23 @@ public class NPC : MonoBehaviour
     private Item[] potentialItems = { new Orange(), new CoughSyrup(), new Laptop(), new Milk(), new Steak(), new Shampoo() };
 
 
-    public enum State { Shopping, RetreivingCart, PickingUpCart}
-    public State myState { get; set; }
-    public int listIndex { get; set; }
-    public bool hasDestination { get; set; }
+    enum State { Shopping, RetreivingCart, PickingUpCart}
+    private State myState;
+    private System.Type type;
 
     private Vector3 whereIsMyCart;
+    private SpringJoint myJoint;
+    private SpringJoint newJoint;
+    private int listIndex = 0;
+    private bool hasDestination = false;
+
     private Vector3 cartLocalPos;
     private Quaternion cartLocalRot;
 
-    private NPCBehavior currenBehavior;
-
     NavMeshAgent agent;
     NavMeshObstacle obstacle;
-
-
     void Start()
     {
-        hasDestination = false;
-        listIndex = 0;
-
         agent = GetComponent<NavMeshAgent>();
         obstacle = GetComponent<NavMeshObstacle>();
         obstacle.enabled = false;
@@ -42,57 +39,70 @@ public class NPC : MonoBehaviour
 
         cartLocalPos = cart.transform.localPosition;
         cartLocalRot = cart.transform.localRotation;
+        myJoint = gameObject.GetComponent<SpringJoint>();
 
         myState = State.Shopping;
-
-        currenBehavior = gameObject.AddComponent<NPCshopping>();
+        
+        
 
 
         //move to GM later, makes NPC and carts not collide1
         Physics.IgnoreLayerCollision(6, 7, true);
-
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        PerformNPCAction();
+        
 
         switch (myState)
         {
             case State.Shopping:
 
-                if(gameObject.GetComponent<NPCshopping>() == null)
+                if (Mathf.Abs(cart.transform.localRotation.z) >= 25 || Mathf.Abs(cart.transform.localRotation.y) >= 45)
                 {
-                    Destroy(GetComponent<NPCBehavior>());
-                    currenBehavior = gameObject.AddComponent<NPCshopping>();
+                    Debug.Log("My cart tipped over!");
+                    cart.transform.localRotation = cartLocalRot;
+                    Debug.Log("Adjusted my cart");
                 }
+
+                if(hasDestination == false)
+                {
+                    agent.SetDestination(ShoppingHelper.GetNearestContainerOfType(GetComponent<Transform>(), potentialItems[listIndex].GetType()).position);
+                    hasDestination = true;
+                }
+
+                if(Mathf.Abs(transform.position.x - ShoppingHelper.GetNearestContainerOfType(GetComponent<Transform>(), potentialItems[listIndex].GetType()).position.x) <= 5
+                    || Mathf.Abs(transform.position.z - ShoppingHelper.GetNearestContainerOfType(GetComponent<Transform>(), potentialItems[listIndex].GetType()).position.z) <= 5)
+                {
+                    if (listIndex < potentialItems.Length - 1) listIndex++;
+                    else listIndex = 0;
+                    hasDestination = false;
+                }
+
+
+
+                
 
                 break;
 
             case State.RetreivingCart:
 
-                if (gameObject.GetComponent<NPCretrieving>() == null)
-                {
-                    Destroy(GetComponent<NPCBehavior>());
-                    currenBehavior = gameObject.AddComponent<NPCretrieving>();
-                }
-
+                Debug.Log("I'm going to get my cart");
+                cart.transform.position = whereIsMyCart;
+                agent.destination = cart.transform.position;
                 break;
 
             case State.PickingUpCart:
+                Debug.Log("I'm picking up my cart");
+                cart.transform.localPosition = cartLocalPos;
+                cart.transform.localRotation = cartLocalRot;
 
-                if (gameObject.GetComponent<NPCresetting>() == null)
-                {
-                    Destroy(GetComponent<NPCBehavior>());
-                    currenBehavior = gameObject.AddComponent<NPCresetting>();
-                }
+                ReplaceJoint();
 
-                //hasDestination = false;
-                //myState = State.Shopping;
-
-
+                hasDestination = false;
+                myState = State.Shopping;
+                
                 break;
 
             default:
@@ -112,7 +122,6 @@ public class NPC : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //if you collide with your cart while retrieving it, go to pick up state
         if(myState == State.RetreivingCart)
         {
             if(collision.gameObject == cart)
@@ -122,11 +131,16 @@ public class NPC : MonoBehaviour
         }
     }
 
-    
-
-    private void PerformNPCAction()
+    private void ReplaceJoint()
     {
-        currenBehavior.NPCaction(GetComponent<NPC>(), agent, cart, cartLocalRot, cartLocalPos, whereIsMyCart, hasDestination, listIndex, potentialItems, myState);
+        newJoint = gameObject.AddComponent<SpringJoint>();
+
+        newJoint.breakForce = 20;
+        newJoint.breakTorque = 20;
+        newJoint.connectedBody = cart.GetComponent<Rigidbody>();
+        newJoint.anchor = new Vector3(0, 1, 0.7f);
+        newJoint.connectedAnchor = new Vector3(0.01f, 0.9779999f, -0.538f); //don't look
     }
+
     
 }
