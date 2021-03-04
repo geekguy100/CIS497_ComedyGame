@@ -10,13 +10,7 @@ using UnityEngine;
 public class Checkout : MonoBehaviour
 {
     [SerializeField] private GameObject winText;
-    public SFXManager sfx;
-
-    private void Awake()
-    {
-        sfx = GameObject.FindGameObjectWithTag("SFXManager").GetComponent<SFXManager>();
-    }
-
+    
 
     /// <summary>
     /// Checks to see if the character has all of the items they need;
@@ -46,7 +40,6 @@ public class Checkout : MonoBehaviour
         {
             // Right now we're assuming only the player can check out.
             winText.SetActive(true);
-            sfx.source.PlayOneShot(sfx.win);
             EventManager.GameWin();
         }
         else

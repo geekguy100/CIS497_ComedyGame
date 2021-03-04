@@ -5,29 +5,21 @@ using UnityEngine;
 public class SFXManager : MonoBehaviour
 {
     public AudioSource source;
-    public AudioClip win;
-    public AudioClip lose;
-    public AudioClip error;
-    public AudioClip drop;
-    public AudioClip pickup;
-    public AudioClip ram;
-    public AudioClip hello;
-    public AudioClip hit;
-    public AudioClip huh;
+    public AudioClip[] sfx;
 
     // Start is called before the first frame update
     void Start()
     {
         source = GetComponent<AudioSource>();
-        StartCoroutine(Play(error));
+        StartCoroutine(Play());
     }
 
-    public IEnumerator Play(AudioClip c)
+    public IEnumerator Play()
     {
-        int r = Random.Range(10, 30);
+        int r = Random.Range(1, 5);
+        int i = Random.Range(0, sfx.Length - 1);
         yield return new WaitForSeconds(r);
-        source.PlayOneShot(c);
-        yield return new WaitForSeconds(r);
-        StartCoroutine(Play(c));
+        //source.clip = sfx[i];
+        source.PlayOneShot(source.clip = sfx[i]);
     }
 }
