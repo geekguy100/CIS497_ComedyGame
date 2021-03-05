@@ -43,18 +43,11 @@ public class PlayerInteraction : MonoBehaviour
                 Player_OnInteractableNearby?.Invoke(i);
             }
         }
-    }
-
-    private void OnTriggerStay(Collider col)
-    {
-        if (!col.CompareTag("Checkout"))
-            return;
-
-        Checkout checkout = col.GetComponent<Checkout>();
-        if (checkout != null && Input.GetKeyDown(KeyCode.F))
+        else if (col.CompareTag("Checkout") && checkout == null)
         {
-            checkout.Interact(GetComponentInParent<CharacterInventory>(), transform.parent.GetComponentInChildren<CharacterShoppingList>());
+            checkout = col.GetComponent<Checkout>();
         }
+
     }
 
     private void OnTriggerExit(Collider col)
@@ -68,8 +61,11 @@ public class PlayerInteraction : MonoBehaviour
                 Player_OnInteractableNearby_Removed?.Invoke(i);
             }
         }
+        else if (col.CompareTag("Checkout") && checkout != null)
+            checkout = null;
     }
 
+    private Checkout checkout;
     private void Update()
     {
         if (pickupWindow == null)
@@ -83,5 +79,12 @@ public class PlayerInteraction : MonoBehaviour
                 }
             }
         }
+
+        if (checkout != null && Input.GetKeyDown(KeyCode.F))
+        {
+            checkout.Interact(GetComponentInParent<CharacterInventory>(), transform.parent.GetComponentInChildren<CharacterShoppingList>());
+        }
+
+
     }
 }
