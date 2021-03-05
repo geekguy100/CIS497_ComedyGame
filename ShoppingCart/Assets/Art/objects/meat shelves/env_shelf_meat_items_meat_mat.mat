@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: env_shelf_meat_items_meat_ma
+  m_Name: env_shelf_meat_items_meat_mat
   m_Shader: {fileID: 4800000, guid: b46ccaccc0c0779479278be55b4ee3f7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
