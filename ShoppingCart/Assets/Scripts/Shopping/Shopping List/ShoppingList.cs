@@ -88,7 +88,7 @@ public abstract class ShoppingList : MonoBehaviour
             return;
         }
 
-        Debug.Log(gameObject.name + ": Removed item " + itemType.ToString() + " to the list.\n" +
+        Debug.Log(gameObject.name + ": Removed item " + itemType.ToString() + " from the list.\n" +
             "Quantity of item is now " + shoppingDictionary[itemType]);
 
         OnItemRemoved?.Invoke(itemType);

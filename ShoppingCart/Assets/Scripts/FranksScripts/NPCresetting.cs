@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 public class NPCresetting : NPCBehavior
 {
-    public override void NPCaction(NPC npc, NavMeshAgent agent, GameObject cart, Quaternion cartLocalRot, Vector3 cartLocalPos, Vector3 whereIsMyCart, bool hasDestination, int listIndex, Item[] potentialItems, NPC.State myState)
+    public override void NPCaction(NPC npc, NavMeshAgent agent, GameObject cart, Quaternion cartLocalRot, Vector3 cartLocalPos, Vector3 whereIsMyCart, bool hasDestination, int listIndex, ItemContainerData[] shoppingListArray, CharacterInventory inventory, NPC.State myState)
     {
         //reset cart's local rotation and position, create new joint, continue shopping
         Debug.Log("I'm picking up my cart");

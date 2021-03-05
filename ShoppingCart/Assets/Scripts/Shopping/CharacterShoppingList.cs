@@ -6,11 +6,14 @@
 // Brief Description : The list of goods the character needs to obtain.
 *****************************************************************************/
 using UnityEngine;
+using System;
 
 public class CharacterShoppingList : ShoppingList
 {
     [Tooltip("The maximum amount of items this shopping list can hold.")]
     [SerializeField] private int maxItems = 20;
+
+    public event Action OnListPopulated;
 
     private void OnEnable()
     {
@@ -36,7 +39,7 @@ public class CharacterShoppingList : ShoppingList
             if (ContainsType(System.Type.GetType(randomItem.ItemType)))
                 continue;
 
-            int randomQuantity = Random.Range(1, randomItem.Quantity / 2 + 1);
+            int randomQuantity = UnityEngine.Random.Range(1, randomItem.Quantity / 2 + 1);
 
             // There's a chance the random quantity will bring us over the max amount of items.
             // To prevent that, we'll decrease the randomQuantity as much as we need to.
@@ -46,7 +49,11 @@ public class CharacterShoppingList : ShoppingList
             }
 
             for (int i = 0; i < randomQuantity; ++i)
+            {
                 AddItem(System.Type.GetType(randomItem.ItemType));
+            }
         }
+
+        OnListPopulated?.Invoke();
     }
 }

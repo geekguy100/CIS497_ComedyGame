@@ -79,6 +79,7 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
         }
 
         visual = Instantiate(visualPrefab, transform.position, visualPrefab.transform.rotation);
+        visual.gameObject.name = itemType;
     }
 
     /// <summary>

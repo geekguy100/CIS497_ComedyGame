@@ -23,6 +23,10 @@ public sealed class ShoppingCenter : ShoppingList
     }
     #endregion
 
+    // TODO;
+    // Keep track of the total amount of items that should be added. 
+    // Once that quantity has been reached, invoke OnShoppingCenterFilled.
+
     private void OnEnable()
     {
         EventManager.OnItemSpawned += AddItem;

@@ -38,7 +38,6 @@ public static class EventManager
 
     /// <summary>
     /// Signals any observers that the game has started,
-    /// and lets observers know when the shopping center is filled.
     /// </summary>
     public static void GameStart()
     {

@@ -14,7 +14,7 @@ public class Checkout : MonoBehaviour
 
     private void Awake()
     {
-        sfx = GameObject.FindGameObjectWithTag("SFXManager").GetComponent<SFXManager>();
+        //sfx = GameObject.FindGameObjectWithTag("SFXManager").GetComponent<SFXManager>();
     }
 
     /// <summary>

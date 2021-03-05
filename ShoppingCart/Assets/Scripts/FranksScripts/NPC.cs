@@ -12,7 +12,13 @@ using UnityEngine.AI;
 public class NPC : MonoBehaviour
 {
     [SerializeField] GameObject cart;
-    private Item[] potentialItems = { new Orange(), new CoughSyrup(), new Laptop(), new Milk(), new Steak(), new Shampoo() };
+    //private Item[] potentialItems = { new Orange(), new CoughSyrup(), new Laptop(), new Milk(), new Steak(), new Shampoo() };
+    // The list of items the NPC needs.
+    private CharacterShoppingList shoppingList;
+    private ItemContainerData[] shoppingListData; // Shopping list in array format.
+
+    // The list of items the NPC has on their person.
+    private CharacterInventory inventory;
 
 
     public enum State { Shopping, RetreivingCart, PickingUpCart}
@@ -24,39 +30,71 @@ public class NPC : MonoBehaviour
     private Vector3 cartLocalPos;
     private Quaternion cartLocalRot;
 
-    private NPCBehavior currenBehavior;
+    private NPCBehavior currentBehavior;
 
     NavMeshAgent agent;
     NavMeshObstacle obstacle;
 
+    // True if the NPC is set up with a populated list and initialized values.
+    private bool setup = false;
+
+    private void Awake()
+    {
+        agent = GetComponent<NavMeshAgent>();
+        obstacle = GetComponent<NavMeshObstacle>();
+        shoppingList = GetComponent<CharacterShoppingList>();
+        shoppingList.OnListPopulated += Setup;
+        inventory = GetComponent<CharacterInventory>();
+
+        currentBehavior = gameObject.AddComponent<NPCshopping>();
+    }
+
+    private void OnDisable()
+    {
+        shoppingList.OnListPopulated -= Setup;
+    }
 
     void Start()
     {
+        //move to GM later, makes NPC and carts not collide1
+        Physics.IgnoreLayerCollision(6, 7, true);
+    }
+
+    /// <summary>
+    /// Setup the NPC after its list is populated.
+    /// </summary>
+    void Setup()
+    {
+        shoppingListData = shoppingList.GetItemData();
+
         hasDestination = false;
         listIndex = 0;
 
-        agent = GetComponent<NavMeshAgent>();
-        obstacle = GetComponent<NavMeshObstacle>();
+
         obstacle.enabled = false;
-        
+
 
         cartLocalPos = cart.transform.localPosition;
         cartLocalRot = cart.transform.localRotation;
 
         myState = State.Shopping;
 
-        currenBehavior = gameObject.AddComponent<NPCshopping>();
+        foreach (ItemContainerData item in shoppingListData)
+            print("ITEM: " + item);
 
-
-        //move to GM later, makes NPC and carts not collide1
-        Physics.IgnoreLayerCollision(6, 7, true);
-
-
+        setup = true;
     }
+
+
+
 
     // Update is called once per frame
     void Update()
     {
+        // Don't run until setup is complete!
+        if (!setup)
+            return;
+
         PerformNPCAction();
 
         switch (myState)
@@ -66,7 +104,7 @@ public class NPC : MonoBehaviour
                 if(gameObject.GetComponent<NPCshopping>() == null)
                 {
                     Destroy(GetComponent<NPCBehavior>());
-                    currenBehavior = gameObject.AddComponent<NPCshopping>();
+                    currentBehavior = gameObject.AddComponent<NPCshopping>();
                 }
 
                 break;
@@ -76,7 +114,7 @@ public class NPC : MonoBehaviour
                 if (gameObject.GetComponent<NPCretrieving>() == null)
                 {
                     Destroy(GetComponent<NPCBehavior>());
-                    currenBehavior = gameObject.AddComponent<NPCretrieving>();
+                    currentBehavior = gameObject.AddComponent<NPCretrieving>();
                 }
 
                 break;
@@ -86,7 +124,7 @@ public class NPC : MonoBehaviour
                 if (gameObject.GetComponent<NPCresetting>() == null)
                 {
                     Destroy(GetComponent<NPCBehavior>());
-                    currenBehavior = gameObject.AddComponent<NPCresetting>();
+                    currentBehavior = gameObject.AddComponent<NPCresetting>();
                 }
 
                 //hasDestination = false;
@@ -126,7 +164,7 @@ public class NPC : MonoBehaviour
 
     private void PerformNPCAction()
     {
-        currenBehavior.NPCaction(GetComponent<NPC>(), agent, cart, cartLocalRot, cartLocalPos, whereIsMyCart, hasDestination, listIndex, potentialItems, myState);
+        currentBehavior.NPCaction(GetComponent<NPC>(), agent, cart, cartLocalRot, cartLocalPos, whereIsMyCart, hasDestination, listIndex, shoppingListData, inventory, myState);
     }
     
 }

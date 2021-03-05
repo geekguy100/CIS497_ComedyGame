@@ -32,9 +32,22 @@ public static class ShoppingHelper
             return null;
 
         ItemContainer[] itemContainers = GameObject.FindObjectsOfType<ItemContainer>();
-        return itemContainers
-            .Where(t => System.Type.GetType(t.GetData().ItemType) == itemType)
+
+        // If there are no items of this type in the scene, return null.
+        if (itemContainers.Length <= 0)
+            return null;
+
+        // If there are some items of this type in the scene, return the nearest to the character.
+        ItemContainer container = itemContainers
+            .Where(t => System.Type.GetType(t.GetData().ItemType) == itemType && t.gameObject.activeInHierarchy)
             .OrderBy(t => Vector3.Distance(character.transform.position, t.transform.position))
-            .ToArray()[0].transform;
+            .FirstOrDefault();
+
+        // If the container found is null, return null.
+        // Else, return the transform component of the container found.
+        if (container == null)
+            return null;
+        else
+            return container.transform;
     }
 }

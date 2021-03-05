@@ -5,30 +5,232 @@ using UnityEngine.AI;
 
 public class NPCshopping : NPCBehavior
 {
-    public override void NPCaction(NPC npc, NavMeshAgent agent, GameObject cart, Quaternion cartLocalRot, Vector3 cartLocalPos, Vector3 whereIsMyCart, bool hasDestination, int listIndex, Item[] potentialItems, NPC.State myState)
+    // The NavMeshAgent.
+    private NavMeshAgent agent;
+
+    // The NPCs inventory.
+    private CharacterInventory inventory;
+
+    // The NPCs shopping list.
+    private CharacterShoppingList characterShoppingList;
+
+    // Data about the NPCs current shopping behavior.
+    private NPCShoppingData shoppingData;
+
+    // The destiation of the item.
+    private ItemContainer destination;
+
+    // The data of the item we are searching for.
+    private ItemContainerData itemData;
+
+    // Last call to the coroutine.
+    private Coroutine lastCall = null;
+
+    private bool beganItemCollection = false;
+
+    private void Awake()
     {
-        //reset cart if it tips or turns weird (currently not working)
-        if (Mathf.Abs(cart.transform.localRotation.z) >= 25 || Mathf.Abs(cart.transform.localRotation.y) >= 45)
+        agent = GetComponent<NavMeshAgent>();
+        inventory = GetComponent<CharacterInventory>();
+        characterShoppingList = GetComponent<CharacterShoppingList>();
+        shoppingData = GetComponent<NPCShoppingData>();
+    }
+
+
+    /// <summary>
+    /// Perform setup.
+    /// </summary>
+    private void Initialize()
+    {
+        print("~~~~INITIALIZING~~~~");
+        if (shoppingData.Index >= characterShoppingList.GetItemData().Length)
         {
-            Debug.Log("My cart tipped over!");
-            cart.transform.localRotation = cartLocalRot;
-            Debug.Log("Adjusted my cart");
+            Debug.LogWarning(gameObject.name + " is done collecting his items. He needs to check out...");
+            return;
+        }
+        else if (shoppingData.Index < 0)
+        {
+            Debug.LogWarning(gameObject.name + " WHY IS MY INDEX < 0??");
+            return;
         }
 
-        //if you don't have a destination, set one and begin walking there
-        if (hasDestination == false)
-        {
-            agent.SetDestination(ShoppingHelper.GetNearestContainerOfType(GetComponent<Transform>(), potentialItems[listIndex].GetType()).position);
-            npc.hasDestination = true;
-        }
+        itemData = characterShoppingList.GetItemData()[shoppingData.Index];
+        Transform nearestContainer = ShoppingHelper.GetNearestContainerOfType(transform, System.Type.GetType(itemData.ItemType));
 
-        //if you're at your destination, say you no longer have a destination, and choose your next one
-        if (Mathf.Abs(transform.position.x - ShoppingHelper.GetNearestContainerOfType(GetComponent<Transform>(), potentialItems[listIndex].GetType()).position.x) <= 5
-            || Mathf.Abs(transform.position.z - ShoppingHelper.GetNearestContainerOfType(GetComponent<Transform>(), potentialItems[listIndex].GetType()).position.z) <= 5)
+        // If there are no containers of the type of item we need, then leave the store.
+        if (nearestContainer != null)
         {
-            if (listIndex < potentialItems.Length - 1) npc.listIndex++;
-            else npc.listIndex = 0;
-            npc.hasDestination = false;
+            destination = ShoppingHelper.GetNearestContainerOfType(transform, System.Type.GetType(itemData.ItemType)).GetComponent<ItemContainer>();
+            agent.SetDestination(destination.transform.position);
+        }
+        else
+        {
+            Debug.LogWarning(gameObject.name + ": No items of type " + itemData.ItemType + " left in the store...");
         }
     }
+
+    public override void NPCaction(NPC npc, NavMeshAgent agent, GameObject cart, Quaternion cartLocalRot, Vector3 cartLocalPos, Vector3 whereIsMyCart, bool hasDestination, int listIndex, ItemContainerData[] shoppingListData, CharacterInventory inventory, NPC.State myState)
+    {
+        // Initialization
+        if (destination == null)
+        {
+            print("DESTINATION NULL. INITIALIZING.");
+            Initialize();
+            return;
+        }
+
+        // If the NPC is in range of the item, perform collection sequence.
+        if (Vector3.Distance(transform.position, destination.transform.position) < 4f)
+        {
+            if (!beganItemCollection)
+            {
+                beganItemCollection = true;
+                StartCoroutine(CollectItems());
+            }
+
+        }
+    }
+
+    /// <summary>
+    /// NPC collects the items from the nearest ItemContainer.
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator CollectItems()
+    {
+        Debug.LogWarning("NPC COLLECTING: " + itemData.ItemType + " " + itemData.Quantity);
+        for (int i = 0; i < itemData.Quantity; ++i)
+        {
+            // Make sure that our destination is still active.
+            // If it's not, we'll have to find another item container.
+            if (destination != null)
+            {
+                destination.Interact(inventory);
+            }
+
+            // If our destinarion is null (quantity ran out mid collection),
+            // re-initialize this behaviour.
+            else
+            {
+                Debug.LogWarning("ITEM RAN OUT. " + itemData.ItemType);
+                beganItemCollection = false;
+                yield break;
+            }
+
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        Debug.LogWarning("DONE COLLECTING " + itemData.ItemType);
+        FinishCollection();
+    }
+
+    /// <summary>
+    /// Invoked when the NPC finishes collecting items;
+    /// Resets beganItemCollection to false and increases the shoppingData.Index property
+    /// so the NPC knows to go to the next item.
+    /// </summary>
+    private void FinishCollection()
+    {
+        beganItemCollection = false;
+        ++shoppingData.Index;
+        Initialize();
+    }
+
+
+    //public override void NPCaction(NPC npc, NavMeshAgent agent, GameObject cart, Quaternion cartLocalRot, Vector3 cartLocalPos, Vector3 whereIsMyCart, bool hasDestination, int listIndex, ItemContainerData[] shoppingListData, CharacterInventory inventory, NPC.State myState)
+    //{
+    //    if (shoppingListData.Length <= 0 || listIndex > shoppingListData.Length - 1)
+    //    {
+    //        print("DONE WITH LIST!");
+    //        return;
+    //    }
+
+    //    if (collecting && nearestContainer == null)
+    //    {
+    //        Debug.LogWarning("Collecting and nearest container is null!");
+
+    //        if (lastCall != null)
+    //        {
+    //            StopCoroutine(lastCall);
+    //            lastCall = null;
+    //        }
+            
+    //        collecting = false;
+    //        collectionComplete = false;
+    //        npc.hasDestination = false;
+    //        return;
+    //    }
+
+
+    //    //reset cart if it tips or turns weird (currently not working)
+    //    if (Mathf.Abs(cart.transform.localRotation.z) >= 25 || Mathf.Abs(cart.transform.localRotation.y) >= 45)
+    //    {
+    //        Debug.Log("My cart tipped over!");
+    //        cart.transform.localRotation = cartLocalRot;
+    //        Debug.Log("Adjusted my cart");
+    //    }
+
+    //    //if you don't have a destination, set one and begin walking there
+    //    if (hasDestination == false)
+    //    {
+    //        itemType = System.Type.GetType(shoppingListData[listIndex].ItemType);
+    //        nearestContainer = ShoppingHelper.GetNearestContainerOfType(transform, itemType).GetComponent<ItemContainer>();
+
+    //        agent.SetDestination(nearestContainer.transform.position);
+    //        npc.hasDestination = true;
+    //    }
+
+    //    //if (nearestContainer == null)
+    //    //{
+    //    //    //nearestContainer = ShoppingHelper.GetNearestContainerOfType(transform, itemType).GetComponent<ItemContainer>();
+    //    //    npc.hasDestination = false;
+
+    //    //    itemType = null;
+    //    //    nearestContainer = null;
+    //    //    collectionComplete = false;
+
+    //    //    return;
+    //    //}
+
+    //    //if you're at your destination, say you no longer have a destination, and choose your next one
+    //    if (Vector3.Distance(transform.position, nearestContainer.transform.position) <= 4)
+    //    {
+    //        // Interact with the item container to add the right amount of items to our inventory.
+    //        if (!collectionComplete && !collecting)
+    //            lastCall = StartCoroutine(CollectItems(shoppingListData[listIndex], inventory));
+
+    //        if (collectionComplete)
+    //        {
+    //            print("DONE COLLECTING " + shoppingListData[listIndex].ItemType);
+    //            // Seek out the next item on the list.
+    //            npc.listIndex++;
+
+    //            itemType = null;
+    //            nearestContainer = null;
+    //            collectionComplete = false;
+
+    //            npc.hasDestination = false;
+    //            return;
+    //        }
+    //    }
+    //}
+
+    //private bool collecting = false;
+    //private bool collectionComplete = false;
+    ////private IEnumerator CollectItems(ItemContainerData itemToGet, CharacterInventory inventory)
+    ////{
+    ////    collecting = true;
+    ////    for (int i = 0; i < itemToGet.Quantity; ++i)
+    ////    {
+    ////        if (nearestContainer == null)
+    ////        {
+    ////            Debug.LogWarning("Nearest container destoyed mid pickup...");
+    ////            yield break;
+    ////        }
+
+    ////        nearestContainer.Interact(inventory);
+    ////        yield return new WaitForSeconds(0.5f);
+    ////    }
+    ////    collecting = false;
+    ////    collectionComplete = true;
+    ////}
 }
