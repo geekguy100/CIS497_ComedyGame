@@ -59,6 +59,9 @@ public class PickupWindow : MonoBehaviour
         if (!nearbyItems.Contains(itemContainer))
         {
             nearbyItems.Add(itemContainer);
+            // If an NPC picks up an item while you are trying to grab it as well, 
+            // make sure to update the display.
+            itemContainer.OnQuantityReduced += UpdateDisplay;
             UpdateDisplay();
         }
 
@@ -76,6 +79,7 @@ public class PickupWindow : MonoBehaviour
         if (nearbyItems.Contains(itemContainer))
         {
             nearbyItems.Remove(itemContainer);
+            itemContainer.OnQuantityReduced -= UpdateDisplay;
             UpdateDisplay();
         }
 
@@ -115,23 +119,36 @@ public class PickupWindow : MonoBehaviour
             nearbyItems[selection].Interact(playerInventory);
             if (sfx != null)
                 sfx.source.PlayOneShot(sfx.pickup);
-            if (nearbyItems[selection].GetData().Quantity <= 0)
+
+            // If we picked up the last nearby item, reset our selection and cursor
+            // position.
+            if (nearbyItems.Count == 0)
             {
-                nearbyItems.Remove(nearbyItems[selection]);
                 selection = 0;
                 cursor.rectTransform.anchoredPosition = cursorPos;
+                return;
             }
-
-            UpdateDisplay();
         }
     }
 
     public void UpdateDisplay()
     {
         display.text = "";
-        foreach (ItemContainer i in nearbyItems)
+
+        for (int i = 0; i < nearbyItems.Count; ++i)
         {
-            display.text += i.GetData().ToString() + "\n";
+            // If we are out of this item, remove it from the list.
+            if (nearbyItems[i].GetData().Quantity <= 0)
+            {
+                RemoveItem(nearbyItems[i]);
+                selection = 0;
+                cursor.rectTransform.anchoredPosition = cursorPos;
+                //i -= 1;
+                continue;
+            }
+
+            // Append to the display text.
+            display.text += nearbyItems[i].GetData().ToString() + "\n";
         }
     }
 }

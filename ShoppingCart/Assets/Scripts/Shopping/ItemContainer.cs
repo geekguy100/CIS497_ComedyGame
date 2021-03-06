@@ -6,6 +6,7 @@
 // Brief Description : Class for defining functionality of an item container.
 *****************************************************************************/
 using UnityEngine;
+using System;
 
 public struct ItemContainerData
 {
@@ -49,6 +50,10 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
     // The instantiated visual prefab.
     private GameObject visual;
 
+    // An event that is invoked when the item container's quantity is reduced;
+    // invoked when an item is taken from the container.
+    public event Action OnQuantityReduced;
+
     #region --- Subscribing and Unsubscribing to EventManager events ---
     private void OnEnable()
     {
@@ -83,7 +88,7 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
 
 
         // Set the amount of items this itemContainer will hold.
-        currentQuantity = Random.Range(minQuantity, maxQuantity + 1);
+        currentQuantity = UnityEngine.Random.Range(minQuantity, maxQuantity + 1);
 
         // Make sure the event manager knows the number of items in this cart.
         for (int i = 0; i < currentQuantity; ++i)
@@ -115,6 +120,8 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
 
             if(!isLooseItem)
                 EventManager.ItemTaken(System.Type.GetType(itemType));
+
+            OnQuantityReduced?.Invoke();
         }
 
         // Destroy the visual prefab and this game object so the players know they cannot access this item container.
