@@ -805,6 +805,14 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -0.5380001
       objectReference: {fileID: 0}
+    - target: {fileID: 4993960089667094382, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: m_Height
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993960089667094382, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: m_Radius
+      value: 0.54
+      objectReference: {fileID: 0}
     - target: {fileID: 5300584959740279353, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_Name
       value: NPC (4)
@@ -1123,6 +1131,14 @@ PrefabInstance:
     - target: {fileID: 4993960089667094380, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: -0.5380125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993960089667094382, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: m_Height
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993960089667094382, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: m_Radius
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 5300584959740279353, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_Name
@@ -1666,6 +1682,14 @@ PrefabInstance:
     - target: {fileID: 4993960089667094380, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: -0.5380155
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993960089667094382, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: m_Height
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993960089667094382, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: m_Radius
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 5300584959740279353, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_Name
@@ -2310,6 +2334,14 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -0.5379866
       objectReference: {fileID: 0}
+    - target: {fileID: 4993960089667094382, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: m_Height
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993960089667094382, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: m_Radius
+      value: 0.54
+      objectReference: {fileID: 0}
     - target: {fileID: 5300584959740279353, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_Name
       value: NPC (3)
@@ -2394,6 +2426,14 @@ PrefabInstance:
     - target: {fileID: 4993960089667094380, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: -0.5380168
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993960089667094382, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: m_Height
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993960089667094382, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: m_Radius
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 5300584959740279353, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_Name
