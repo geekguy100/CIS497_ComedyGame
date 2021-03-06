@@ -71,4 +71,12 @@ public class NPCstunned : NPCBehavior
         agent.isStopped = false;
         npc.myState = NPC.State.Shopping;
     }
+
+    // In case this script is disabled early (by another behavior taking priority),
+    // make sure to reset the shopping data index to 0 and allow the NPC to move.
+    private void OnDisable()
+    {
+        agent.isStopped = false;
+        shoppingData.Index = 0;
+    }
 }
