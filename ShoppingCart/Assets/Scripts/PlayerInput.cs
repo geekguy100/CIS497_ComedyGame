@@ -27,6 +27,9 @@ public class PlayerInput : MonoBehaviour
         float v = Input.GetAxis("Vertical");
         input = new Vector3(h, 0, v);
         input = transform.TransformDirection(input);
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+            characterMovement.Dash();
     }
 
     private void FixedUpdate()
