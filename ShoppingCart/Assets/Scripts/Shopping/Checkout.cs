@@ -23,6 +23,7 @@ public class Checkout : MonoBehaviour
     /// </summary>
     /// <param name="inventory">The character's inventory.</param>
     /// <param name="shoppingList">The character's shopping list.</param>
+    /// <returns>True if the character can check out.</returns>
     public void Interact(CharacterInventory inventory, ShoppingList shoppingList)
     {
         // True if the character can check out.
@@ -41,14 +42,17 @@ public class Checkout : MonoBehaviour
             break;
         }
 
-        if (canCheckOut)
-        {
-            // Right now we're assuming only the player can check out.
-            winText.SetActive(true);
-            sfx.source.PlayOneShot(sfx.win);
-            EventManager.GameWin();
-        }
-        else
-            Debug.Log("Can't check out yet...");
+        string result = canCheckOut ? (inventory.gameObject.name + " checks out.") : (inventory.gameObject.name + " cannot check out...");
+        print(result);
+
+        //if (canCheckOut)
+        //{
+        //    // Right now we're assuming only the player can check out.
+        //    winText.SetActive(true);
+        //    sfx.source.PlayOneShot(sfx.win);
+        //    EventManager.GameWin();
+        //}
+        //else
+        //    Debug.Log("Can't check out yet...");
     }
 }

@@ -21,7 +21,7 @@ public class NPC : MonoBehaviour
     private CharacterInventory inventory;
 
 
-    public enum State { Shopping, RetreivingCart, PickingUpCart}
+    public enum State { Shopping, RetreivingCart, PickingUpCart, Checkout}
     public State myState { get; set; }
     public int listIndex { get; set; }
     public bool hasDestination { get; set; }
@@ -130,6 +130,16 @@ public class NPC : MonoBehaviour
                 //hasDestination = false;
                 //myState = State.Shopping;
 
+
+                break;
+
+            case State.Checkout:
+
+                if (gameObject.GetComponent<NPCcheckout>() == null)
+                {
+                    Destroy(GetComponent<NPCBehavior>());
+                    currentBehavior = gameObject.AddComponent<NPCcheckout>();
+                }
 
                 break;
 

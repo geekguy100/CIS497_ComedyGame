@@ -25,7 +25,7 @@ public static class ShoppingHelper
     /// </summary>
     /// <param name="character">The character to check the nearest item container to.</param>
     /// <param name="itemType">The type of item that the item container should contain.</param>
-    /// <returns></returns>
+    /// <returns>The nearest item container of the given item type.</returns>
     public static Transform GetNearestContainerOfType(Transform character, System.Type itemType)
     {
         if (!IsOfTypeItem(itemType))
@@ -49,5 +49,21 @@ public static class ShoppingHelper
             return null;
         else
             return container.transform;
+    }
+
+    /// <summary>
+    /// Gets the nearest checkout game object from a character.
+    /// </summary>
+    /// <param name="character">The character to find the nearest checkout location to.</param>
+    /// <returns>The nearest checkout location.</returns>
+    public static GameObject GetNearestCheckoutLocation(Transform character)
+    {
+        GameObject[] checkoutLocations = GameObject.FindGameObjectsWithTag("CheckoutLocation");
+        if (checkoutLocations.Length <= 0)
+            return null;
+
+        return checkoutLocations
+            .OrderBy(t => Vector3.Distance(character.position, t.transform.position))
+            .FirstOrDefault();
     }
 }

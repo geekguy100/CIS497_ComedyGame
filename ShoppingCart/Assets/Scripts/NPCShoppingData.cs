@@ -3,12 +3,18 @@
 // Author :            Kyle Grenier
 // Creation Date :     03/04/2021
 //
-// Brief Description : Holds the index of the NPC's shopping list.
+// Brief Description : Holds NPCs shopping data (done shopping and index of item to search for).
 *****************************************************************************/
 using UnityEngine;
 
 public class NPCShoppingData : MonoBehaviour
 {
+    private bool doneShopping = false;
+    public bool DoneShopping { get { return doneShopping; } set { doneShopping = value; } }
+
+    private bool checkedOut = false;
+    public bool CheckedOut { get { return checkedOut; } set { checkedOut = value; } }
+
     private int index = 0;
     public int Index
     {

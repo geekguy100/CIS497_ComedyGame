@@ -23,10 +23,10 @@ public class NPCshopping : NPCBehavior
     // The data of the item we are searching for.
     private ItemContainerData itemData;
 
-    // Last call to the coroutine.
-    private Coroutine lastCall = null;
-
     private bool beganItemCollection = false;
+
+    // The parent NPC.
+    private NPC npc;
 
     private void Awake()
     {
@@ -42,35 +42,53 @@ public class NPCshopping : NPCBehavior
     /// </summary>
     private void Initialize()
     {
+        // If the NPC is done shopping, don't run.
+        if (shoppingData.DoneShopping)
+            return;
+
         print("~~~~INITIALIZING~~~~");
+
+        // NPC has obtained all items and needs to check out.
         if (shoppingData.Index >= characterShoppingList.GetItemData().Length)
         {
             Debug.LogWarning(gameObject.name + " is done collecting his items. He needs to check out...");
+            shoppingData.DoneShopping = true;
+            npc.myState = NPC.State.Checkout;
+            //agent.SetDestination(ShoppingHelper.GetNearestCheckoutLocation(transform).transform.position);
             return;
         }
         else if (shoppingData.Index < 0)
         {
-            Debug.LogWarning(gameObject.name + " WHY IS MY INDEX < 0??");
+            Debug.LogError(gameObject.name + " WHY IS MY INDEX < 0??");
             return;
         }
 
         itemData = characterShoppingList.GetItemData()[shoppingData.Index];
         Transform nearestContainer = ShoppingHelper.GetNearestContainerOfType(transform, System.Type.GetType(itemData.ItemType));
 
-        // If there are no containers of the type of item we need, then leave the store.
+        // If we don't have a destination, find the nearest containter of the needed item type and path to it.
         if (nearestContainer != null)
         {
             destination = ShoppingHelper.GetNearestContainerOfType(transform, System.Type.GetType(itemData.ItemType)).GetComponent<ItemContainer>();
             agent.SetDestination(destination.transform.position);
         }
+        // If there are no items in stock of this type, then leave the store.
         else
         {
-            Debug.LogWarning(gameObject.name + ": No items of type " + itemData.ItemType + " left in the store...");
+            Debug.LogWarning(gameObject.name + ": No items of type " + itemData.ItemType + " left in the store... NPC is done shopping.");
+            shoppingData.DoneShopping = true;
+            agent.SetDestination(GameObject.FindGameObjectWithTag("Finish").transform.position);
         }
     }
 
     public override void NPCaction(NPC npc, NavMeshAgent agent, GameObject cart, Quaternion cartLocalRot, Vector3 cartLocalPos, Vector3 whereIsMyCart, bool hasDestination, int listIndex, ItemContainerData[] shoppingListData, CharacterInventory inventory, NPC.State myState)
     {
+        if (this.npc == null)
+            this.npc = npc;
+
+        if (shoppingData.DoneShopping)
+            return;
+
         // Initialization
         if (destination == null)
         {
@@ -97,7 +115,7 @@ public class NPCshopping : NPCBehavior
     /// <returns></returns>
     private IEnumerator CollectItems()
     {
-        Debug.LogWarning("NPC COLLECTING: " + itemData.ItemType + " " + itemData.Quantity);
+        Debug.LogWarning(gameObject.name + ": COLLECTING: " + itemData.ItemType + " " + itemData.Quantity);
         for (int i = 0; i < itemData.Quantity; ++i)
         {
             // Make sure that our destination is still active.
@@ -111,7 +129,7 @@ public class NPCshopping : NPCBehavior
             // re-initialize this behaviour.
             else
             {
-                Debug.LogWarning("ITEM RAN OUT. " + itemData.ItemType);
+                Debug.LogWarning(gameObject.name + ": ITEM RAN OUT. " + itemData.ItemType);
                 beganItemCollection = false;
                 yield break;
             }
@@ -119,7 +137,7 @@ public class NPCshopping : NPCBehavior
             yield return new WaitForSeconds(0.5f);
         }
 
-        Debug.LogWarning("DONE COLLECTING " + itemData.ItemType);
+        Debug.LogWarning(gameObject.name + ": DONE COLLECTING " + itemData.ItemType);
         FinishCollection();
     }
 
