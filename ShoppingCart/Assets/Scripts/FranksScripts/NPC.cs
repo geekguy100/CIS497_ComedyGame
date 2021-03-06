@@ -11,7 +11,7 @@ using UnityEngine.AI;
 
 public class NPC : MonoBehaviour
 {
-    [SerializeField] GameObject cart;
+    private GameObject cart;
     //private Item[] potentialItems = { new Orange(), new CoughSyrup(), new Laptop(), new Milk(), new Steak(), new Shampoo() };
     // The list of items the NPC needs.
     private CharacterShoppingList shoppingList;
@@ -47,6 +47,8 @@ public class NPC : MonoBehaviour
         inventory = GetComponent<CharacterInventory>();
 
         currentBehavior = gameObject.AddComponent<NPCshopping>();
+
+        cart = transform.GetChild(0).gameObject;
     }
 
     private void OnDisable()

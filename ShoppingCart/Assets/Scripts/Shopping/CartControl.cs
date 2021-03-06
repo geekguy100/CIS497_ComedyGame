@@ -36,7 +36,7 @@ public class CartControl : MonoBehaviour
         cart.transform.rotation = transform.rotation;
 
         //Set the cart's position to the character's position but forward cartOffset units.
-        Vector3 pos = new Vector3(transform.position.x, cart.transform.position.y, transform.position.z) + (transform.forward * cartOffset);
+        Vector3 pos = new Vector3(transform.position.x, 0f, transform.position.z) + (transform.forward * cartOffset);
         cart.transform.position = pos;
 
         joint = gameObject.AddComponent<FixedJoint>();

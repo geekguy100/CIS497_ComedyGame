@@ -37,8 +37,27 @@ public class NPCcheckout : NPCBehavior
 
     public override void NPCaction(NPC npc, NavMeshAgent agent, GameObject cart, Quaternion cartLocalRot, Vector3 cartLocalPos, Vector3 whereIsMyCart, bool hasDestination, int listIndex, ItemContainerData[] shoppingListArray, CharacterInventory inventory, NPC.State myState)
     {
+        // If the item ran out of stock, head towards the exit.
+        if (shoppingData.OutOfStock && destination == null)
+        {
+            Debug.Log(gameObject.name + ": item needed it out of stock, so he'll head to the exit.");
+            destination = GameObject.FindGameObjectWithTag("Finish").transform;
+
+            if (destination != null)
+                agent.SetDestination(destination.position);
+            else
+                Debug.LogError(gameObject.name + ": cannot find the exit???");
+        }
+        // If the NPC knows to find the exit, check to see how close he is. Destroy him when he's there.
+        else if (shoppingData.OutOfStock && destination != null)
+        {
+            if (Vector3.Distance(transform.position, destination.position) < 1f)
+            {
+                Destroy(gameObject);
+            }
+        }
         // If we haven't checked out yet and don't have a destination, set it to the nearest checkout location.
-        if (!shoppingData.CheckedOut && destination == null)
+        else if (!shoppingData.CheckedOut && destination == null)
         {
             Debug.Log(gameObject.name + ": wants to checkout but has no checkout location. Finding one now...");
             destination = ShoppingHelper.GetNearestCheckoutLocation(transform).transform;

@@ -43,7 +43,7 @@ public class NPCshopping : NPCBehavior
     private void Initialize()
     {
         // If the NPC is done shopping, don't run.
-        if (shoppingData.DoneShopping)
+        if (shoppingData.DoneShopping || shoppingData.OutOfStock)
             return;
 
         print("~~~~INITIALIZING~~~~");
@@ -76,8 +76,9 @@ public class NPCshopping : NPCBehavior
         else
         {
             Debug.LogWarning(gameObject.name + ": No items of type " + itemData.ItemType + " left in the store... NPC is done shopping.");
-            shoppingData.DoneShopping = true;
-            agent.SetDestination(GameObject.FindGameObjectWithTag("Finish").transform.position);
+            shoppingData.OutOfStock = true;
+            npc.myState = NPC.State.Checkout;
+            //agent.SetDestination(GameObject.FindGameObjectWithTag("Finish").transform.position);
         }
     }
 
@@ -86,7 +87,7 @@ public class NPCshopping : NPCBehavior
         if (this.npc == null)
             this.npc = npc;
 
-        if (shoppingData.DoneShopping)
+        if (shoppingData.DoneShopping || shoppingData.OutOfStock)
             return;
 
         // Initialization
