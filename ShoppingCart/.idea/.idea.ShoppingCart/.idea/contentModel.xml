@@ -31,6 +31,7 @@
         <e p="Scripts" t="Include">
           <e p="AdditiveSceneLoader.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
+          <e p="DashSlider.cs" t="Include" />
           <e p="EventManager.cs" t="Include" />
           <e p="FranksScripts" t="Include">
             <e p="Cart.cs" t="Include" />
@@ -49,7 +50,9 @@
           <e p="MainMenu.cs" t="Include" />
           <e p="MouseLook.cs" t="Include" />
           <e p="MusicManager.cs" t="Include" />
+          <e p="NPCCart.cs" t="Include" />
           <e p="NPCShoppingData.cs" t="Include" />
+          <e p="NPCstunned.cs" t="Include" />
           <e p="PickupWindow.cs" t="Include" />
           <e p="PlayerCartControl.cs" t="Include" />
           <e p="PlayerInput.cs" t="Include" />
