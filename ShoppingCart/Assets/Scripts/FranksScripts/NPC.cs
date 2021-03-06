@@ -100,12 +100,6 @@ public class NPC : MonoBehaviour
 
         PerformNPCAction();
 
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            print("PENIS");
-            myState = State.Stunned;
-        }
-
         switch (myState)
         {
             case State.Shopping:
