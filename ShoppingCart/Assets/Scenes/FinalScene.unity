@@ -197,6 +197,24 @@ Transform:
   m_Father: {fileID: 8737271167190867925}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &243621537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 243621537, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
+  m_PrefabInstance: {fileID: 508726921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &243621540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243621537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35cba73839991f74fa67cad44feb4e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 345260790}
 --- !u!1 &243674283
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  dashDuration: 1
+  dashDuration: 0.5
   dashCooldown: 4
 --- !u!114 &345260791
 MonoBehaviour:
@@ -531,6 +549,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1922637369, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922637369, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5444104567722956706, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
       propertyPath: m_Name
       value: Canvas (Play)

@@ -7,6 +7,7 @@
 *****************************************************************************/
 using UnityEngine;
 using System.Collections;
+using System;
 
 [RequireComponent(typeof(Rigidbody))]
 public class CharacterMovement : MonoBehaviour
@@ -26,9 +27,15 @@ public class CharacterMovement : MonoBehaviour
 
     private Rigidbody rb;
 
+    public event Action<float> OnDashUpdate;
+
+    private float dashTime;
+
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        dashTime = dashCooldown;
     }
 
     public void Move(Vector3 direction)
@@ -52,6 +59,15 @@ public class CharacterMovement : MonoBehaviour
         StartCoroutine(PerformDash());
     }
 
+    private void Update()
+    {
+        if (!performingDash && dashTime < dashCooldown)
+        {
+            dashTime += Time.deltaTime;
+            OnDashUpdate?.Invoke(dashTime / dashCooldown);
+        }
+    }
+
     /// <summary>
     /// Perform the dash.
     /// </summary>
@@ -61,6 +77,8 @@ public class CharacterMovement : MonoBehaviour
 
         performingDash = true;
         rb.AddForce(transform.forward * 100f, ForceMode.Impulse);
+        dashTime = 0;
+        OnDashUpdate?.Invoke(dashTime);
 
         yield return new WaitForSeconds(dashDuration);
         performingDash = false;
