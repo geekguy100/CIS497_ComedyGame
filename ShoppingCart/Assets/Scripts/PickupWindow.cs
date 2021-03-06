@@ -113,7 +113,8 @@ public class PickupWindow : MonoBehaviour
             //nearbyItems[selection].transform.position = cart.transform.position + new Vector3(0, 1, 0);
             //nearbyItems[selection].isInPlayerCart = true;
             nearbyItems[selection].Interact(playerInventory);
-            sfx.source.PlayOneShot(sfx.pickup);
+            if (sfx != null)
+                sfx.source.PlayOneShot(sfx.pickup);
             if (nearbyItems[selection].GetData().Quantity <= 0)
             {
                 nearbyItems.Remove(nearbyItems[selection]);

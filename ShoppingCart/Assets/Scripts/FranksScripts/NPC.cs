@@ -21,7 +21,7 @@ public class NPC : MonoBehaviour
     private CharacterInventory inventory;
 
 
-    public enum State { Shopping, RetreivingCart, PickingUpCart, Checkout}
+    public enum State { Shopping, RetreivingCart, PickingUpCart, Checkout, Stunned}
     public State myState { get; set; }
     public int listIndex { get; set; }
     public bool hasDestination { get; set; }
@@ -95,7 +95,14 @@ public class NPC : MonoBehaviour
         if (!setup)
             return;
 
+
         PerformNPCAction();
+
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            print("PENIS");
+            myState = State.Stunned;
+        }
 
         switch (myState)
         {
@@ -143,6 +150,14 @@ public class NPC : MonoBehaviour
 
                 break;
 
+            case State.Stunned:
+                if (gameObject.GetComponent<NPCstunned>() == null)
+                {
+                    Destroy(GetComponent<NPCBehavior>());
+                    currentBehavior = gameObject.AddComponent<NPCstunned>();
+                }
+
+                break;
             default:
 
                 Debug.LogError("The NPCs state machine broke :(");

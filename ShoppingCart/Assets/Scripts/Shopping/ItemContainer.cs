@@ -32,6 +32,8 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
     [Tooltip("The item type that this container holds")]
     [SerializeField] private string itemType;
 
+    private bool isLooseItem = false;
+
     // The minimum amount of items present in this item container.
     private int minQuantity = 1;
 
@@ -58,6 +60,16 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
         EventManager.OnGameStart -= OnGameStart;
     }
     #endregion
+    
+    /// <summary>
+    /// Initializes the ItemContainer. Used for spawning in loose items on the ground.
+    /// </summary>
+    public void Init(string itemType, int currentQuantity)
+    {
+        this.itemType = itemType;
+        this.currentQuantity = currentQuantity;
+        isLooseItem = true;
+    }
 
     private void OnGameStart()
     {
@@ -69,7 +81,8 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
             return;
         }
 
-        // Calculate the quantity of items this container will hold.
+
+        // Set the amount of items this itemContainer will hold.
         currentQuantity = Random.Range(minQuantity, maxQuantity + 1);
 
         // Make sure the event manager knows the number of items in this cart.
@@ -78,8 +91,12 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
             EventManager.ItemSpawned(System.Type.GetType(itemType));
         }
 
-        visual = Instantiate(visualPrefab, transform.position, visualPrefab.transform.rotation);
-        visual.gameObject.name = itemType;
+        if (visualPrefab != null)
+        {
+            visual = Instantiate(visualPrefab, transform.position, visualPrefab.transform.rotation);
+            visual.gameObject.name = itemType;
+        }
+
     }
 
     /// <summary>
@@ -95,13 +112,16 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
             --currentQuantity;
             Debug.Log(gameObject.name + ": ItemContainer quantity of " + itemType + " now at " + currentQuantity);
             senderList.AddItem(System.Type.GetType(itemType));
-            EventManager.ItemTaken(System.Type.GetType(itemType));
+
+            if(!isLooseItem)
+                EventManager.ItemTaken(System.Type.GetType(itemType));
         }
 
-        // Destroy the visual prefab so the players know they cannot access this item container.
-        if (currentQuantity <= 0 && visual != null)
+        // Destroy the visual prefab and this game object so the players know they cannot access this item container.
+        if (currentQuantity <= 0)
         {
-            Destroy(visual);
+            if (visual != null)
+                Destroy(visual);
             Destroy(gameObject);
         }
     }
