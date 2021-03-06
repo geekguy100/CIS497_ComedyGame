@@ -16,6 +16,7 @@ public class PlayerCartControl : MonoBehaviour
     private bool canPickupCart = true;
     private bool canAbandonCart = false;
     private Coroutine lastCoroutine = null;
+    private GameObject cart = null;
 
     private void Awake()
     {
@@ -24,8 +25,21 @@ public class PlayerCartControl : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && cartControl.HasCart() && canAbandonCart)
+        if (Input.GetKeyDown(KeyCode.E) && cart != null && canPickupCart)
         {
+            canPickupCart = false;
+
+            if (lastCoroutine != null)
+                StopCoroutine(lastCoroutine);
+
+            cartControl.AssignCart(cart);
+
+            lastCoroutine = StartCoroutine(ResetAbandonment());
+            didAttach = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.E) && cartControl.HasCart() && canAbandonCart)
+        {
+            canAbandonCart = false;
             if (lastCoroutine != null)
                 StopCoroutine(lastCoroutine);
 
@@ -34,41 +48,38 @@ public class PlayerCartControl : MonoBehaviour
             // To make sure we won't immediately pick up another cart, we
             // start this coroutine.
             lastCoroutine = StartCoroutine(ResetPickup());
-
         }
     }
 
-    private void OnTriggerStay(Collider col)
+    private void OnTriggerEnter(Collider col)
     {
-        if (Input.GetKey(KeyCode.E) && col.gameObject.CompareTag("Cart") && !cartControl.HasCart() && canPickupCart)
-        {
-            if (lastCoroutine != null)
-                StopCoroutine(lastCoroutine);
+        if (col.CompareTag("Cart"))
+            cart = col.gameObject;
+    }
 
-            cartControl.AssignCart(col.gameObject);
-
-            lastCoroutine = StartCoroutine(ResetAbandonment());
-            didAttach = true;
-        }
+    private void OnTriggerExit(Collider col)
+    {
+        if (col.CompareTag("Cart"))
+            cart = null;
     }
 
     private void OnJointBreak(float breakForce)
     {
         canPickupCart = true;
+        canAbandonCart = false;
+        cart = null;
     }
 
     private IEnumerator ResetPickup()
     {
         yield return new WaitForSeconds(0.2f);
         canPickupCart = true;
-        canAbandonCart = false;
     }
 
     private IEnumerator ResetAbandonment()
     {
         yield return new WaitForSeconds(0.2f);
         canAbandonCart = true;
-        canPickupCart = false;
     }
 
 }
