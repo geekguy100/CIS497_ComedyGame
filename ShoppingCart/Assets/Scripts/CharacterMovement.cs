@@ -23,7 +23,8 @@ public class CharacterMovement : MonoBehaviour
 
     public void Move(Vector3 direction)
     {
-        rb.MovePosition(rb.position + direction * movementSpeed * Time.fixedDeltaTime);
+        //rb.MovePosition(rb.position + direction * movementSpeed * Time.fixedDeltaTime);
+        rb.velocity = new Vector3(direction.x * movementSpeed, rb.velocity.y, direction.z * movementSpeed);
     }
 
 }

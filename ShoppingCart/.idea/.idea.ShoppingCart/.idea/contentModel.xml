@@ -36,6 +36,7 @@
             <e p="Cart.cs" t="Include" />
             <e p="NPC.cs" t="Include" />
             <e p="NPCBehavior.cs" t="Include" />
+            <e p="NPCcheckout.cs" t="Include" />
             <e p="NPCresetting.cs" t="Include" />
             <e p="NPCretrieving.cs" t="Include" />
             <e p="NPCshopping.cs" t="Include" />
@@ -45,8 +46,10 @@
           <e p="ItemCollection.cs" t="Include" />
           <e p="ItemFactory.cs" t="Include" />
           <e p="ItemSpawner.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
           <e p="MouseLook.cs" t="Include" />
           <e p="MusicManager.cs" t="Include" />
+          <e p="NPCShoppingData.cs" t="Include" />
           <e p="PickupWindow.cs" t="Include" />
           <e p="PlayerCartControl.cs" t="Include" />
           <e p="PlayerInput.cs" t="Include" />
