@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="93b9329c-e6cd-4dc5-9d12-17f0299b5274" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NathanScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NathanScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/objects/ceiling and wall/store front wall.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/objects/ceiling and wall/store front wall.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +44,7 @@
         <option value="$PROJECT_DIR$/Assets/Art/Shaders/psx-unlit.shader" />
         <option value="$PROJECT_DIR$/Assets/Art/Shaders/psx-vertexlit.shader" />
         <option value="$PROJECT_DIR$/Assets/Art/fonts/zdepth Text.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
       </list>
     </option>
   </component>
@@ -76,6 +75,7 @@
       <workItem from="1614647536982" duration="5871000" />
       <workItem from="1614892555416" duration="652000" />
       <workItem from="1614893291541" duration="255000" />
+      <workItem from="1614997890331" duration="420000" />
     </task>
     <servers />
   </component>
