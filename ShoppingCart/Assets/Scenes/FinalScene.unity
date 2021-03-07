@@ -901,6 +901,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 795171383}
     m_Modifications:
+    - target: {fileID: 1652653900, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: stunMagnitude
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 193186793256760658, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1226,7 +1230,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf9854c8551c4c4c87bccb0dbf53b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stunMagnitude: 6
 --- !u!1 &951346703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,6 +1267,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 795171383}
     m_Modifications:
+    - target: {fileID: 1652653900, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: stunMagnitude
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 563721111925458009, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1864,6 +1871,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 795171383}
     m_Modifications:
+    - target: {fileID: 1652653900, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: stunMagnitude
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4811152011026800771, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2471,6 +2482,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 795171383}
     m_Modifications:
+    - target: {fileID: 1652653900, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: stunMagnitude
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4811152011026800771, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2540,6 +2555,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 795171383}
     m_Modifications:
+    - target: {fileID: 1652653900, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
+      propertyPath: stunMagnitude
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 563721111925458009, guid: 5a56c23da6d6aa74a9bd6564993042cb, type: 3}
       propertyPath: m_Enabled
       value: 0
