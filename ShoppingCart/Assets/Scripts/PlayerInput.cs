@@ -12,6 +12,7 @@ public class PlayerInput : MonoBehaviour
 {
     //The CharacterMovement script to handle moving the character.
     private CharacterMovement characterMovement;
+    public PlayerCartControl playerCartControl;
 
     //The player's input.
     private Vector3 input = Vector3.zero;
@@ -19,6 +20,7 @@ public class PlayerInput : MonoBehaviour
     private void Awake()
     {
         characterMovement = GetComponent<CharacterMovement>();
+        playerCartControl = GetComponent<PlayerCartControl>();
     }
 
     void Update()
@@ -28,7 +30,7 @@ public class PlayerInput : MonoBehaviour
         input = new Vector3(h, 0, v);
         input = transform.TransformDirection(input);
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && playerCartControl.didAttach)
             characterMovement.Dash();
     }
 

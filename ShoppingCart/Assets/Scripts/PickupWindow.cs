@@ -8,6 +8,7 @@ public class PickupWindow : MonoBehaviour
 {
     private PlayerInteraction playerInteraction;
     private CharacterInventory playerInventory;
+    public PlayerCartControl playerCartControl;
     public SFXManager sfx;
     //public GameObject cart;
     public List<ItemContainer> nearbyItems;
@@ -114,7 +115,7 @@ public class PickupWindow : MonoBehaviour
             cursor.rectTransform.anchoredPosition += new Vector2(0, 80);
             Debug.Log(selection);
         }
-        if (Input.GetKeyDown(KeyCode.F) && nearbyItems.Count != 0)
+        if (Input.GetKeyDown(KeyCode.F) && nearbyItems.Count != 0 && playerCartControl.didAttach)
         {
             //nearbyItems[selection].transform.position = cart.transform.position + new Vector3(0, 1, 0);
             //nearbyItems[selection].isInPlayerCart = true;

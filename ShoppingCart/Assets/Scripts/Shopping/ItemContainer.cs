@@ -39,7 +39,8 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
     private int minQuantity = 1;
 
     // The maximum amount of items present in this item container.
-    private int maxQuantity = 10;
+    //private int maxQuantity = 10; //This resulted in many runs where it was impossible to lose, tried to tone down a bit, but needs playtesting
+    private int maxQuantity = 7;
 
     // The amount of items currently present in this item container.
     private int currentQuantity = 0;

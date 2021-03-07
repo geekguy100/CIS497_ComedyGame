@@ -51,6 +51,34 @@ public class NPC : MonoBehaviour
         cart = transform.GetChild(0).gameObject;
     }
 
+    private void ChooseColor()
+    {
+        Color c = Color.white;
+        int i = Random.Range(0, 5);
+        switch (i)
+        {
+            case 0:
+                c = Color.red;
+                break;
+            case 1:
+                c = Color.green;
+                break;
+            case 2:
+                c = Color.blue;
+                break;
+            case 3:
+                c = Color.black;
+                break;
+            case 4:
+                c = Color.yellow;
+                break;
+            default:
+                break;
+        }
+        this.GetComponent<MeshRenderer>().material.color = c;
+        Debug.Log("d");
+    }
+
     private void OnDisable()
     {
         shoppingList.OnListPopulated -= Setup;
@@ -60,6 +88,14 @@ public class NPC : MonoBehaviour
     {
         //move to GM later, makes NPC and carts not collide1
         Physics.IgnoreLayerCollision(6, 7, true);
+
+        ChooseColor();
+
+        int num = Random.Range(0, 2);
+        if (num == 0)
+            StartCoroutine(SFXManager.instance.Play(SFXManager.instance.hello));
+        else
+            StartCoroutine(SFXManager.instance.Play(SFXManager.instance.huh));
     }
 
     /// <summary>

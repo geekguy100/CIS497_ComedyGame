@@ -48,6 +48,7 @@ public class PlayerCartControl : MonoBehaviour
             // To make sure we won't immediately pick up another cart, we
             // start this coroutine.
             lastCoroutine = StartCoroutine(ResetPickup());
+            didAttach = false;
         }
     }
 

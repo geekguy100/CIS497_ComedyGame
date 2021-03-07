@@ -18,13 +18,17 @@ public class Timer : MonoBehaviour
     private Color green = new Color32(41, 204, 84, 255);
     private Color red = new Color32(204, 55, 41, 255);
     private Color blue = new Color32(22, 166, 255, 255);
+    private Color black = new Color32(255, 255, 255, 255);
 
     private bool gameWon = false;
+    private bool gameOver = false;
     [SerializeField] private Animator anim;
 
     private void OnEnable()
     {
         EventManager.OnGameWin += () => { gameWon = true; };
+        EventManager.OnGameWin += () => { gameOver = true; };
+        EventManager.OnGameLost += () => { gameOver = true; };
         EventManager.OnGameWin += () => { anim.SetTrigger("Expand"); };
         EventManager.OnGameLost += () => { anim.SetTrigger("Expand"); };
         StartCoroutine(ColorSwap());
@@ -32,14 +36,18 @@ public class Timer : MonoBehaviour
 
     private void Update()
     {
-        if (!gameWon)
+        if (!gameOver)
         {
             time += Time.deltaTime;
             timerText.text = "Time: " + Math.Round(time, 2);
         }
-        else
+        else if (gameWon)
         {
             timerText.color = blue;
+        }
+        else
+        {
+            timerText.color = black;
         }
     }
 

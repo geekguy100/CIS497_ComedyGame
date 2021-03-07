@@ -41,7 +41,7 @@ public class SFXManager : MonoBehaviour
 
     public IEnumerator Play(AudioClip c)
     {
-        int r = Random.Range(10, 30);
+        int r = Random.Range(15, 60);
         yield return new WaitForSeconds(r);
         source.PlayOneShot(c);
         yield return new WaitForSeconds(r);

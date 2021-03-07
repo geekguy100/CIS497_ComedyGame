@@ -87,7 +87,7 @@ public class TutorialUI : MonoBehaviour
                 break;
             case 1:
                 text.text = "Use WASD to move.\n";
-                if (Input.GetKeyDown(KeyCode.W))
+                if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.F))
                 {
                     StartCoroutine(Delay());
                     action++;
@@ -95,29 +95,37 @@ public class TutorialUI : MonoBehaviour
                 break;
             case 2:
                 text.text = "Press E to attach/detach from your cart.\n";
-                if (pcc.didAttach)
+                if (pcc.didAttach || Input.GetKeyDown(KeyCode.F))
                 {
                     StartCoroutine(Delay());
                     action++;
                 }
                 break;
             case 3:
-                text.text = "The window on the right shows nearby items.\nWalk near something and press F to pick it up.\nScroll with the mouse to select which item to pick up.\n";
+                text.text = "The window on the right shows nearby items.\nWalk near something while holding your cart and press F to pick it up.\nScroll with the mouse to select which item to pick up.\n";
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     StartCoroutine(Delay());
                     action++;
                 }
                 break;
-            case 4: 
-                text.text = "Get all of the items on your list then head to checkout and press F. Press F now to dismiss.\n";
+            case 4:
+                text.text = "Press left shift to dash.\nDashing into other shoppers makes them drop their items.\n";
+                if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.F))
+                {
+                    StartCoroutine(Delay());
+                    action++;
+                }
+                break;
+            case 5: 
+                text.text = "Get all of the items on your list then head to checkout and press F.\nIf another shopper checks out with an item you need, you lose.\nPress F now to dismiss.\n";
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     StartCoroutine(Delay());
                     action++;
                 }
                 break;
-            case 5:
+            case 6:
                 text.enabled = false;
                 doTutorial = false;
                 break;

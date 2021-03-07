@@ -29,11 +29,12 @@ public class NPCstunned : NPCBehavior
 
     private void Start()
     {
-        int num = Random.Range(0, 2);
+        /*int num = Random.Range(0, 2);
         if (num == 0)
             SFXManager.instance.source.PlayOneShot(SFXManager.instance.hit);
         else
-            SFXManager.instance.source.PlayOneShot(SFXManager.instance.error);
+            SFXManager.instance.source.PlayOneShot(SFXManager.instance.error);*/
+        SFXManager.instance.source.PlayOneShot(SFXManager.instance.hit);
     }
 
     // NPC is stunned for a few seconds. He just sits there while stunned.
@@ -64,7 +65,7 @@ public class NPCstunned : NPCBehavior
                 inventory.RemoveItem(System.Type.GetType(inventoryItems[i].ItemType));
             }
         }
-
+        SFXManager.instance.source.PlayOneShot(SFXManager.instance.drop);
         // All items have been removed from the NPCs inventory.
         // Start the stun cooldown.
         StartCoroutine(StunCooldown(npc));

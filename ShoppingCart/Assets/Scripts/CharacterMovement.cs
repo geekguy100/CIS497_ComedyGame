@@ -75,6 +75,8 @@ public class CharacterMovement : MonoBehaviour
     {
         dashComplete = false;
 
+        SFXManager.instance.source.PlayOneShot(SFXManager.instance.ram, .7f);
+
         performingDash = true;
         rb.AddForce(transform.forward * 100f, ForceMode.Impulse);
         dashTime = 0;
