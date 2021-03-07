@@ -78,6 +78,8 @@ public class PickupWindow : MonoBehaviour
 
         if (nearbyItems.Contains(itemContainer))
         {
+            selection = 0;
+            cursor.rectTransform.anchoredPosition = cursorPos;
             nearbyItems.Remove(itemContainer);
             itemContainer.OnQuantityReduced -= UpdateDisplay;
             UpdateDisplay();

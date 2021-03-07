@@ -86,9 +86,13 @@ public class NPCshopping : NPCBehavior
     {
         if (this.npc == null)
             this.npc = npc;
-
         if (shoppingData.DoneShopping || shoppingData.OutOfStock)
+        {
+            npc.myState = NPC.State.Checkout;
             return;
+        }
+
+
 
         // Initialization
         if (destination == null)

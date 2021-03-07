@@ -1,7 +1,7 @@
 /*****************************************************************************
 // File Name :         NPCcheckout.cs
 // Author :            Kyle Grenier
-// Creation Date :     #CREATIONDATE#
+// Creation Date :     03/05/2021
 //
 // Brief Description : NPC behavior for checking out items -- this behavior is set when the NPC has collected all items.
 *****************************************************************************/
