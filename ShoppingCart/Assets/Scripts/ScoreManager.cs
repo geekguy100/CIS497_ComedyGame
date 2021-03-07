@@ -14,6 +14,7 @@ public class ScoreManager : MonoBehaviour
 
     private bool gameOver = false;
 
+
     private void Awake()
     {
         // Initialize the player's shopping list and inventory.

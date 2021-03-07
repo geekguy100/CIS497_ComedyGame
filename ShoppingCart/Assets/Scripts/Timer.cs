@@ -20,10 +20,13 @@ public class Timer : MonoBehaviour
     private Color blue = new Color32(22, 166, 255, 255);
 
     private bool gameWon = false;
+    [SerializeField] private Animator anim;
 
     private void OnEnable()
     {
         EventManager.OnGameWin += () => { gameWon = true; };
+        EventManager.OnGameWin += () => { anim.SetTrigger("Expand"); };
+        EventManager.OnGameLost += () => { anim.SetTrigger("Expand"); };
         StartCoroutine(ColorSwap());
     }
 
