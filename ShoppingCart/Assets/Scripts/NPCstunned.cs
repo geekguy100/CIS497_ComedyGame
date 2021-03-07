@@ -27,6 +27,15 @@ public class NPCstunned : NPCBehavior
         agent = GetComponent<NavMeshAgent>();
     }
 
+    private void Start()
+    {
+        int num = Random.Range(0, 2);
+        if (num == 0)
+            SFXManager.instance.source.PlayOneShot(SFXManager.instance.hit);
+        else
+            SFXManager.instance.source.PlayOneShot(SFXManager.instance.error);
+    }
+
     // NPC is stunned for a few seconds. He just sits there while stunned.
     // After stun duration, all items go back into his inventory.
     public override void NPCaction(NPC npc, NavMeshAgent agent, GameObject cart, Quaternion cartLocalRot, Vector3 cartLocalPos, Vector3 whereIsMyCart, bool hasDestination, int listIndex, ItemContainerData[] shoppingListArray, CharacterInventory inventory, NPC.State myState)

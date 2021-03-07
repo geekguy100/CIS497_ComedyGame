@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class SFXManager : MonoBehaviour
 {
+    #region ---Singleton---
+    public static SFXManager instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
+    #endregion
+
     public AudioSource source;
     public AudioClip win;
     public AudioClip lose;
@@ -18,13 +30,13 @@ public class SFXManager : MonoBehaviour
     private void OnEnable()
     {
         EventManager.OnGameWin += () => { source.PlayOneShot(win); };
+        EventManager.OnGameLost += () => { source.PlayOneShot(lose); };
     }
 
     // Start is called before the first frame update
     void Start()
     {
         source = GetComponent<AudioSource>();
-        StartCoroutine(Play(error));
     }
 
     public IEnumerator Play(AudioClip c)
