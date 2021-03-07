@@ -43,6 +43,7 @@ public class TutorialUI : MonoBehaviour
             pauseMenu.SetActive(true);
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
         else
         {
@@ -50,6 +51,7 @@ public class TutorialUI : MonoBehaviour
             pauseMenu.SetActive(false);
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 
@@ -57,6 +59,12 @@ public class TutorialUI : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Restart()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public IEnumerator Delay()
