@@ -59,14 +59,18 @@ public class ScoreManager : MonoBehaviour
             }
 
             // For each NPC with the item we need, set its arrow active.
-            foreach(GameObject npc in npcsWithItem)
+            foreach (GameObject npc in npcsWithItem)
             {
                 // The NPC's arrow is not active, so we'll activate it.
                 if (!npc.transform.GetChild(1).gameObject.activeInHierarchy)
                     npc.transform.GetChild(1).gameObject.SetActive(true);
+            }
 
-                // The NPC no longer has this item on them, so we'll disable the arrow.
-                else if (npc.GetComponent<CharacterInventory>().GetQuantity(itemType) < 1)
+            // Deactivate the arrow if it is active and the NPC does not have that item on them.
+            foreach (GameObject npc in GameObject.FindGameObjectsWithTag("NPC"))
+            {
+                CharacterInventory npcInventory = npc.GetComponent<CharacterInventory>();
+                if (npcInventory.GetQuantity(itemType) <= 0 && npc.transform.GetChild(1).gameObject.activeInHierarchy)
                     npc.transform.GetChild(1).gameObject.SetActive(false);
             }
         }
