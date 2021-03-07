@@ -15,6 +15,11 @@ public class SFXManager : MonoBehaviour
     public AudioClip hit;
     public AudioClip huh;
 
+    private void OnEnable()
+    {
+        EventManager.OnGameWin += () => { source.PlayOneShot(win); };
+    }
+
     // Start is called before the first frame update
     void Start()
     {

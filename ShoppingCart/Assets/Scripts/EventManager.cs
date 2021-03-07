@@ -14,6 +14,7 @@ public static class EventManager
     public static event Action OnGameStart;
     public static event Action OnShoppingCenterFilled;
     public static event Action OnGameWin;
+    public static event Action OnGameLost;
 
 
     /// <summary>
@@ -51,5 +52,10 @@ public static class EventManager
     public static void GameWin()
     {
         OnGameWin?.Invoke();
+    }
+
+    public static void GameLost()
+    {
+        OnGameLost?.Invoke();
     }
 }

@@ -66,4 +66,26 @@ public static class ShoppingHelper
             .OrderBy(t => Vector3.Distance(character.position, t.transform.position))
             .FirstOrDefault();
     }
+
+    /// <summary>
+    /// Gets an NPC that has a type of item in their inventory.
+    /// </summary>
+    /// <param name="itemType">The type of item </param>
+    /// <returns>An NPC that has an item of the given type.</returns>
+    public static GameObject[] GetNPCsWithItemType(System.Type itemType)
+    {
+        // Invalid item type. Return null.
+        if (!IsOfTypeItem(itemType))
+            return null;
+
+        GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
+
+        // There are no NPCs left in the store, so return null!
+        if (npcs.Length <= 0)
+            return null;
+
+        return npcs
+            .Where(t => t.GetComponent<CharacterInventory>().GetQuantity(itemType) > 0)
+            .ToArray();
+    }
 }

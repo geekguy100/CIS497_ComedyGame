@@ -11,7 +11,7 @@ using System;
 public class CharacterInteraction : MonoBehaviour
 {
     [Tooltip("The ShoppingList to act as the sender when interacting with an IInteractable.")]
-    [SerializeField] private ShoppingList listToSend;
+    /*[SerializeField]*/ private ShoppingList listToSend;
 
     public event Action<IItemInteractable> OnInteracted;
 

@@ -9,14 +9,6 @@ using UnityEngine;
 
 public class Checkout : MonoBehaviour
 {
-    [SerializeField] private GameObject winText;
-    public SFXManager sfx;
-
-    private void Awake()
-    {
-        //sfx = GameObject.FindGameObjectWithTag("SFXManager").GetComponent<SFXManager>();
-    }
-
     /// <summary>
     /// Checks to see if the character has all of the items they need;
     /// compares the items in the inventory to the items on their shopping list.
@@ -44,6 +36,12 @@ public class Checkout : MonoBehaviour
 
         string result = canCheckOut ? (inventory.gameObject.name + " checks out.") : (inventory.gameObject.name + " cannot check out...");
         print(result);
+
+        // If the player checks out, win!
+        if (canCheckOut && inventory.CompareTag("Player"))
+        {
+            EventManager.GameWin();
+        }
 
         //if (canCheckOut)
         //{

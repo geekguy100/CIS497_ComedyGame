@@ -15,6 +15,7 @@ TagManager:
   - SFXManager
   - NPC
   - CheckoutLocation
+  - PlayerShoppingList
   layers:
   - Default
   - TransparentFX
