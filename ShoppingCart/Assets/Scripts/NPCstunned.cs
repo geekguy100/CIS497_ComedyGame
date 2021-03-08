@@ -79,7 +79,7 @@ public class NPCstunned : NPCBehavior
         // After NPC is stunned, resume shopping -- he'll go pick up any loose items by nature.
         shoppingData.Index = 0;
         agent.isStopped = false;
-        npc.myState = NPC.State.Shopping;
+        npc.myState = NPC.State.PickingUpCart;// changed from shopping
     }
 
     // In case this script is disabled early (by another behavior taking priority),
