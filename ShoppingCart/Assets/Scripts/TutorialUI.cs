@@ -72,6 +72,12 @@ public class TutorialUI : MonoBehaviour
         yield return new WaitForSeconds(2f);
     }
 
+    public IEnumerator LongDelay()
+    {
+        yield return new WaitForSeconds(5f);
+        PauseGame();
+    }
+
     public void Tutorial()
     {
         switch (action)
@@ -102,7 +108,7 @@ public class TutorialUI : MonoBehaviour
                 }
                 break;
             case 3:
-                text.text = "The window on the right shows nearby items.\nWalk near something while holding your cart and press F to pick it up.\nScroll with the mouse to select which item to pick up.\n";
+                text.text = "The window on the right shows nearby items.\nWalk near the blue cubes while holding your cart and press F to pick up.\nScroll with the mouse to select which item to pick up.\n";
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     StartCoroutine(Delay());
@@ -110,7 +116,7 @@ public class TutorialUI : MonoBehaviour
                 }
                 break;
             case 4:
-                text.text = "Press left shift to dash.\nDashing into other shoppers makes them drop their items.\n";
+                text.text = "On the bottom left is your Dash Meter.\n When it is full, press left shift to dash.\nDashing into other shoppers makes them drop their items.\n";
                 if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.F))
                 {
                     StartCoroutine(Delay());
@@ -118,7 +124,7 @@ public class TutorialUI : MonoBehaviour
                 }
                 break;
             case 5: 
-                text.text = "Get all of the items on your list then head to checkout and press F.\nIf another shopper checks out with an item you need, you lose.\nPress F now to dismiss.\n";
+                text.text = "Get all of the items on your list then head to checkout.\nGo quickly, supplies are limited.\nIf another shopper checks out with an item you need, you lose.\nPress F now to dismiss.\n";
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     StartCoroutine(Delay());
@@ -126,11 +132,24 @@ public class TutorialUI : MonoBehaviour
                 }
                 break;
             case 6:
+                text.text = "You can press P to pause at any time.\n";
+                if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.F))
+                {
+                    StartCoroutine(Delay());
+                    action++;
+                }
+                break;
+            case 7:
                 text.enabled = false;
                 doTutorial = false;
                 break;
             default:
                 break;
         }
+    }
+
+    private void OnEnable()
+    {
+        EventManager.OnGameWin += () => { StartCoroutine(LongDelay()); };
     }
 }
