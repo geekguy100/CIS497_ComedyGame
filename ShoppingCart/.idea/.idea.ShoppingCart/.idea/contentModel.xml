@@ -17,6 +17,7 @@
             <e p="mirror_vertexlit.shader" t="Include" />
             <e p="MirrorReflection.cs" t="Include" />
             <e p="psx-unlit.shader" t="Include" />
+            <e p="psx-vertexlit no z cull.shader" t="Include" />
             <e p="psx-vertexlit.shader" t="Include" />
             <e p="reflective" t="Include">
               <e p="psx-unlit-add.shader" t="Include" />
@@ -56,6 +57,7 @@
           <e p="PickupWindow.cs" t="Include" />
           <e p="PlayerCartControl.cs" t="Include" />
           <e p="PlayerInput.cs" t="Include" />
+          <e p="ScoreManager.cs" t="Include" />
           <e p="SFXManager.cs" t="Include" />
           <e p="Shopping" t="Include">
             <e p="CartControl.cs" t="Include" />
@@ -73,6 +75,7 @@
               <e p="Candy.cs" t="Include" />
               <e p="Chicken.cs" t="Include" />
               <e p="Chip.cs" t="Include" />
+              <e p="Console.cs" t="Include" />
               <e p="Cookie.cs" t="Include" />
               <e p="CoughSyrup.cs" t="Include" />
               <e p="DogToy.cs" t="Include" />
@@ -143,6 +146,7 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
+        <e p="UIManager.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
