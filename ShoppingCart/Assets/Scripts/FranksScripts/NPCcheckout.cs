@@ -40,7 +40,6 @@ public class NPCcheckout : NPCBehavior
         // If the item ran out of stock, head towards the exit.
         if (shoppingData.OutOfStock && destination == null)
         {
-            SFXManager.instance.source.PlayOneShot(SFXManager.instance.huh);
             Debug.Log(gameObject.name + ": item needed it out of stock, so he'll head to the exit.");
             destination = GameObject.FindGameObjectWithTag("Finish").transform;
 
@@ -88,7 +87,6 @@ public class NPCcheckout : NPCBehavior
         {
             if (destination == null)
             {
-                SFXManager.instance.source.PlayOneShot(SFXManager.instance.hello);
                 destination = GameObject.FindGameObjectWithTag("Finish").transform;
                 agent.SetDestination(destination.position);
             }

@@ -108,7 +108,7 @@ public class TutorialUI : MonoBehaviour
                 }
                 break;
             case 3:
-                text.text = "The window on the right shows nearby items.\nWalk near the blue cubes while holding your cart and press F to pick up.\nScroll with the mouse to select which item to pick up.\n";
+                text.text = "Walking near a blue cube will show what items are inside.\nPress F while attached to your cart to pick up.\nScroll with the mouse to select which item to pick up.\n";
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     StartCoroutine(Delay());
@@ -116,7 +116,7 @@ public class TutorialUI : MonoBehaviour
                 }
                 break;
             case 4:
-                text.text = "On the bottom left is your Dash Meter.\n When it is full, press left shift to dash.\nDashing into other shoppers makes them drop their items.\n";
+                text.text = "On the bottom left is your Dash Meter.\n When it is full, press left shift to Dash.\nDashing into other shoppers makes them drop their items.\n";
                 if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.F))
                 {
                     StartCoroutine(Delay());

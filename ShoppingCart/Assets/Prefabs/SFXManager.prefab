@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 0}
   win: {fileID: 8300000, guid: 452b2d09ec841ae41b00cfdb1d82c936, type: 3}
-  lose: {fileID: 8300000, guid: 81202639fcf9201449c6d8fd0ef08227, type: 3}
+  lose: {fileID: 8300000, guid: 4afad3f32d7ff9b4dbb0a0548ac9ef49, type: 3}
   error: {fileID: 8300000, guid: edbc6f8aa707e5b4d9eb11a9dc7a445d, type: 3}
   drop: {fileID: 8300000, guid: 05773826ba3fbb44ea430c8453a34b08, type: 3}
   pickup: {fileID: 8300000, guid: 543060cdb0905704e87d0782891861ac, type: 3}
@@ -150,3 +150,6 @@ MonoBehaviour:
   hello: {fileID: 8300000, guid: a5833b5f00fc2aa488775513f329f9c2, type: 3}
   hit: {fileID: 8300000, guid: f2117e08a424cf340ba352fb4e12fc5f, type: 3}
   huh: {fileID: 8300000, guid: 52777b34d95f00d49b6a80f41ef2176b, type: 3}
+  notif: {fileID: 8300000, guid: a3a9425975300c34a9dfc358ea2dab76, type: 3}
+  hey: {fileID: 8300000, guid: 82388cff34e866c4f8161bdb610fee8e, type: 3}
+  another: {fileID: 8300000, guid: 85f8df39aec7ecc49b1f5e3ca757f2d3, type: 3}

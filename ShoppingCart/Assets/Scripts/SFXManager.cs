@@ -26,6 +26,9 @@ public class SFXManager : MonoBehaviour
     public AudioClip hello;
     public AudioClip hit;
     public AudioClip huh;
+    public AudioClip notif;
+    public AudioClip hey;
+    public AudioClip another;
 
     private void OnEnable()
     {
@@ -39,12 +42,32 @@ public class SFXManager : MonoBehaviour
         source = GetComponent<AudioSource>();
     }
 
-    public IEnumerator Play(AudioClip c)
+    public IEnumerator Play()
     {
         int r = Random.Range(15, 60);
+        int i = Random.Range(0, 5);
         yield return new WaitForSeconds(r);
-        source.PlayOneShot(c);
+        switch (i)
+        {
+            case 0:
+                source.PlayOneShot(huh);
+                break;
+            case 1:
+                source.PlayOneShot(hello);
+                break;
+            case 2:
+                source.PlayOneShot(notif, .1f);
+                break;
+            case 3:
+                source.PlayOneShot(hey);
+                break;
+            case 4:
+                source.PlayOneShot(another, .5f);
+                break;
+            default:
+                break;
+        }
         yield return new WaitForSeconds(r);
-        StartCoroutine(Play(c));
+        StartCoroutine(Play());
     }
 }

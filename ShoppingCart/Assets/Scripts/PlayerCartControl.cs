@@ -69,6 +69,7 @@ public class PlayerCartControl : MonoBehaviour
         canPickupCart = true;
         canAbandonCart = false;
         cart = null;
+        didAttach = false;
     }
 
     private IEnumerator ResetPickup()

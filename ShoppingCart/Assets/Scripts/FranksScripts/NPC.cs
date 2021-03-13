@@ -90,12 +90,7 @@ public class NPC : MonoBehaviour
         Physics.IgnoreLayerCollision(6, 7, true);
 
         ChooseColor();
-
-        int num = Random.Range(0, 2);
-        if (num == 0)
-            StartCoroutine(SFXManager.instance.Play(SFXManager.instance.hello));
-        else
-            StartCoroutine(SFXManager.instance.Play(SFXManager.instance.huh));
+        StartCoroutine(SFXManager.instance.Play());
     }
 
     /// <summary>

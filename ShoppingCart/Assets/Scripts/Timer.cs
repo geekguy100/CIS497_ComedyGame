@@ -24,6 +24,8 @@ public class Timer : MonoBehaviour
     private bool gameOver = false;
     [SerializeField] private Animator anim;
 
+    public float bestTime = 999f;
+
     private void OnEnable()
     {
         EventManager.OnGameWin += () => { gameWon = true; };
@@ -31,7 +33,16 @@ public class Timer : MonoBehaviour
         EventManager.OnGameLost += () => { gameOver = true; };
         EventManager.OnGameWin += () => { anim.SetTrigger("Expand"); };
         EventManager.OnGameLost += () => { anim.SetTrigger("Expand"); };
-        StartCoroutine(ColorSwap());
+        if (PlayerPrefs.GetFloat("PB") == 0)
+        {
+            PlayerPrefs.SetFloat("PB", 999);
+        }
+        else
+        {
+            bestTime = PlayerPrefs.GetFloat("PB");
+        }
+        
+        //StartCoroutine(ColorSwap());
     }
 
     private void Update()
@@ -39,10 +50,22 @@ public class Timer : MonoBehaviour
         if (!gameOver)
         {
             time += Time.deltaTime;
-            timerText.text = "Time: " + Math.Round(time, 2);
+            timerText.text = "Time: " + Math.Round(time, 2) + "\nPersonal Best: " + Math.Round(bestTime, 2);
+            if (time < bestTime)
+            {
+                timerText.color = green;
+            }
+            else
+            {
+                timerText.color = red;
+            }
         }
         else if (gameWon)
         {
+            if (time < bestTime)
+            {
+                PlayerPrefs.SetFloat("PB", time);
+            }
             timerText.color = blue;
         }
         else
@@ -54,7 +77,7 @@ public class Timer : MonoBehaviour
     public IEnumerator ColorSwap()
     {
         timerText.color = green;
-        yield return new WaitForSeconds(UnityEngine.Random.Range(10, 30));
+        yield return new WaitForSeconds(120);
 
         timerText.color = red;
         yield return new WaitForSeconds(UnityEngine.Random.Range(10, 30));

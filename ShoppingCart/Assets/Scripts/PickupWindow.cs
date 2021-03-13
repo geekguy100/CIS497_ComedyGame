@@ -16,6 +16,7 @@ public class PickupWindow : MonoBehaviour
     public int selection;
     public Image cursor;
     public Vector3 cursorPos;
+    public TextMeshProUGUI control;
 
     // Start is called before the first frame update
     void Start()
@@ -97,10 +98,14 @@ public class PickupWindow : MonoBehaviour
         if (nearbyItems.Count == 0)
         {
             cursor.enabled = false;
+            this.GetComponent<Image>().enabled = false;
+            control.enabled = false;
         }
         else if (!cursor.enabled)
         {
             cursor.enabled = true;
+            this.GetComponent<Image>().enabled = true;
+            control.enabled = true;
         }
 
         if (Input.mouseScrollDelta.y < 0 && selection < nearbyItems.Count - 1)
