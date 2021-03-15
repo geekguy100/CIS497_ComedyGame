@@ -51,11 +51,13 @@ public class NPCstunned : NPCBehavior
         for (int i = 0; i < inventoryItems.Length; ++i)
         {
             GameObject prefab = ItemFactory.Spawn(inventoryItems[i].ItemType);
-            prefab.AddComponent<Rigidbody>();
 
             // Spawn in a loose item, and initialize it with the proper item type and quantity.
-            ItemContainer looseItem = Instantiate(prefab, transform.position + Vector3.up * 5f, prefab.transform.rotation).GetComponent<ItemContainer>();
-            looseItem.Init(inventoryItems[i].ItemType, inventoryItems[i].Quantity);
+            GameObject looseItem = Instantiate(prefab, transform.position + Vector3.up * 5f, prefab.transform.rotation);
+            looseItem.AddComponent<Rigidbody>();
+            ItemContainer container = looseItem.AddComponent<ItemContainer>();
+
+            container.Init(inventoryItems[i].ItemType, inventoryItems[i].Quantity);
 
             // Add a random force to the spawned loose item for effect.
             //Vector3 force = new Vector3(Random.Range(-3f, 3f), 2f, Random.Range(-3f, 3f));

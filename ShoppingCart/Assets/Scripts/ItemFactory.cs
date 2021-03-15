@@ -13,9 +13,8 @@ public static class ItemFactory
     /// Returns a prefab of the item to spawn.
     /// </summary>
     /// <param name="itemName">The exact name of the item prefab in the Resources folder.</param>
-    /// <param name="addComponent">Should the ItemContainer component be added?</param>
     /// <returns>A prefab of the item to spawn.</returns>
-    public static GameObject Spawn(string itemName, bool addComponent = true)
+    public static GameObject Spawn(string itemName)
     {
         // Retrieving the item prefab.
         GameObject prefab = Resources.Load(itemName) as GameObject;
@@ -24,15 +23,6 @@ public static class ItemFactory
         {
             Debug.LogWarning("ItemFactory: Cannot find a prefab named '" + itemName + "' in the Resources folder! Defaulting to the blue cube...");
             prefab = Resources.Load("LooseItem") as GameObject;
-        }
-
-        // Checking to see if it has the ItemContainer component. If it does not,
-        // add the component to it.
-        if (addComponent)
-        {
-            ItemContainer container = prefab.GetComponent<ItemContainer>();
-            if (container == null)
-                prefab.AddComponent<ItemContainer>();
         }
 
         return prefab;

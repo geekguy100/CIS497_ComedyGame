@@ -94,7 +94,7 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
             EventManager.ItemSpawned(System.Type.GetType(itemType));
         }
 
-        GameObject visualPrefab = ItemFactory.Spawn(itemType.ToString(), false);
+        GameObject visualPrefab = ItemFactory.Spawn(itemType.ToString());
         if (visualPrefab != null)
         {
             visual = Instantiate(visualPrefab, transform.position, visualPrefab.transform.rotation);
