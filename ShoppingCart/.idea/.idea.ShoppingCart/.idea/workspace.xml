@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93b9329c-e6cd-4dc5-9d12-17f0299b5274" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/art.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/art.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="93b9329c-e6cd-4dc5-9d12-17f0299b5274" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +74,7 @@
       <workItem from="1614893291541" duration="255000" />
       <workItem from="1614997890331" duration="577000" />
       <workItem from="1615057915890" duration="1737000" />
-      <workItem from="1615507668963" duration="303000" />
+      <workItem from="1615507668963" duration="869000" />
     </task>
     <servers />
   </component>
@@ -117,5 +113,9 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1773" y="370" key="run.anything.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1613360396342" />
+    <state x="985" y="377" width="672" height="678" key="search.everywhere.popup" timestamp="1615507802004">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="985" y="377" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1615507802004" />
   </component>
 </project>
