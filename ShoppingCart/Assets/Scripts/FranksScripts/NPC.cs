@@ -76,7 +76,6 @@ public class NPC : MonoBehaviour
                 break;
         }
         this.GetComponent<MeshRenderer>().material.color = c;
-        Debug.Log("d");
     }
 
     private void OnDisable()

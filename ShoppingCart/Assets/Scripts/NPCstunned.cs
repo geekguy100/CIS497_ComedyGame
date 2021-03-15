@@ -46,11 +46,13 @@ public class NPCstunned : NPCBehavior
 
         agent.isStopped = true;
         ItemContainerData[] inventoryItems = inventory.GetItemData();
-        GameObject prefab = Resources.Load("LooseItem") as GameObject;
 
         // For each item in the NPCs inventory, create a loose item on the ground.
         for (int i = 0; i < inventoryItems.Length; ++i)
         {
+            GameObject prefab = ItemFactory.Spawn(inventoryItems[i].ItemType);
+            prefab.AddComponent<Rigidbody>();
+
             // Spawn in a loose item, and initialize it with the proper item type and quantity.
             ItemContainer looseItem = Instantiate(prefab, transform.position + Vector3.up * 5f, prefab.transform.rotation).GetComponent<ItemContainer>();
             looseItem.Init(inventoryItems[i].ItemType, inventoryItems[i].Quantity);

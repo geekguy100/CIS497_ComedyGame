@@ -45,9 +45,6 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
     // The amount of items currently present in this item container.
     private int currentQuantity = 0;
 
-    [Tooltip("The visual prefab of this item container.")]
-    [SerializeField] private GameObject visualPrefab;
-
     // The instantiated visual prefab.
     private GameObject visual;
 
@@ -97,10 +94,14 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
             EventManager.ItemSpawned(System.Type.GetType(itemType));
         }
 
+        GameObject visualPrefab = ItemFactory.Spawn(itemType.ToString(), false);
         if (visualPrefab != null)
         {
             visual = Instantiate(visualPrefab, transform.position, visualPrefab.transform.rotation);
             visual.gameObject.name = itemType;
+
+            // Make the prefab bob and rotate.
+            visual.AddComponent<BobAndRotate>();
         }
 
     }

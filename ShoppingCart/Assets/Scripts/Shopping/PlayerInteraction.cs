@@ -43,7 +43,7 @@ public class PlayerInteraction : MonoBehaviour
                 Player_OnInteractableNearby?.Invoke(i);
             }
         }
-        else if (col.CompareTag("Checkout") && checkout == null)
+        else if (col.CompareTag("CheckoutLocation") && checkout == null)
         {
             checkout = col.GetComponent<Checkout>();
         }
@@ -61,7 +61,7 @@ public class PlayerInteraction : MonoBehaviour
                 Player_OnInteractableNearby_Removed?.Invoke(i);
             }
         }
-        else if (col.CompareTag("Checkout") && checkout != null)
+        else if (col.CompareTag("CheckoutLocation") && checkout != null)
             checkout = null;
     }
 

@@ -2066,6 +2066,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1169229408186314947, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
+      propertyPath: itemType
+      value: CatFood
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169229408349120125, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
+      propertyPath: itemType
+      value: DogToy
+      objectReference: {fileID: 0}
     - target: {fileID: 1169229409195406597, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
       propertyPath: m_Name
       value: Spawnpoints
@@ -2113,6 +2121,14 @@ PrefabInstance:
     - target: {fileID: 1169229409195406650, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030420592670148013, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
+      propertyPath: itemType
+      value: CatFood
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594038893048024169, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
+      propertyPath: itemType
+      value: DogToy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}

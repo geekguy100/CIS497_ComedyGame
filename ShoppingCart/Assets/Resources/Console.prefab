@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 114457196513567353}
   - component: {fileID: 114457196513567352}
   m_Layer: 0
-  m_Name: LooseItem
+  m_Name: Console
   m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 613def7333c887f42974acccb7892121, type: 2}
+  - {fileID: 2100000, guid: dcf643a29cd59b147b4f02dafd2ae52a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

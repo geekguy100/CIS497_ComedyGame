@@ -1,5 +1,5 @@
 /*****************************************************************************
-// File Name :         PetToy.cs
+// File Name :         PetFood.cs
 // Author :            Kyle Grenier
 // Creation Date :     #CREATIONDATE#
 //
@@ -7,10 +7,10 @@
 *****************************************************************************/
 using UnityEngine;
 
-public class PetToy : Item
+public class CatFood : Item
 {
     protected override string GetDescription()
     {
-        return "A Toy for your pet";
+        return "A can of cat food";
     }
 }
