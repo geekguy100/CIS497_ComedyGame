@@ -31,6 +31,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AdditiveSceneLoader.cs" t="Include" />
+          <e p="BobAndRotate.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
           <e p="DashSlider.cs" t="Include" />
           <e p="EventManager.cs" t="Include" />
@@ -73,6 +74,7 @@
               <e p="Bread.cs" t="Include" />
               <e p="Cabbage.cs" t="Include" />
               <e p="Candy.cs" t="Include" />
+              <e p="CatFood.cs" t="Include" />
               <e p="Chicken.cs" t="Include" />
               <e p="Chip.cs" t="Include" />
               <e p="Console.cs" t="Include" />
@@ -89,8 +91,6 @@
               <e p="Milk.cs" t="Include" />
               <e p="Orange.cs" t="Include" />
               <e p="Pasta.cs" t="Include" />
-              <e p="PetFood.cs" t="Include" />
-              <e p="PetToy.cs" t="Include" />
               <e p="Pizza.cs" t="Include" />
               <e p="Shampoo.cs" t="Include" />
               <e p="Soda.cs" t="Include" />

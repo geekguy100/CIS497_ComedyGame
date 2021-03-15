@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93b9329c-e6cd-4dc5-9d12-17f0299b5274" name="Default Changelist" comment="" />
+    <list default="true" id="93b9329c-e6cd-4dc5-9d12-17f0299b5274" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/objects/ceiling and wall/ceiling.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/objects/ceiling and wall/ceiling.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/calibrib SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/calibrib SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +80,7 @@
       <workItem from="1614997890331" duration="577000" />
       <workItem from="1615057915890" duration="1737000" />
       <workItem from="1615507668963" duration="869000" />
+      <workItem from="1615769951962" duration="160000" />
     </task>
     <servers />
   </component>
