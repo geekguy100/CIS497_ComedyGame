@@ -2,6 +2,7 @@
 	Properties{
 		_MainTex("Base (RGB)", 2D) = "white" {}
 		_bias ("Clip Bias", Range (0, 1)) = 0.75
+		_Color("Color Data", Color) = (0,0,1,1)
 	}
 		SubShader{
 			Tags { "RenderType" = "Opaque" }
@@ -29,6 +30,7 @@
 					};
 
                     uniform fixed _bias;
+                    float4 _Color;
 					float4 _MainTex_ST;
 					uniform half4 unity_FogStart;
 					uniform half4 unity_FogEnd;
@@ -95,7 +97,7 @@
 
                         clip( tex.a - _bias );
                         
-                        fixed4 col = tex;
+                        fixed4 col = tex * _Color;
                         col.a = 1.0f;
                         #if USING_FOG
                             col.rgb = lerp(unity_FogColor.rgb, col.rgb, IN.colorFog);

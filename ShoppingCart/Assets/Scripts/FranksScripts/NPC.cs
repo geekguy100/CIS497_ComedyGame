@@ -58,19 +58,19 @@ public class NPC : MonoBehaviour
         switch (i)
         {
             case 0:
-                c = Color.red;
+                c = new Color(0.8862745f, 0.1882352f, 0.307532f); // red
                 break;
             case 1:
-                c = Color.green;
+                c = new Color(0.1882353f, 0.8862745f, 0.2045531f); // green
                 break;
             case 2:
-                c = Color.blue;
+                c = new Color(0.2202741f, 0.3655099f, 0.8490566f); // blue
                 break;
             case 3:
-                c = Color.black;
+                c = new Color(0.1509434f,0.1509434f,0.1509434f); // black
                 break;
             case 4:
-                c = Color.yellow;
+                c = new Color(0.8867924f, 0.7645116f, 0.1882342f); // yellow
                 break;
             default:
                 break;

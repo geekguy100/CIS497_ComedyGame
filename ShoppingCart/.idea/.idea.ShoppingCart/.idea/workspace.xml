@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="93b9329c-e6cd-4dc5-9d12-17f0299b5274" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingCart/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/objects/ceiling and wall/ceiling.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/objects/ceiling and wall/ceiling.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/calibrib SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/calibrib SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Shaders/psx-vertexlit.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Shaders/psx-vertexlit.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FranksScripts/NPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FranksScripts/NPC.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +44,9 @@
         <option value="$PROJECT_DIR$/Assets/Art/Shaders/psx-unlit.shader" />
         <option value="$PROJECT_DIR$/Assets/Art/fonts/zdepth Text.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Art/Shaders/psx-vertexlit.shader" />
         <option value="$PROJECT_DIR$/Assets/Art/Shaders/psx-vertexlit no z cull.shader" />
+        <option value="$PROJECT_DIR$/Assets/Art/Shaders/psx-vertexlit.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FranksScripts/NPC.cs" />
       </list>
     </option>
   </component>
