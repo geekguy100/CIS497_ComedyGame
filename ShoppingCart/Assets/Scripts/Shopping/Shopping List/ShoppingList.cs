@@ -102,7 +102,7 @@ public abstract class ShoppingList : MonoBehaviour
     }
 
     /// <summary>
-    /// Gets the quantity of an item type.
+    /// Gets the quantity of an item type. Returns 0 if the item does not exist in the list.
     /// </summary>
     /// <param name="itemType">The type of item to check the quantity of.</param>
     /// <returns>The quantity of the item type.</returns>
