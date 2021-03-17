@@ -5,7 +5,7 @@
 //
 // Brief Description : Displays a character's inventory in the shopping cart.
 *****************************************************************************/
-using System;
+using System.Linq;
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -40,13 +40,13 @@ public class ItemCartDisplay : MonoBehaviour
     private void OnEnable()
     {
         inventory.OnItemAdded += AddItem;
-        inventory.OnItemRemoved += RemoveItem;
+        inventory.OnCartEmptied += RemoveItems;
     }
 
     private void OnDisable()
     {
         inventory.OnItemAdded -= AddItem;
-        inventory.OnItemRemoved -= RemoveItem;
+        inventory.OnCartEmptied -= RemoveItems;
     }
 
     private void AddItem(System.Type itemType)
@@ -73,9 +73,18 @@ public class ItemCartDisplay : MonoBehaviour
         spawnPos.localPosition = tile.POS;
     }
 
-    private void RemoveItem(System.Type itemType)
+    private void RemoveItems()
     {
+        // If there are any items in the cart,
+        // just remove them in bulk.
+        if (itemsInCart.Count > 0)
+        {
+            foreach (GameObject item in itemsInCart)
+                Destroy(item);
 
+            tile = new GridTile(grid);
+            spawnPos.localPosition = tile.POS;
+        }
     }
 }
 

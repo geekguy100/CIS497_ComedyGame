@@ -17,6 +17,9 @@ public abstract class ShoppingList : MonoBehaviour
     public event Action<System.Type> OnItemAdded;
     public event Action<System.Type> OnItemRemoved;
 
+    // Invoked if the cart becomes completely empty.
+    public event Action OnCartEmptied;
+
 
     protected virtual void Awake()
     {
@@ -99,6 +102,9 @@ public abstract class ShoppingList : MonoBehaviour
             Debug.Log("No more " + itemType.ToString());
             shoppingDictionary.Remove(itemType);
         }
+
+        if (shoppingDictionary.Count == 0)
+            OnCartEmptied?.Invoke();
     }
 
     /// <summary>
