@@ -18,6 +18,8 @@ public class PickupWindow : MonoBehaviour
     public Vector3 cursorPos;
     public TextMeshProUGUI control;
 
+    public bool pickedUpItem = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -122,6 +124,7 @@ public class PickupWindow : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.F) && nearbyItems.Count != 0 && playerCartControl.didAttach)
         {
+            pickedUpItem = true;
             //nearbyItems[selection].transform.position = cart.transform.position + new Vector3(0, 1, 0);
             //nearbyItems[selection].isInPlayerCart = true;
             nearbyItems[selection].Interact(playerInventory);

@@ -20,6 +20,8 @@ public class PlayerInteraction : MonoBehaviour
 
     private PickupWindow pickupWindow = null;
 
+    public bool grabbedItem;
+
     private void Awake()
     {
         characterInteraction = GetComponent<CharacterInteraction>();
@@ -72,6 +74,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                grabbedItem = true;
                 for (int i = 0; i < interactablesNearby.Count; ++i)
                 {
                     characterInteraction.Interact(interactablesNearby[i]);

@@ -32,6 +32,8 @@ public class NPC : MonoBehaviour
 
     private NPCBehavior currentBehavior;
 
+    public bool lostCart = false;
+
     NavMeshAgent agent;
     NavMeshObstacle obstacle;
 
@@ -143,7 +145,7 @@ public class NPC : MonoBehaviour
                 break;
 
             case State.RetreivingCart:
-
+                lostCart = true;
                 if (gameObject.GetComponent<NPCretrieving>() == null)
                 {
                     Destroy(GetComponent<NPCBehavior>());
@@ -153,7 +155,7 @@ public class NPC : MonoBehaviour
                 break;
 
             case State.PickingUpCart:
-
+                lostCart = true;
                 if (gameObject.GetComponent<NPCresetting>() == null)
                 {
                     Destroy(GetComponent<NPCBehavior>());
@@ -177,6 +179,7 @@ public class NPC : MonoBehaviour
                 break;
 
             case State.Stunned:
+                lostCart = true;
                 if (gameObject.GetComponent<NPCstunned>() == null)
                 {
                     Destroy(GetComponent<NPCBehavior>());
