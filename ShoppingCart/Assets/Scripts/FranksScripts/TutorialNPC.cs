@@ -5,20 +5,23 @@ using UnityEngine;
 public class TutorialNPC : MonoBehaviour
 {
     CharacterInventory list;
-    // Start is called before the first frame update
-    void Start()
+
+    private void OnEnable()
+    {
+        EventManager.OnGameStart += Init;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnGameStart -= Init;
+    }
+
+    private void Init()
     {
         list = gameObject.GetComponent<CharacterInventory>();
-        for(int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
         {
             list.AddItem(System.Type.GetType(ShoppingCenter.instance.GetRandomItem().ItemType));
         }
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
