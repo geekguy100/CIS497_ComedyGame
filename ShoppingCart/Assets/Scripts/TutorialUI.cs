@@ -68,5 +68,6 @@ public class TutorialUI : MonoBehaviour
     private void OnEnable()
     {
         EventManager.OnGameWin += () => { StartCoroutine(LongDelay()); };
+        EventManager.OnGameLost += () => { StartCoroutine(LongDelay()); };
     }
 }
