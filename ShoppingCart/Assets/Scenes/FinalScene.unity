@@ -369,6 +369,14 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 345260790}
+    - target: {fileID: 516620799, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211121931, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1922637369, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -485,6 +493,10 @@ PrefabInstance:
       propertyPath: playerCartControl
       value: 
       objectReference: {fileID: 345260787}
+    - target: {fileID: 5444104568978449068, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
 --- !u!1 &508726922 stripped

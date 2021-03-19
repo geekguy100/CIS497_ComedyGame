@@ -33,7 +33,7 @@ public class Tutorial : MonoBehaviour
     
     void Update()
     {
-        switch(index)
+        switch (index)
         {
             case 0:
                 if (Input.GetKeyDown(KeyCode.Return))
@@ -43,6 +43,13 @@ public class Tutorial : MonoBehaviour
                 }
                 break;
             case 1:
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    index++;
+                    tutorialText.text = tutorialMessages[index];
+                }
+                break;
+            case 2:
                 continueText.SetActive(false);
 
                 if (cartControl.didAttach)
@@ -56,14 +63,14 @@ public class Tutorial : MonoBehaviour
                 }
 
                 break;
-            case 2:
+            case 3:
                 if (Input.GetKeyDown(KeyCode.Return))
                 {
                     index++;
                     tutorialText.text = tutorialMessages[index];
                 }
                 break;
-            case 3:
+            case 4:
                 continueText.SetActive(false);
 
                 if (pickUpWindow.pickedUpItem)
@@ -76,14 +83,14 @@ public class Tutorial : MonoBehaviour
                     }
                 }
                 break;
-            case 4:
+            case 5:
                 if (Input.GetKeyDown(KeyCode.Return))
                 {
                     index++;
                     tutorialText.text = tutorialMessages[index];
                 }
                 break;
-            case 5:
+            case 6:
                 continueText.SetActive(false);
 
                 if (npc.lostCart)
@@ -96,13 +103,6 @@ public class Tutorial : MonoBehaviour
                     }
                 }
                 break;
-            case 6:
-                if (Input.GetKeyDown(KeyCode.Return))
-                {
-                    index++;
-                    tutorialText.text = tutorialMessages[index];
-                }
-                break;
             case 7:
                 if (Input.GetKeyDown(KeyCode.Return))
                 {
@@ -111,6 +111,13 @@ public class Tutorial : MonoBehaviour
                 }
                 break;
             case 8:
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    index++;
+                    tutorialText.text = tutorialMessages[index];
+                }
+                break;
+            case 9:
                 if (Input.GetKeyDown(KeyCode.Return))
                 {
                     tutorialText.text = tutorialMessages[index];
