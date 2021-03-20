@@ -275,6 +275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a4eb602268892f43883189006859433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterInventory: {fileID: 3248669746600516696}
+  characterShoppingList: {fileID: 3248669747280248766}
+  grabbedItem: 0
 --- !u!1 &3248669747280248760
 GameObject:
   m_ObjectHideFlags: 0

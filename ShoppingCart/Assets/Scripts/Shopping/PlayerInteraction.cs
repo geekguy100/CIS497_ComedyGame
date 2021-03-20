@@ -12,13 +12,16 @@ using System;
 [RequireComponent(typeof(CharacterInteraction))]
 public class PlayerInteraction : MonoBehaviour
 {
-    CharacterInteraction characterInteraction;
+    private CharacterInteraction characterInteraction;
     List<IItemInteractable> interactablesNearby = new List<IItemInteractable>();
 
     public event Action<IItemInteractable> Player_OnInteractableNearby;
     public event Action<IItemInteractable> Player_OnInteractableNearby_Removed;
 
     private PickupWindow pickupWindow = null;
+
+    [SerializeField] private CharacterInventory characterInventory;
+    [SerializeField] private CharacterShoppingList characterShoppingList;
 
     public bool grabbedItem;
 
@@ -31,7 +34,7 @@ public class PlayerInteraction : MonoBehaviour
     private void Start()
     {
         if (pickupWindow != null)
-            pickupWindow.Init(this, transform.GetComponentInParent<CharacterInventory>());
+            pickupWindow.Init(this, characterInventory, characterShoppingList);
     }
 
     private void OnTriggerEnter(Collider col)
@@ -85,7 +88,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if (checkout != null && Input.GetKeyDown(KeyCode.F))
         {
-            checkout.Interact(GetComponentInParent<CharacterInventory>(), transform.parent.GetComponentInChildren<CharacterShoppingList>());
+            checkout.Interact(characterInventory, characterShoppingList);
         }
 
 

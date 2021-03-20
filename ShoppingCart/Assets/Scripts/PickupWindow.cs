@@ -8,7 +8,9 @@ public class PickupWindow : MonoBehaviour
 {
     private PlayerInteraction playerInteraction;
     private CharacterInventory playerInventory;
+    private CharacterShoppingList playerShoppingList;
     public PlayerCartControl playerCartControl;
+    [SerializeField] private bool tutorial = false;
     public SFXManager sfx;
     //public GameObject cart;
     public List<ItemContainer> nearbyItems;
@@ -30,10 +32,11 @@ public class PickupWindow : MonoBehaviour
         cursorPos = cursor.rectTransform.anchoredPosition;
     }
 
-    public void Init(PlayerInteraction playerInteraction, CharacterInventory playerInventory)
+    public void Init(PlayerInteraction playerInteraction, CharacterInventory playerInventory, CharacterShoppingList playerShoppingList)
     {
         this.playerInteraction = playerInteraction;
         this.playerInventory = playerInventory;
+        this.playerShoppingList = playerShoppingList;
 
         // Subscribe to the PlayerInteraction's events.
         playerInteraction.Player_OnInteractableNearby += AddItem;
@@ -124,20 +127,27 @@ public class PickupWindow : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.F) && nearbyItems.Count != 0 && playerCartControl.didAttach)
         {
-            pickedUpItem = true;
-            //nearbyItems[selection].transform.position = cart.transform.position + new Vector3(0, 1, 0);
-            //nearbyItems[selection].isInPlayerCart = true;
-            nearbyItems[selection].Interact(playerInventory);
-            if (sfx != null)
-                sfx.source.PlayOneShot(sfx.pickup);
+            System.Type itemType = System.Type.GetType(nearbyItems[selection].GetData().ItemType);
 
-            // If we picked up the last nearby item, reset our selection and cursor
-            // position.
-            if (nearbyItems.Count == 0)
+            // Only pick up if the item is on the shopping list and we need more of it.
+            if ((playerShoppingList.ContainsType(itemType) && playerInventory.GetQuantity(itemType) < playerShoppingList.GetQuantity(itemType)) || tutorial)
             {
-                selection = 0;
-                cursor.rectTransform.anchoredPosition = cursorPos;
-                return;
+                pickedUpItem = true;
+
+                //nearbyItems[selection].transform.position = cart.transform.position + new Vector3(0, 1, 0);
+                //nearbyItems[selection].isInPlayerCart = true;
+                nearbyItems[selection].Interact(playerInventory);
+                if (sfx != null)
+                    sfx.source.PlayOneShot(sfx.pickup);
+
+                // If we picked up the last nearby item, reset our selection and cursor
+                // position.
+                if (nearbyItems.Count == 0)
+                {
+                    selection = 0;
+                    cursor.rectTransform.anchoredPosition = cursorPos;
+                    return;
+                }
             }
         }
     }

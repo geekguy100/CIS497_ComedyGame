@@ -643,15 +643,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1169229408133331257, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.39
+      value: 24.101
       objectReference: {fileID: 0}
     - target: {fileID: 1169229408133331257, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.814
+      value: -4.247
       objectReference: {fileID: 0}
     - target: {fileID: 1169229408133331257, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.15
+      value: 28.332
       objectReference: {fileID: 0}
     - target: {fileID: 1169229408133331257, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -887,15 +887,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7243823501239461607, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.29
+      value: 22.471
       objectReference: {fileID: 0}
     - target: {fileID: 7243823501239461607, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.973
+      value: -4.247
       objectReference: {fileID: 0}
     - target: {fileID: 7243823501239461607, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.496
+      value: 28.299
       objectReference: {fileID: 0}
     - target: {fileID: 7397992639447287655, guid: d8bc6fc8fb09525458cfb5dd6056634c, type: 3}
       propertyPath: m_IsActive
@@ -4366,6 +4366,10 @@ PrefabInstance:
       propertyPath: sfx
       value: 
       objectReference: {fileID: 981077404}
+    - target: {fileID: 5444104568046553432, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
+      propertyPath: tutorial
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5444104568046553432, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
       propertyPath: playerCartControl
       value: 

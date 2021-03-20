@@ -5,9 +5,6 @@
 //
 // Brief Description : The inventory of a character; what that character has on their person.
 *****************************************************************************/
-using UnityEngine;
-using System.Collections.Generic;
-using TMPro;
 
 public class CharacterInventory : ShoppingList
 {
