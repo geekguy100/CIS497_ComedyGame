@@ -49,7 +49,7 @@ public class TutorialUI : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("FinalScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public IEnumerator Delay()
