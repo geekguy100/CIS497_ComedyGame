@@ -34,6 +34,8 @@ public class NPC : MonoBehaviour
 
     public bool lostCart = false;
 
+    public bool isTutorialNPC = false;
+
     NavMeshAgent agent;
     NavMeshObstacle obstacle;
 
@@ -199,7 +201,8 @@ public class NPC : MonoBehaviour
     {
         whereIsMyCart = new Vector3(cart.transform.position.x, cart.transform.position.y, cart.transform.position.z);
         myState = State.RetreivingCart;
-        agent.destination = cart.transform.position;
+        if (!isTutorialNPC)
+            agent.destination = cart.transform.position;
     }
 
     private void OnCollisionEnter(Collision collision)

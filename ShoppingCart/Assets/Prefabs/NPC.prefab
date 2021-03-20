@@ -463,7 +463,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 1, z: 0.7}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.008333332, y: 0.8149998, z: -0.44833273}
+  m_ConnectedAnchor: {x: 0.008307901, y: 0.8149999, z: -0.4483232}
   serializedVersion: 2
   m_Spring: 10
   m_Damper: 0.2
@@ -510,6 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd0f2290557bcd148a3d0a8d8f27243e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lostCart: 0
 --- !u!208 &563721111925458009
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -586,25 +587,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCarrow
       objectReference: {fileID: 0}
-    - target: {fileID: 8172033042443883347, guid: 6742b514c66368047967c27dd4bcdbb2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8800935742272375273, guid: 6742b514c66368047967c27dd4bcdbb2, type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8800935742272375273, guid: 6742b514c66368047967c27dd4bcdbb2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8800935742272375273, guid: 6742b514c66368047967c27dd4bcdbb2, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8800935742272375273, guid: 6742b514c66368047967c27dd4bcdbb2, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8800935742272375273, guid: 6742b514c66368047967c27dd4bcdbb2, type: 3}
       propertyPath: m_LocalPosition.x

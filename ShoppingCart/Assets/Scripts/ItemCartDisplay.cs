@@ -51,7 +51,6 @@ public class ItemCartDisplay : MonoBehaviour
 
     private void AddItem(System.Type itemType)
     {
-        Debug.LogWarning("PENIS");
         // Make sure this is a new item we're adding to the cart.
         if (inventory.GetQuantity(itemType) == 1)
         {

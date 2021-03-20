@@ -16,6 +16,8 @@ public class NPCstunned : NPCBehavior
 
     private NavMeshAgent agent;
 
+    private bool isTutorialNPC = false;
+
 
     private bool stunned = false;
 
@@ -44,7 +46,11 @@ public class NPCstunned : NPCBehavior
         if (stunned)
             return;
 
-        agent.isStopped = true;
+        isTutorialNPC = npc.isTutorialNPC;
+
+        if (!npc.isTutorialNPC)
+            agent.isStopped = true;
+
         ItemContainerData[] inventoryItems = inventory.GetItemData();
 
         // For each item in the NPCs inventory, create a loose item on the ground.
@@ -90,7 +96,9 @@ public class NPCstunned : NPCBehavior
     // make sure to reset the shopping data index to 0 and allow the NPC to move.
     private void OnDisable()
     {
-        agent.isStopped = false;
+        if (!isTutorialNPC)
+            agent.isStopped = false;
+
         shoppingData.Index = 0;
     }
 }

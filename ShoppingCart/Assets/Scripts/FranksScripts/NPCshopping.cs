@@ -70,7 +70,9 @@ public class NPCshopping : NPCBehavior
         if (nearestContainer != null)
         {
             destination = ShoppingHelper.GetNearestContainerOfType(transform, System.Type.GetType(itemData.ItemType)).GetComponent<ItemContainer>();
-            agent.SetDestination(destination.transform.position);
+
+            if (!npc.isTutorialNPC)
+                agent.SetDestination(destination.transform.position);
         }
         // If there are no items in stock of this type, then leave the store.
         else
