@@ -39,7 +39,17 @@ public class CharacterShoppingList : ShoppingList
             if (ContainsType(System.Type.GetType(randomItem.ItemType)))
                 continue;
 
-            int randomQuantity = UnityEngine.Random.Range(1, randomItem.Quantity / 2 + 1);
+            // Try to get at least 3 of an item.
+            int min = UnityEngine.Random.Range(2, 5);
+            int max = Mathf.FloorToInt(randomItem.Quantity / 2) + 1;
+            int randomQuantity = UnityEngine.Random.Range(min, max);
+
+            // If the randomQuantity calculated is greater than the quantity of that item in the store,
+            // decrease randomQuantity until we're at a safe number.
+            while (randomQuantity > randomItem.Quantity)
+            {
+                --randomQuantity;
+            }
 
             // There's a chance the random quantity will bring us over the max amount of items.
             // To prevent that, we'll decrease the randomQuantity as much as we need to.
