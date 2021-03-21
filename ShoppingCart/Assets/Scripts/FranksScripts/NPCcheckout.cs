@@ -35,6 +35,11 @@ public class NPCcheckout : NPCBehavior
         agent = GetComponent<NavMeshAgent>();
     }
 
+    private void Start()
+    {
+        shoppingData.CheckingOut = true;
+    }
+
     public override void NPCaction(NPC npc, NavMeshAgent agent, GameObject cart, Quaternion cartLocalRot, Vector3 cartLocalPos, Vector3 whereIsMyCart, bool hasDestination, int listIndex, ItemContainerData[] shoppingListArray, CharacterInventory inventory, NPC.State myState)
     {
         // If the item ran out of stock, head towards the exit.

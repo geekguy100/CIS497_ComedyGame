@@ -52,7 +52,7 @@ public class ScoreManager : MonoBehaviour
             GameObject[] npcsWithItem = ShoppingHelper.GetNPCsWithItemType(itemType);
 
             // We couldn't find any NPCs with the required item, so it's GAME OVER.
-            if (npcsWithItem == null || npcsWithItem.Length <= 0)
+            if (npcsWithItem == null || npcsWithItem.Length == 0)
             {
                 gameOver = true;
                 EventManager.GameLost();

@@ -18,6 +18,9 @@ public class NPCShoppingData : MonoBehaviour
     private bool outOfStock = false;
     public bool OutOfStock { get { return outOfStock; } set { outOfStock = value; } }
 
+    private bool checkingOut = false;
+    public bool CheckingOut { get { return checkingOut; } set { checkingOut = value; } }
+
     private int index = 0;
     public int Index
     {

@@ -85,7 +85,7 @@ public static class ShoppingHelper
             return null;
 
         return npcs
-            .Where(t => t.GetComponent<CharacterInventory>().GetQuantity(itemType) > 0)
+            .Where(t => t.GetComponent<CharacterInventory>().GetQuantity(itemType) > 0 && !t.GetComponent<NPCShoppingData>().CheckingOut)
             .ToArray();
     }
 }
