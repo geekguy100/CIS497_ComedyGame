@@ -1,15 +1,15 @@
 /*****************************************************************************
 // File Name :         MouseLook.cs
 // Author :            Kyle Grenier
-// Creation Date :     #CREATIONDATE#
+// Creation Date :     once upon a time
 //
-// Brief Description : ADD BRIEF DESCRIPTION OF THE FILE HERE
+// Brief Description : Enables the player to look around in first person with the mouse.
 *****************************************************************************/
 using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-    [SerializeField] private float sensitivity = 90f;
+    private float sensitivity { get { return PlayerSettings.instance.Sensitivity; } }
     [SerializeField] private float headUpperAngleLimit = 85f;
     [SerializeField] private float headLowerAngleLimit = -80f;
 
@@ -35,8 +35,10 @@ public class MouseLook : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float h = Input.GetAxis("Mouse X") * Time.deltaTime * sensitivity;
-        float v = Input.GetAxis("Mouse Y") * Time.deltaTime * sensitivity;
+        float h = Input.GetAxis("Mouse X") * Time.deltaTime;
+        float v = Input.GetAxis("Mouse Y") * Time.deltaTime;
+        h = Mathf.Clamp(h, -1, 1) * sensitivity;
+        v = Mathf.Clamp(v, -1, 1) * sensitivity;
 
         yaw += h;
         pitch -= v;

@@ -3060,6 +3060,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1061526549 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5730635937896704762, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
+  m_PrefabInstance: {fileID: 1951694179}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674df450533195f48ab5d5a621f00059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1071173492 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 412566040, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
@@ -4274,6 +4285,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4054491360886479059, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1061526549}
     - target: {fileID: 5444104567722956706, guid: c9dddb514c2a09a409851c42f8d2814f, type: 3}
       propertyPath: m_Name
       value: Canvas (Play)
@@ -4412,7 +4427,7 @@ Transform:
   m_LocalScale: {x: 0.795, y: 8.001521, z: 14.732221}
   m_Children: []
   m_Father: {fileID: 512768781}
-  m_RootOrder: 35
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!65 &2047770374
 BoxCollider:
