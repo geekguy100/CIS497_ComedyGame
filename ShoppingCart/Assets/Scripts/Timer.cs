@@ -28,11 +28,20 @@ public class Timer : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.OnGameWin += () => { gameWon = true; };
-        EventManager.OnGameWin += () => { gameOver = true; };
-        EventManager.OnGameLost += () => { gameOver = true; };
-        EventManager.OnGameWin += () => { anim.SetTrigger("Expand"); };
-        EventManager.OnGameLost += () => { anim.SetTrigger("Expand"); };
+        EventManager.OnGameWin += GameWin;
+        EventManager.OnGameLost += GameLost;
+        
+        //StartCoroutine(ColorSwap());
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnGameWin -= GameWin;
+        EventManager.OnGameLost -= GameLost;
+    }
+
+    private void Start()
+    {
         if (PlayerPrefs.GetFloat("PB") == 0)
         {
             PlayerPrefs.SetFloat("PB", 999);
@@ -41,8 +50,19 @@ public class Timer : MonoBehaviour
         {
             bestTime = PlayerPrefs.GetFloat("PB");
         }
-        
-        //StartCoroutine(ColorSwap());
+    }
+
+    private void GameWin()
+    {
+        gameWon = true;
+        gameOver = true;
+        anim.SetTrigger("Expand");
+    }
+
+    void GameLost()
+    {
+        gameOver = true;
+        anim.SetTrigger("Expand");
     }
 
     private void Update()

@@ -14,7 +14,23 @@ public class UIManager : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.OnGameWin += () => { winText.SetActive(true); };
-        EventManager.OnGameLost += () => { loseText.SetActive(true); };
+        EventManager.OnGameWin += OnGameWin;
+        EventManager.OnGameLost += OnGameLose;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnGameWin -= OnGameWin;
+        EventManager.OnGameLost -= OnGameLose;
+    }
+
+    private void OnGameWin()
+    {
+        winText.SetActive(true);
+    }
+
+    void OnGameLose()
+    {
+        loseText.SetActive(true);
     }
 }

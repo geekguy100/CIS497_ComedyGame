@@ -32,8 +32,24 @@ public class SFXManager : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.OnGameWin += () => { source.PlayOneShot(win); };
-        EventManager.OnGameLost += () => { source.PlayOneShot(lose); };
+        EventManager.OnGameWin += OnGameWin;
+        EventManager.OnGameLost += OnGameLost;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnGameWin -= OnGameWin;
+        EventManager.OnGameLost -= OnGameLost;
+    }
+
+    private void OnGameWin()
+    {
+        source.PlayOneShot(win);
+    }
+
+    private void OnGameLost()
+    {
+        source.PlayOneShot(lose);
     }
 
     // Start is called before the first frame update

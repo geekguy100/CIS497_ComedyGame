@@ -12,20 +12,16 @@ using TMPro;
 public class Tutorial : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI tutorialText;
-    [SerializeField] string[] tutorialMessages;
+    [SerializeField] private string[] tutorialMessages;
     [SerializeField] GameObject continueText;
-    PickupWindow pickUpWindow;
-    PlayerCartControl cartControl;
-    NPC npc;
+    [SerializeField] private PickupWindow pickUpWindow;
+    [SerializeField] private PlayerCartControl cartControl;
+    [SerializeField] private NPC npc;
 
     private int index = 0;
     void Start()
     {
         continueText.SetActive(true);
-
-        pickUpWindow = FindObjectOfType<PickupWindow>();
-        cartControl = FindObjectOfType<PlayerCartControl>();
-        npc = FindObjectOfType<NPC>();
 
         tutorialText.text = tutorialMessages[index];
     }

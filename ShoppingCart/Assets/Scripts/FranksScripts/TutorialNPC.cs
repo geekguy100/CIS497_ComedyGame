@@ -8,12 +8,12 @@ public class TutorialNPC : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.OnGameStart += Init;
+        EventManager.OnShoppingCenterFilled += Init;
     }
 
     private void OnDisable()
     {
-        EventManager.OnGameStart -= Init;
+        EventManager.OnShoppingCenterFilled -= Init;
     }
 
     private void Init()
