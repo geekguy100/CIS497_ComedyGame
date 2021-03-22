@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5713060974088854411}
   - component: {fileID: 7542449544809049921}
   - component: {fileID: -3663292517927485159}
+  - component: {fileID: 7497226435072716094}
   m_Layer: 0
   m_Name: Chip
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4999675957740653115, guid: 0b4e6828a5c93b243b62ce991098a1fb, type: 3}
+--- !u!65 &7497226435072716094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8335271850712616596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35917965, y: 0.5257985, z: 0.13957821}
+  m_Center: {x: 0, y: 0, z: 0}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 926508304051194985}
   - component: {fileID: 3116325109736618147}
   - component: {fileID: 6565803202923197542}
+  - component: {fileID: -4832417402715194589}
   m_Layer: 0
   m_Name: Milk
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3116465286698040369, guid: b55d8f7e52f768c4ea812920e42dc8fb, type: 3}
+--- !u!65 &-4832417402715194589
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3476661664367286646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.32821158, y: 0.5397118, z: 0.3282116}
+  m_Center: {x: -2.8650163e-25, y: -0.029518358, z: -0.000000007450581}

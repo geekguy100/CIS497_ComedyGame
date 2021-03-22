@@ -56,7 +56,7 @@ public class ItemCartDisplay : MonoBehaviour
         {
             GameObject prefab = ItemFactory.Spawn(itemType.ToString());
             GameObject visual = Instantiate(prefab, spawnPos.position, prefab.transform.rotation, transform);
-            print("VISUAL : " + (visual == null));
+            //print("VISUAL : " + (visual == null));
             Destroy(visual.GetComponent<Collider>()); // Destroy any collider on this visual so we don't have collision issues.
             itemsInCart.Add(visual);
             UpdateLocation();

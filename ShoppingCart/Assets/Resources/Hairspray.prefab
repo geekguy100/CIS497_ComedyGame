@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5067612534468268413}
   - component: {fileID: 7041151010560845239}
   - component: {fileID: 4483701381447953}
+  - component: {fileID: 7859960560151612060}
   m_Layer: 0
   m_Name: Hairspray
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3366282925837053250, guid: fd4a3c6c1c04cac4fa0515bd441b1c9c, type: 3}
+--- !u!65 &7859960560151612060
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8842762866671158370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09664917, y: 0.4467131, z: 0.096649185}
+  m_Center: {x: 0.0000000037252903, y: 0.007509969, z: -0.0000000037252903}

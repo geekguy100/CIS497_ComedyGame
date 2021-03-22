@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6329060708806181856}
   - component: {fileID: 8084419172032231210}
   - component: {fileID: -1743991629331963931}
+  - component: {fileID: 4856075619401074407}
   m_Layer: 0
   m_Name: Waffles
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5148567754973873673, guid: 8577fddf3e612ef4f81e60fc48340187, type: 3}
+--- !u!65 &4856075619401074407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7724056091163170559}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.49581972, y: 0.24761909, z: 0.19810368}
+  m_Center: {x: -2.023188e-26, y: -0.0020844974, z: 0}

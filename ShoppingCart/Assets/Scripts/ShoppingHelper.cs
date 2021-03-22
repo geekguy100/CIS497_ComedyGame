@@ -88,4 +88,67 @@ public static class ShoppingHelper
             .Where(t => t.GetComponent<CharacterInventory>().GetQuantity(itemType) > 0 && !t.GetComponent<NPCShoppingData>().CheckingOut)
             .ToArray();
     }
+
+    /// <summary>
+    /// Returns true if an NPC has enough of an item the player needs.
+    /// </summary>
+    /// <param name="npcInventory">The NPC's inventory.</param>
+    /// <param name="playerInventory">the player's inventory.</param>
+    /// <param name="playerShoppingList">The player's shopping list.</param>
+    /// <param name="itemType">The type of item to check for.</param>
+    /// <returns></returns>
+    public static bool NPCHasEnoughOfItem(CharacterInventory npcInventory, CharacterInventory playerInventory, CharacterShoppingList playerShoppingList, System.Type itemType)
+    {
+        if (!IsOfTypeItem(itemType))
+            return false;
+
+        int npcItemQuantity = npcInventory.GetQuantity(itemType);
+        int quantityPlayerNeeds = playerShoppingList.GetQuantity(itemType) - playerInventory.GetQuantity(itemType);
+
+        // Does the NPC has the remainder of items the player needs?
+        if (npcItemQuantity >= quantityPlayerNeeds)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    /// Returns the summed quantity of an item from all the NPC's inventories.
+    /// </summary>
+    /// <param name="itemType">The type of item to check for.</param>
+    /// <returns>The summed quantity of an item from all the NPC's inventories.</returns>
+    public static int GetTotalNPCQuantity(System.Type itemType)
+    {
+        if (!IsOfTypeItem(itemType))
+            return -1;
+
+        int totalQuantity = 0;
+        GameObject[] npcsWithItem = GetNPCsWithItemType(itemType);
+        foreach (GameObject npc in npcsWithItem)
+        {
+            CharacterInventory npcInventory = npc.GetComponent<CharacterInventory>();
+            totalQuantity += npcInventory.GetQuantity(itemType);
+        }
+
+        return totalQuantity;
+    }
+
+    /// <summary>
+    /// Returns how much more of a particular item the player needs.
+    /// </summary>
+    /// <param name="itemType">The type of item to check for.</param>
+    /// <returns>How much more of the item the player needs.</returns>
+    public static int PlayerNeeds(System.Type itemType)
+    {
+        if (!IsOfTypeItem(itemType))
+            return -1;
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        CharacterInventory playerInventory = player.GetComponent<CharacterInventory>();
+        CharacterShoppingList playerShoppingList = player.GetComponentInChildren<CharacterShoppingList>();
+
+        return playerShoppingList.GetQuantity(itemType) - playerInventory.GetQuantity(itemType);
+    }
 }

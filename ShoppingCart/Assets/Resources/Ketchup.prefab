@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2109170503914133409}
   - component: {fileID: 4224851645296042859}
   - component: {fileID: -8710303660724327467}
+  - component: {fileID: 1825832710994963741}
   m_Layer: 0
   m_Name: Ketchup
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7794565511940539504, guid: d1164deb3b607f7468a497bb97c4a579, type: 3}
+--- !u!65 &1825832710994963741
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2423302049102283454}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12314058, y: 0.39724213, z: 0.123140596}
+  m_Center: {x: 3.1539e-26, y: 0.0032494739, z: -0.000000007450581}

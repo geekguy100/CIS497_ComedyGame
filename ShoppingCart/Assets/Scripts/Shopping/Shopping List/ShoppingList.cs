@@ -47,7 +47,7 @@ public abstract class ShoppingList : MonoBehaviour
     {
         if (!ShoppingHelper.IsOfTypeItem(itemType))
         {
-            Debug.LogWarning(gameObject.name + ": " + itemType + " is not a valid Item and cannot be added to the shopping list.");
+            //Debug.LogWarning(gameObject.name + ": " + itemType + " is not a valid Item and cannot be added to the shopping list.");
             return;
         }
 
@@ -59,8 +59,8 @@ public abstract class ShoppingList : MonoBehaviour
         else
             shoppingDictionary.Add(itemType, 1);
 
-        Debug.Log(gameObject.name + ": Added item " + itemType.ToString() + " to the list.\n" +
-            "Quantity of item is now " + shoppingDictionary[itemType]);
+       // Debug.Log(gameObject.name + ": Added item " + itemType.ToString() + " to the list.\n" +
+            //"Quantity of item is now " + shoppingDictionary[itemType]);
 
         OnItemAdded?.Invoke(itemType);
     }
@@ -91,8 +91,8 @@ public abstract class ShoppingList : MonoBehaviour
             return;
         }
 
-        Debug.Log(gameObject.name + ": Removed item " + itemType.ToString() + " from the list.\n" +
-            "Quantity of item is now " + shoppingDictionary[itemType]);
+        //Debug.Log(gameObject.name + ": Removed item " + itemType.ToString() + " from the list.\n" +
+            //"Quantity of item is now " + shoppingDictionary[itemType]);
 
         OnItemRemoved?.Invoke(itemType);
 

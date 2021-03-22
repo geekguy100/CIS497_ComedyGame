@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5369082328026000283}
   - component: {fileID: 7883050490517380945}
   - component: {fileID: 6793002692366744}
+  - component: {fileID: 4151253536187564815}
   m_Layer: 0
   m_Name: Vitamins
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -572717046685862590, guid: fdea9b7d038c83947baa0d956c3b64cf, type: 3}
+--- !u!65 &4151253536187564815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8531722974471814788}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18159528, y: 0.34540653, z: 0.1815953}
+  m_Center: {x: 2.4370471e-26, y: 0.0025108978, z: -0.0000000037252903}

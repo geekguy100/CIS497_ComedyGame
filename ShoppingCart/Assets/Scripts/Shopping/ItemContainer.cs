@@ -40,7 +40,7 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
 
     // The maximum amount of items present in this item container.
     //private int maxQuantity = 10; //This resulted in many runs where it was impossible to lose, tried to tone down a bit, but needs playtesting
-    private int maxQuantity = 7;
+    private int maxQuantity = 3;
 
     // The amount of items currently present in this item container.
     private int currentQuantity = 0;
@@ -114,10 +114,10 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
     {
         //ShoppingList senderList = sender.GetComponent<ShoppingList>();
 
-        if (senderList != null && currentQuantity > 0)
+        if (senderList != null && currentQuantity >= 0)
         {
             --currentQuantity;
-            Debug.Log(gameObject.name + ": ItemContainer quantity of " + itemType + " now at " + currentQuantity);
+            //Debug.Log(gameObject.name + ": ItemContainer quantity of " + itemType + " now at " + currentQuantity);
             senderList.AddItem(System.Type.GetType(itemType));
 
             if(!isLooseItem)

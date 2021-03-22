@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8581586554296908563}
   - component: {fileID: 5833037591589572569}
   - component: {fileID: 733029011831268461}
+  - component: {fileID: -4543942137346389332}
   m_Layer: 0
   m_Name: CoughSyrup
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2404510539979245059, guid: 317607d64fa32e642aa7379fafe8271d, type: 3}
+--- !u!65 &-4543942137346389332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5472965056798780940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.110325485, y: 0.27987522, z: 0.110325485}
+  m_Center: {x: 0.0000000018626451, y: 0.0026883632, z: -0.0000000037252903}

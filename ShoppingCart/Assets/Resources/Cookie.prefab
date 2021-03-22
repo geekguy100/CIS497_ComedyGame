@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5051083751954421644}
   - component: {fileID: 7061075360048046918}
   - component: {fileID: -3842721365684983614}
+  - component: {fileID: 2691902638638870438}
   m_Layer: 0
   m_Name: Cookie
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -988258950539096506, guid: 29e822e35f09f0b48a33bb50569ab0f2, type: 3}
+--- !u!65 &2691902638638870438
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8862247135400346259}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4377489, y: 0.34562725, z: 0.08420882}
+  m_Center: {x: 0.0009778664, y: 9.491053e-27, z: 0}

@@ -46,12 +46,12 @@ public class NPCshopping : NPCBehavior
         if (shoppingData.DoneShopping || shoppingData.OutOfStock)
             return;
 
-        print("~~~~INITIALIZING~~~~");
+        //print("~~~~INITIALIZING~~~~");
 
         // NPC has obtained all items and needs to check out.
         if (shoppingData.Index >= characterShoppingList.GetItemData().Length)
         {
-            Debug.LogWarning(gameObject.name + " is done collecting his items. He needs to check out...");
+            //Debug.LogWarning(gameObject.name + " is done collecting his items. He needs to check out...");
             shoppingData.DoneShopping = true;
             npc.myState = NPC.State.Checkout;
             //agent.SetDestination(ShoppingHelper.GetNearestCheckoutLocation(transform).transform.position);
@@ -59,7 +59,7 @@ public class NPCshopping : NPCBehavior
         }
         else if (shoppingData.Index < 0)
         {
-            Debug.LogError(gameObject.name + " WHY IS MY INDEX < 0??");
+            //Debug.LogError(gameObject.name + " WHY IS MY INDEX < 0??");
             return;
         }
 
@@ -77,7 +77,7 @@ public class NPCshopping : NPCBehavior
         // If there are no items in stock of this type, then leave the store.
         else
         {
-            Debug.LogWarning(gameObject.name + ": No items of type " + itemData.ItemType + " left in the store... NPC is done shopping.");
+            //Debug.LogWarning(gameObject.name + ": No items of type " + itemData.ItemType + " left in the store... NPC is done shopping.");
             shoppingData.OutOfStock = true;
             npc.myState = NPC.State.Checkout;
             //agent.SetDestination(GameObject.FindGameObjectWithTag("Finish").transform.position);
@@ -99,7 +99,7 @@ public class NPCshopping : NPCBehavior
         // Initialization
         if (destination == null)
         {
-            print("DESTINATION NULL. INITIALIZING.");
+            //print("DESTINATION NULL. INITIALIZING.");
             Initialize();
             return;
         }
@@ -122,7 +122,7 @@ public class NPCshopping : NPCBehavior
     /// <returns></returns>
     private IEnumerator CollectItems()
     {
-        Debug.LogWarning(gameObject.name + ": COLLECTING: " + itemData.ItemType + " " + itemData.Quantity);
+        //Debug.LogWarning(gameObject.name + ": COLLECTING: " + itemData.ItemType + " " + itemData.Quantity);
         for (int i = 0; i < itemData.Quantity; ++i)
         {
             // Make sure that our destination is still active.
@@ -136,7 +136,7 @@ public class NPCshopping : NPCBehavior
             // re-initialize this behaviour.
             else
             {
-                Debug.LogWarning(gameObject.name + ": ITEM RAN OUT. " + itemData.ItemType);
+                //Debug.LogWarning(gameObject.name + ": ITEM RAN OUT. " + itemData.ItemType);
                 beganItemCollection = false;
                 yield break;
             }
@@ -144,7 +144,7 @@ public class NPCshopping : NPCBehavior
             yield return new WaitForSeconds(0.5f);
         }
 
-        Debug.LogWarning(gameObject.name + ": DONE COLLECTING " + itemData.ItemType);
+        //Debug.LogWarning(gameObject.name + ": DONE COLLECTING " + itemData.ItemType);
         FinishCollection();
     }
 

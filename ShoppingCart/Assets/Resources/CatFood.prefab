@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2467736933983488632}
   - component: {fileID: 422176058224311986}
   - component: {fileID: 8636855565627460927}
+  - component: {fileID: -3761368806454720958}
   m_Layer: 0
   m_Name: CatFood
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7457904062666470831, guid: 9f20846517164264a92212999e02d4d9, type: 3}
+--- !u!65 &-3761368806454720958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223408857563914087}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45811635, y: 0.63228446, z: 0.20450293}
+  m_Center: {x: 3.5784367e-26, y: 0.003686875, z: -0.000000022351742}

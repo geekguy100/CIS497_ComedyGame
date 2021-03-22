@@ -91,7 +91,7 @@ public sealed class ShoppingListUI : MonoBehaviour
             // If the item is already on our UI, update the text.
             if(item.itemType == itemType)
             {
-                SetText(item);
+                UpdateAllText();
                 return;
             }
         }
@@ -111,6 +111,7 @@ public sealed class ShoppingListUI : MonoBehaviour
     /// <param name="item">The ListItem to update.</param>
     private void SetText(ListItem item)
     {
+        Debug.Log(ShoppingCenter.instance.GetQuantity(item.itemType));
         // The amount the character has, the amount they need, and the amount in the store.
         item.textComponent.text = 
             item.itemType.ToString() + ": " + 
@@ -123,7 +124,7 @@ public sealed class ShoppingListUI : MonoBehaviour
             item.textComponent.color = Color.green;
 
         // If there are no longer enough items of this type present in the shopping center, make the text color red.
-        else if (ShoppingCenter.instance.GetQuantity(item.itemType) < shoppingList.GetQuantity(item.itemType))
+        else if (ShoppingCenter.instance.GetQuantity(item.itemType) < shoppingList.GetQuantity(item.itemType) - inventory.GetQuantity(item.itemType))
             item.textComponent.color = Color.red;
 
         // If we're still collecting this type of item and there are enough present in the store, make the text color black.
@@ -135,7 +136,7 @@ public sealed class ShoppingListUI : MonoBehaviour
     /// Updates all text on the list.
     /// </summary>
     /// <param name="itemType">Not used.</param>
-    private void UpdateAllText(System.Type itemType)
+    private void UpdateAllText()
     {
         foreach(ListItem item in itemsOnList)
         {

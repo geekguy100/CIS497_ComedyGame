@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2110885559338476380}
   - component: {fileID: 4228783785385121686}
   - component: {fileID: 3169567881569130986}
+  - component: {fileID: 7831963974124832531}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4518950799879426184, guid: 338b579eaac9d444b804df906d1e6e19, type: 3}
+--- !u!65 &7831963974124832531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2427251094584325699}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.36206636, y: 0.46591818, z: 0.2002818}
+  m_Center: {x: -4.948217e-25, y: -0.05098164, z: 0.0028505363}

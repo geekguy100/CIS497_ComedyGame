@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6915121760278106861}
   - component: {fileID: 8652406452706846247}
   - component: {fileID: -4116621877527950543}
+  - component: {fileID: 1545297268642471267}
   m_Layer: 0
   m_Name: Pasta
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6112103154885674536, guid: 99b344524444ad24e97955677e5adbde, type: 3}
+--- !u!65 &1545297268642471267
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7139183578508429298}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25586, y: 0.38493422, z: 0.10026384}
+  m_Center: {x: 0, y: 0, z: 0}

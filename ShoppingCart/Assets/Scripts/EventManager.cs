@@ -15,6 +15,7 @@ public static class EventManager
     public static event Action OnShoppingCenterFilled;
     public static event Action OnGameWin;
     public static event Action OnGameLost;
+    public static event Action OnNPCLeaveStore;
 
 
     /// <summary>
@@ -54,8 +55,19 @@ public static class EventManager
         OnGameWin?.Invoke();
     }
 
+    /// <summary>
+    /// Invoked when the player can no longer complete their shopping list.
+    /// </summary>
     public static void GameLost()
     {
         OnGameLost?.Invoke();
+    }
+
+    /// <summary>
+    /// Invoked when an NPC leaves the store.
+    /// </summary>
+    public static void NPCLeaveStore()
+    {
+        OnNPCLeaveStore?.Invoke();
     }
 }
