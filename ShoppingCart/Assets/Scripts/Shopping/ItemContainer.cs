@@ -36,11 +36,11 @@ public class ItemContainer : MonoBehaviour, IItemInteractable
     private bool isLooseItem = false;
 
     // The minimum amount of items present in this item container.
-    private int minQuantity = 1;
+    private int minQuantity = 2;
 
     // The maximum amount of items present in this item container.
     //private int maxQuantity = 10; //This resulted in many runs where it was impossible to lose, tried to tone down a bit, but needs playtesting
-    private int maxQuantity = 3;
+    private int maxQuantity = 5;
 
     // The amount of items currently present in this item container.
     private int currentQuantity = 0;

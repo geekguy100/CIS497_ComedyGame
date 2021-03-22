@@ -17,6 +17,8 @@ public static class EventManager
     public static event Action OnGameLost;
     public static event Action OnNPCLeaveStore;
 
+    private static bool gameOver = false;
+
 
     /// <summary>
     /// Invoked when an item is taken from the shopping center.
@@ -52,7 +54,10 @@ public static class EventManager
     /// </summary>
     public static void GameWin()
     {
-        OnGameWin?.Invoke();
+        if (!gameOver)
+        {
+            OnGameWin?.Invoke();
+        }
     }
 
     /// <summary>
@@ -60,7 +65,10 @@ public static class EventManager
     /// </summary>
     public static void GameLost()
     {
-        OnGameLost?.Invoke();
+        if (!gameOver)
+        {
+            OnGameLost?.Invoke();
+        }
     }
 
     /// <summary>

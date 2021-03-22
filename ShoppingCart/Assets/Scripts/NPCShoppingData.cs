@@ -21,6 +21,9 @@ public class NPCShoppingData : MonoBehaviour
     private bool checkingOut = false;
     public bool CheckingOut { get { return checkingOut; } set { checkingOut = value; } }
 
+    private bool over = false;
+    public bool Over { get { return over; } set { over = value; } }
+
     private int index = 0;
     public int Index
     {

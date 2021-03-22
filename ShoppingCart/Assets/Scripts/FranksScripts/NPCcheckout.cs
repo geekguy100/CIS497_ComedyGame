@@ -58,7 +58,9 @@ public class NPCcheckout : NPCBehavior
         {
             if (Vector3.Distance(transform.position, destination.position) < 1f)
             {
+                shoppingData.Over = true;
                 Destroy(gameObject);
+                EventManager.NPCLeaveStore();
             }
         }
         // If we haven't checked out yet and don't have a destination, set it to the nearest checkout location.
@@ -98,7 +100,9 @@ public class NPCcheckout : NPCBehavior
 
             if (Vector3.Distance(transform.position, destination.position) < 1f)
             {
+                shoppingData.Over = true;
                 Destroy(gameObject);
+                EventManager.NPCLeaveStore();
             }
         }
     }

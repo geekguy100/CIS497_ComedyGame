@@ -40,6 +40,7 @@ public class Checkout : MonoBehaviour
         // If the player checks out, win!
         if (canCheckOut && inventory.CompareTag("Player"))
         {
+            print("WINNER");
             EventManager.GameWin();
         }
 

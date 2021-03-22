@@ -110,7 +110,6 @@ public class ScoreManager : MonoBehaviour
             int storeQuantity = ShoppingCenter.instance.GetQuantity(itemType);
 
             bool foundQuantity = false;
-
             // If this is true, then we cannot rely on the store for
             // obtaining the item we need, so let's look for any NPCs that have enough
             // of the item we need.
@@ -138,6 +137,7 @@ public class ScoreManager : MonoBehaviour
                 // If we can get enough items from the NPCs, continue the game.
                 if (ShoppingHelper.GetTotalNPCQuantity(itemType) >= howManyMoreOfThisItemWeNeed)
                 {
+                    print("FOUND QUANTITY");
                     foundQuantity = true;
                 }
 

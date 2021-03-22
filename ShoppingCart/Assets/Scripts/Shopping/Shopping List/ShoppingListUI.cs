@@ -74,6 +74,11 @@ public sealed class ShoppingListUI : MonoBehaviour
         EventManager.OnItemSpawned -= UpdateList;
     }
 
+    private void Start()
+    {
+        InvokeRepeating("UpdateAllText", 2f, 2f);
+    }
+
     /// <summary>
     /// Updates the text of an item on the UI list.
     /// </summary>
@@ -111,7 +116,6 @@ public sealed class ShoppingListUI : MonoBehaviour
     /// <param name="item">The ListItem to update.</param>
     private void SetText(ListItem item)
     {
-        Debug.Log(ShoppingCenter.instance.GetQuantity(item.itemType));
         // The amount the character has, the amount they need, and the amount in the store.
         item.textComponent.text = 
             item.itemType.ToString() + ": " + 
